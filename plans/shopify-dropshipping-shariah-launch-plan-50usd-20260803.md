@@ -31,7 +31,7 @@ Here is the conclusion I reached while building the cash model in Section 3, sta
 
 > **$50 is genuinely enough capital to run this business. What $50 cannot buy is demand.**
 
-The float math (Section 3) shows that money stops being the binding constraint after roughly one 10-day cycle — each fulfilled order returns about **2.7×** what it cost you to fulfil. Within about 30 days of your *first sale*, capital is no longer what limits you.
+The float math (Section 3) shows that money stops being the binding constraint after roughly **two payout cycles** — each fulfilled order returns about **2.7×** what it cost you to fulfil. Within about **6–8 weeks of your *first sale***, capital is no longer what limits you.
 
 The thing that limits you is that nobody knows your store exists. The previous plan solved that with money. This plan solves it with published content and patience, and that is a genuinely harder, slower path — not a cheaper version of the same path. Section 10 is honest about the odds.
 
@@ -70,48 +70,80 @@ This ceiling is the reason Section 5 re-ranks the products. At $50, **cost of go
 
 This section is the most important in the document. It is what makes $50 work at all, and it did not exist in the previous plan because at $1,490 nobody needs to think about it.
 
-### 3.1 The problem
+### 3.1 The money path (no PayPal)
 
-You pay CJ for the goods **before** the customer's money is available to you. New-seller payment holds are standard:
+**Payoneer is not a Shopify checkout gateway for you.** `Payoneer Checkout` exists as a real Shopify app accepting Visa/Mastercard/Amex, but it is restricted to merchants with a **Hong Kong legal entity** and/or **$10,000–20,000+ monthly volume** ([Payoneer Checkout](https://www.payoneer.com/checkout/shopify-integration/), [Shopify app listing](https://apps.shopify.com/payoneer-checkout)). A new Jordan store qualifies on neither axis.
 
-- **PayPal** holds new sellers' payments **for up to 21 days** ([PayPal official](https://www.paypal.com/us/cshelp/article/new-paypal-account-%E2%80%93-payments-on-hold-and-accessing-your-money-quicker-help848)).
-- **2Checkout** holds a **5% rolling reserve for 90 days**, paying out weekly on the 2Sell package ([Merchant Maverick](https://www.merchantmaverick.com/reviews/2checkout-review/), [2Checkout payouts doc](https://verifone.cloud/docs/2checkout/Onboarding/Payouts)).
+Payoneer's role here is **settlement, not checkout**:
 
-So a naive reading says: $47 of float, 21-to-90-day holds, therefore you can fulfil 3 orders and then wait a month and a half. That would make this plan close to unworkable.
+```
+Customer card  →  2Checkout (gateway)  →  Payoneer USD balance  →  pay CJ
+```
 
-### 3.2 The two facts that break the problem open
+This works because **2Checkout pays out to Payoneer** — funds are credited to your Payoneer USD balance automatically, with no manual withdrawal ([2Checkout payouts](https://verifone.cloud/docs/2checkout/Onboarding/Payouts), [Merchant Maverick](https://www.merchantmaverick.com/reviews/2checkout-review/)) — and **CJ accepts Payoneer**, at any top-up amount; the $2,000 minimum applies only to wire transfer ([CJ payment methods](https://cjdropshipping.com/article-details/112), [CJ wallet doc](https://cjdropshipping.com/article-details/1374683186952540160)).
 
-**Fact 1 — tracking-confirmed delivery releases PayPal funds early.** If you add tracking through an approved carrier and it shows **delivered**, PayPal may release the hold **within 1–3 business days of confirmed delivery** ([PayPal official](https://www.paypal.com/us/cshelp/article/new-paypal-account-%E2%80%93-payments-on-hold-and-accessing-your-money-quicker-help848)). Your CJ **US warehouse** delivery window is 5–10 business days. So your hold is not 21 days — it is *delivery + 1–3 days*.
+A useful side effect: choosing Payoneer as the payout destination avoids 2Checkout's **bank-wire path, which costs ~$15 per transfer and can take up to 25 business days**. At your order sizes a $15 wire fee would eat most of an order's margin, so Payoneer is not merely acceptable here — it is the correct choice.
 
-**Fact 2 — CJ accepts PayPal directly.** CJ supports 9 payment methods including **PayPal and Payoneer** ([CJ payment methods](https://cjdropshipping.com/article-details/112), [CJ blog](https://blog.cjdropshipping.com/detail/payment-methods)). For Payoneer top-ups you can charge **any amount** — the $2,000 minimum applies only to wire transfer ([CJ wallet doc](https://cjdropshipping.com/article-details/1374683186952540160)).
+### 3.2 The problem
 
-Fact 2 matters more than it looks. **PayPal Jordan has partial access with withdrawal restrictions** — Jordan is not among the countries with full receive-and-withdraw-to-local-bank functionality ([doola country breakdown](https://www.doola.com/blog/which-countries-can-fully-use-paypal/), [Webvator Jordan guide](https://webvator.com/paypal-jordan/)). But **you do not need to withdraw.** The money's job is to pay CJ, and CJ takes PayPal. The balance never has to touch a Jordanian bank for the business to operate. Withdrawal only matters when you want to take money out as personal income — which at this stage you should not be doing for months anyway.
+You pay CJ for the goods **before** the customer's money reaches you. Three separate mechanisms delay it:
+
+| Mechanism | Effect | Source |
+|---|---|---|
+| **Payout cadence** | Weekly, bi-weekly, or monthly. **Choose weekly** (2Sell default). | [2Checkout payouts](https://verifone.cloud/docs/2checkout/Onboarding/Payouts) |
+| **Minimum payout threshold** | **$50–100** balance before a payout runs at all | [2Checkout payouts](https://verifone.cloud/docs/2checkout/Onboarding/Payouts) |
+| **Rolling reserve** | **5% withheld for 90 days**, on a rolling basis | [Merchant Maverick](https://www.merchantmaverick.com/reviews/2checkout-review/) |
+
+The **minimum threshold** is the one that bites at your scale, and it is easy to miss. At $32.90 per order, you need **2–4 completed orders to accumulate** before any money moves at all. A single order sits there indefinitely.
+
+The **rolling reserve** is not a one-off either: at steady state, 5% of your last 90 days of revenue is permanently parked. Treat it as a standing ~5% haircut on working capital, not a temporary hold.
 
 ### 3.3 The cycle
 
 ```
-Day 0    Customer pays  →  $32.90 lands in PayPal (HELD)
-Day 0    You pay CJ $11.50 from YOUR float          ← float −$11.50
-Day 0–1  CJ ships from US warehouse; tracking synced to Shopify + PayPal
-Day 5–10 Delivered; tracking confirms
-Day 7–13 PayPal releases the $32.90                  ← float +$32.90
+Day 0     Customer pays   →  $32.90 enters your 2Checkout balance
+Day 0     You pay CJ $11.50 from Payoneer            ← float −$11.50
+Day 0–1   CJ ships from US warehouse; tracking synced to Shopify
+Day 5–10  Delivered
+Day ~14–21 Balance clears the $50–100 minimum; weekly payout runs
+          → ~95% lands in Payoneer                   ← float +$31.26
+          (remaining 5% released after 90 days)
 ```
 
-**Cycle length ≈ 7–13 days. Each order returns ≈ 2.7× the cash it consumed.**
+**Realistic first payout: day 14–21.** Once volume is steady enough to clear the minimum every week, the cycle shortens to roughly **7–10 days**. Each order still returns ≈ **2.7×** the cash it consumed — the *return* is unchanged; only the *speed* is worse.
 
-### 3.4 Why money stops being the constraint
+### 3.4 Honest comparison, and why it matters less than it looks
 
-Starting float $47, hero COGS $11.50, revenue per order $32.90. If you could sell to the ceiling every cycle:
+Settling through 2Checkout instead of PayPal is **worse on paper**:
+
+| | Via PayPal | Via 2Checkout → Payoneer |
+|---|---|---|
+| First cash back | day 7–13 | **day 14–21** |
+| Release trigger | tracking-confirmed delivery | weekly run **+** $50–100 minimum |
+| Standing reserve | none | **5% for 90 days** |
+| Processing fee | ~4.4% + fixed | **~3.5% + $0.35** (better) |
+
+So you give up cash velocity and gain slightly lower fees.
+
+**But the delay is largely hidden behind the organic ramp.** Your first organic order is expected at **week 4–8** (Section 7.4). The payout delay only starts counting *after* orders begin arriving. The two timelines overlap rather than stack — meaning that in the period that actually decides whether this venture lives, the slower rail costs you very little.
+
+It becomes a genuine constraint only if organic traction arrives *faster* than expected and you start hitting the order ceiling. That is a good problem, and Tier 2 (Section 9) exists to solve it.
+
+**Do not round this off to "no difference."** The 5% reserve is real money held back permanently, and the $50–100 minimum means your very first order or two will sit uncollected for weeks. Plan your float knowing the first cash back is 2–3 weeks out, not 1.
+
+### 3.5 Why money stops being the constraint
+
+Starting float $47, hero COGS $11.50, ~$31.26 net returned per order. If you could sell to the ceiling every cycle:
 
 | Cycle | Orders you can fund | Cash out | Cash returned | Float after |
 |---|---|---|---|---|
-| 1 (day 0–13) | 3 | $34.50 | $98.70 | **$111** |
-| 2 (day 13–26) | 9 | $103.50 | $296.10 | **$304** |
-| 3 (day 26–39) | 26 | $299 | $855 | **$860** |
+| 1 (day 0–21) | 3 | $34.50 | $93.78 | **$106** |
+| 2 (day 21–31) | 9 | $103.50 | $281.34 | **$284** |
+| 3 (day 31–41) | 24 | $276 | $750 | **$758** |
 
-Do not read this as a forecast — it assumes you can *generate* 3, then 9, then 26 orders, which is exactly the thing organic traffic will not do for you on that schedule. Read it for the single structural point it makes:
+Do not read this as a forecast — it assumes you can *generate* 3, then 9, then 24 orders, which is exactly the thing organic traffic will not do for you on that schedule. Read it for the single structural point it makes:
 
-> **Capital ceases to be the limiting factor after roughly one cycle. From then on, the only limiting factor is demand.**
+> **Capital ceases to be the limiting factor after roughly two payout cycles (~6–8 weeks). From then on, the only limiting factor is demand.**
 
 This is why I am not going to spend the rest of this document on money-saving tactics. The money is fine. Sections 5–7 are about the actual problem.
 
@@ -227,6 +259,8 @@ It wins because it is the only candidate scoring high on both the content axis (
 
 **Held in reserve: jar opener.** If the cap's content fails to gain traction within the Section 10 stop-loss window, this is the pivot — cheaper float, Pinterest-first rather than TikTok-first.
 
+**Why the slower payout cycle does not change this pick.** The jar opener's cheaper COGS buys a wider ceiling — 7 concurrent orders against the cap's 3 — and with 2Checkout's 14–21 day first payout (Section 3.3) that extra room looks tempting. It is a false economy at this stage: organic traffic takes **4–8 weeks to produce a first order at all** (Section 7.4), so you will not be running 3 concurrent orders, let alone 7. The ceiling the jar opener relieves is one you will not touch for months, and you would pay for it with a materially weaker organic audience — the thing that actually decides whether this works. **Buy content strength, not float headroom you cannot reach.** Revisit only if traction genuinely outruns the float, which Tier 2 solves anyway.
+
 ---
 
 ## 6. Zero-cost infrastructure
@@ -249,6 +283,22 @@ It wins because it is the only candidate scoring high on both the content axis (
 - **Contact** — a real address you answer within 12 hours.
 
 **Do not install a "fake sales" or urgency-timer app.** Beyond being ghish under Section 4.3, they are conversion-negative on cold organic traffic.
+
+### 6.1 Order of operations — do these in this sequence
+
+The sequence matters more than usual here, because two of these steps are **irreversible or time-critical** and getting them out of order costs real money.
+
+1. **Connect Claude to Shopify first — before creating any store.** This is free, requires no store to exist, and unlocks store *previews*: you describe the store in a sentence and get back working previews with different themes, each carrying a signup link that creates a real store with the theme and starter products already installed. Exploring before committing is strictly better than creating a blank store and reshaping it.
+
+2. **Explore with previews only. Do not create a throwaway "test" store.** The $1/mo promo is for **new accounts**, and burning that eligibility on a practice store is an expensive way to learn the admin panel. Previews cost nothing and create nothing.
+
+3. **Before you complete signup, confirm the `$1/mo` price is actually shown at checkout.** This is the single highest-value 10 seconds in the whole setup. Without the promo you pay `$29 × 3 = $87` for three months — **more than your entire capital**. If the preview signup path does not display the $1 price, back out and sign up through `shopify.com` directly, then apply the free theme by hand. Convenience is not worth $84 at this budget.
+
+4. **The same day, submit the 2Checkout application.** Underwriting is manual and is the **longest pole in this entire plan** (Section 10.1) — every day you delay it delays your first collectable sale, not just your first sale. Do this in parallel with building the store, not after.
+
+5. **Then connect the created store to Claude** for ongoing work: product pages, the salam disclosure pages above, collections, and copy.
+
+Steps 1–3 are one sitting. Step 4 must not wait for the store to be finished.
 
 ---
 
@@ -302,15 +352,17 @@ The honest benchmarks, and you should read them before you start rather than aft
 |---|---|
 | Retail + shipping charged (AOV) | **$32.90** |
 | CJ product + US freight | −$11.50 |
-| Payment processing **[VERIFY]** — PayPal commercial cross-border, est. ~4.4% + fixed | −$1.94 |
-| Shopify third-party gateway fee (2% on Basic) **[VERIFY]** — confirm whether PayPal incurs it in your configuration | −$0.66 |
-| **Contribution per order** | **≈ $18.80** |
+| Payment processing — 2Checkout 2Sell ≈ **3.5% + $0.35** **[VERIFY]** | −$1.50 |
+| Shopify third-party gateway fee (2% on Basic) **[VERIFY]** | −$0.66 |
+| **Contribution per order** | **≈ $19.24** |
 | Refund/dispute allowance (5% of revenue) | −$1.65 |
-| **Net margin per order** | **≈ $17** |
+| **Net margin per order** | **≈ $17.6** |
 
-**[VERIFY]** the exact PayPal merchant rate for a Jordan-registered account receiving US payments — I could not confirm it from outside your account, and cross-border rates vary. If it lands materially above ~4.4%, re-run this table before launch.
+Note what changed when PayPal came out of the stack: **fees got slightly better, cash velocity got clearly worse.** The 2Sell rate (~3.5% + $0.35) beats the PayPal cross-border estimate (~4.4% + fixed) by roughly $0.44/order — but you now wait 14–21 days for the first payout instead of 7–13, and 5% sits in reserve for 90 days (Section 3.4). **On a $50 float, timing matters more than 44 cents.** Do not let the better fee line distract you from the slower rail.
 
-Compare this with the previous plan, where the same ~$18 contribution had to cover a median Meta CPA of $32.22 — i.e. the plan lost money at median performance. **Here, CPA is $0, so that $17 is real profit.** Removing paid acquisition does not just cut a cost; it removes the specific mechanism that made the previous plan fragile.
+**[VERIFY]** your confirmed 2Sell rate and reserve percentage once underwriting approves you — headline rates vary by country and vertical, and 2Checkout reserves the right to raise the reserve if refunds or chargebacks run high. Re-run this table with your actual numbers before scaling.
+
+Compare this with the previous plan, where a ~$18 contribution had to cover a median Meta CPA of $32.22 — i.e. the plan lost money at median performance. **Here, CPA is $0, so that $17.6 is real profit.** Removing paid acquisition does not just cut a cost; it removes the specific mechanism that made the previous plan fragile.
 
 ### 8.2 What the numbers mean at this scale
 
@@ -371,7 +423,9 @@ This is the normal experience, not the exceptional one — recall that some crea
 Secondary risks, in order:
 1. **Content that doesn't hold attention.** Fixable, but only by volume and iteration — which requires surviving risk #1.
 2. **Ghish exposure from the unsampled product** (Section 4.3) — a bad first batch could produce refunds and a damaged reputation before you have any margin for error.
-3. **PayPal account limitation.** Jordan is a partial-access country; a limitation mid-cycle would strand your float. Mitigation: keep tracking on 100% of orders, refund before disputes, and stand up 2Checkout as a backup once Tier 2 gives you slack.
+3. **2Checkout underwriting rejection, or a reserve increase mid-flight.** This is now a **single point of failure** — the entire money path runs through one gateway, and approval depends on a manual underwriting review that can decline a new individual with no trading history. A mid-flight reserve increase (2Checkout may raise it if refunds or chargebacks run high) would tighten your float without warning. Mitigations: apply on **day 1**, because underwriting is the longest pole in the plan; keep tracking on 100% of orders and refund before disputes, since your dispute ratio is what triggers reserve increases; and know the fallback landscape below before you need it.
+
+   **The fallback is thin — do not assume a comfortable plan B.** **Stripe is unavailable in Jordan** (46 supported countries; Jordan is not among them). **PayTabs Jordan** and **Telr** both serve Jordan — PayTabs even has a Shopify app — but **both require an incorporated company** (trade licence / commercial registration displayed on the site) and settle to a local bank rather than to Payoneer, which makes them a poor fit for a US-market individual seller. **BlueSnap** settles to merchants in ~50 countries; Jordan eligibility is **[VERIFY]**. Realistically, your contingency is **registering a Jordanian company**, which also unlocks PayTabs. That is a real cost and a real delay — which is exactly why the day-1 2Checkout application matters.
 4. **Float lockup at the ceiling** (Section 3.5) — a good problem, and temporary.
 
 ### 10.2 Stop-loss — denominated in time, not money
@@ -404,10 +458,12 @@ $50 is enough to *start* this business properly and Shariah-compliantly. It is n
 |---|---|
 | Shopify $1/mo × 3 promo currently offered to you; **monthly billing selected, not annual** | Shopify signup flow |
 | Exact CJ US-warehouse cost + freight + processing for your hero SKU | CJ dashboard |
-| CJ accepts **PayPal** as a payment method on your account (the whole float cycle depends on this) | CJ payment settings |
-| PayPal Jordan business account — can you *receive* US commercial payments; what is the hold policy on your account | PayPal account + support |
-| PayPal merchant rate for cross-border US receipts (Section 8.1 assumes ~4.4% + fixed) | PayPal fee schedule for JO |
-| Whether Shopify's 2% third-party gateway fee applies to PayPal in your configuration | Shopify billing settings |
+| CJ accepts **Payoneer** as a payment method on your account (the whole float cycle depends on this) | CJ payment settings |
+| **2Checkout accepts a Jordan-registered *individual*** — not only a registered company. This is the single biggest unknown in the plan; underwriting is manual and I could not verify it from outside your account | 2Checkout application + underwriting response |
+| Your confirmed **2Sell rate and reserve percentage** (Section 8.1 assumes ~3.5% + $0.35 and a 5% reserve) | 2Checkout merchant control panel |
+| **Payoneer selected as your payout method and approved** — note that 2Checkout's finance team must approve any payout-detail change | 2Checkout payout settings |
+| Your actual **minimum payout threshold and cadence** — set cadence to weekly (Section 3.2 assumes $50–100 minimum) | 2Checkout payout settings |
+| Whether Shopify's 2% third-party gateway fee applies to 2Checkout in your configuration | Shopify billing settings |
 | CJ supplier rating/order-history thresholds available for screening (Section 4.3) | CJ product listings |
 | Salam structure sign-off, incl. the Hanafi deferment question if you follow Hanafi taqlīd | A scholar you trust, shown Section 4 |
 
@@ -417,7 +473,9 @@ $50 is enough to *start* this business properly and Shariah-compliantly. It is n
 
 **Shopify pricing/promo:** [The4](https://the4.co/blogs/shopify-tutorials/1-dollar-for-3-months) · [PageFly](https://pagefly.io/blogs/shopify/shopify-1-dollar) · [EComposer](https://ecomposer.io/blogs/ecomposer-tips/shopify-1-dollar-3-months) · [Avada](https://avada.io/blog/shopify-1-dollar/)
 
-**Payments/holds:** [PayPal — new seller holds & early release](https://www.paypal.com/us/cshelp/article/new-paypal-account-%E2%80%93-payments-on-hold-and-accessing-your-money-quicker-help848) · [doola — full-access country list](https://www.doola.com/blog/which-countries-can-fully-use-paypal/) · [Webvator — PayPal Jordan](https://webvator.com/paypal-jordan/) · [Merchant Maverick — 2Checkout reserve](https://www.merchantmaverick.com/reviews/2checkout-review/) · [2Checkout payouts](https://verifone.cloud/docs/2checkout/Onboarding/Payouts)
+**Payments / payouts:** [2Checkout payouts — methods, cadence, thresholds](https://verifone.cloud/docs/2checkout/Onboarding/Payouts) · [Merchant Maverick — 2Checkout 5% / 90-day reserve](https://www.merchantmaverick.com/reviews/2checkout-review/) · [Payoneer Checkout — Shopify integration & eligibility](https://www.payoneer.com/checkout/shopify-integration/) · [Payoneer Checkout — Shopify app listing](https://apps.shopify.com/payoneer-checkout)
+
+**Fallback gateways (Section 10.1):** [Stripe global availability](https://stripe.com/global) · [Stripe supported countries 2026](https://dodopayments.com/blogs/stripe-supported-countries-alternatives) · [PayTabs Jordan — Shopify app](https://apps.shopify.com/paytabs-jordan) · [PayTabs — KYC documents required](https://support.paytabs.com/en/support/solutions/articles/60000716510-what-kyc-documents-are-required-to-activate-my-paytabs-account-) · [Telr — terms (UAE/KSA/Jordan/Bahrain incorporation)](https://telr.com/terms-and-condition) · [BlueSnap — payout methods](https://support.bluesnap.com/docs/payout-method)
 
 **CJ Dropshipping:** [Payment methods](https://cjdropshipping.com/article-details/112) · [CJ blog — payment methods](https://blog.cjdropshipping.com/detail/payment-methods) · [CJ wallet charge/withdraw](https://cjdropshipping.com/article-details/1374683186952540160) · [CJ beginner guide 2026](https://cjdropshipping.com/blogs/cj-news/What-is-CJdropshipping) · [RevenueGeeks pricing](https://revenuegeeks.com/cjdropshipping-pricing/)
 

@@ -190,7 +190,7 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
     </div>
   </div>
 
-  <div class="pagefoot"><span>خطة الإطلاق بخمسين دولاراً</span><span class="num">1 / 8</span></div>
+  <div class="pagefoot"><span>خطة الإطلاق بخمسين دولاراً</span><span class="num">1 / 9</span></div>
 </div>
 
 <!-- ============ PAGE 2 : ALLOCATION ============ -->
@@ -236,7 +236,7 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
     <p style="margin-bottom:0;">لهذا السبب يُعيد القسم ٥ ترتيب المنتجات. عند <span class="num">$50</span> تصبح <strong>تكلفة البضاعة متغيّراً استراتيجياً لا تفصيلاً محاسبياً</strong> — منتج بـ<span class="num">$6</span> يمنحك أكثر من ضعف مساحة العمل التي يمنحها منتج بـ<span class="num">$12</span>.</p>
   </div>
 
-  <div class="pagefoot"><span>توزيع رأس المال</span><span class="num">2 / 8</span></div>
+  <div class="pagefoot"><span>توزيع رأس المال</span><span class="num">2 / 9</span></div>
 </div>
 
 <!-- ============ PAGE 3 : FLOAT CYCLE ============ -->
@@ -244,16 +244,22 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
   <h2 class="sec kufi">٢. دورة السيولة — محرّك الخطة</h2>
   <p>هذا أهم قسم في المستند، وهو ما يجعل الـ<span class="num">$50</span> قابلة للتنفيذ أصلاً. لم يكن موجوداً في الخطة السابقة لأن أحداً لا يحتاج للتفكير فيه عند <span class="num">$1,490</span>.</p>
 
-  <h3>٢.١ المشكلة</h3>
-  <p>أنت تدفع لـ<span class="en">CJ</span> ثمن البضاعة <strong>قبل</strong> أن تصبح أموال العميل متاحة لك، واحتجاز أموال البائع الجديد ممارسة قياسية: <span class="en">PayPal</span> يحتجز مدفوعات البائعين الجدد <strong>حتى <span class="num">21</span> يوماً</strong>، و<span class="en">2Checkout</span> يحتجز <strong>احتياطياً دوّاراً <span class="num">5%</span> لمدة <span class="num">90</span> يوماً</strong> بدفعات أسبوعية على باقة <span class="en">2Sell</span>. ظاهرياً هذا يعني: <span class="num">$47</span> سيولة + احتجاز طويل = ثلاثة طلبات ثم انتظار شهر ونصف — أي خطة شبه مستحيلة.</p>
-
-  <h3>٢.٢ حقيقتان تكسران المشكلة</h3>
+  <h3>٢.١ مسار المال (بلا <span class="en">PayPal</span>)</h3>
   <div class="callout ok">
-    <p><strong>الحقيقة الأولى — تأكيد التسليم يُحرِّر أموال <span class="en">PayPal</span> مبكراً.</strong> عند إضافة رقم تتبّع من شركة شحن معتمدة وظهور حالة «تم التسليم»، قد يُفرج <span class="en">PayPal</span> عن المبلغ <strong>خلال <span class="num">1–3</span> أيام عمل من تأكيد التسليم</strong>. ومدة التسليم من مستودع <span class="en">CJ</span> الأمريكي <span class="num">5–10</span> أيام عمل. إذن الاحتجاز ليس <span class="num">21</span> يوماً، بل <em>مدة التسليم <span class="num">+ 1–3</span> أيام</em>.</p>
-    <p style="margin-bottom:0;"><strong>الحقيقة الثانية — <span class="en">CJ</span> يقبل الدفع عبر <span class="en">PayPal</span> مباشرة.</strong> يدعم <span class="en">CJ</span> تسع وسائل دفع من بينها <span class="en">PayPal</span> و<span class="en">Payoneer</span>، وشحن الرصيد عبر <span class="en">Payoneer</span> متاح <strong>بأي مبلغ</strong> — الحد الأدنى <span class="num">$2,000</span> يخصّ الحوالة البنكية فقط.</p>
+    <p><strong><span class="en">Payoneer</span> ليس بوابة دفع على <span class="en">Shopify</span> بالنسبة لك.</strong> يوجد تطبيق <span class="en">Payoneer Checkout</span> فعلاً ويقبل <span class="en">Visa/Mastercard/Amex</span>، لكنه مشروط بكيان قانوني في <strong>هونغ كونغ</strong> و/أو حجم شهري <strong><span class="num">$10,000–20,000+</span></strong>. متجر جديد في الأردن لا يستوفي أياً من الشرطين.</p>
+    <p style="margin-bottom:0;"><strong>دور <span class="en">Payoneer</span> هنا هو التسوية لا التحصيل:</strong> بطاقة العميل ← <span class="en">2Checkout</span> ← رصيد <span class="en">Payoneer</span> بالدولار ← تدفع لـ<span class="en">CJ</span>. وهذا يعمل لأن <span class="en">2Checkout</span> <strong>يصرف إلى <span class="en">Payoneer</span></strong> تلقائياً بلا سحب يدوي، و<span class="en">CJ</span> يقبل <span class="en">Payoneer</span> بأي مبلغ — الحد الأدنى <span class="num">$2,000</span> يخصّ الحوالة البنكية فقط.</p>
   </div>
+  <p>وفائدة جانبية مهمة: اختيار <span class="en">Payoneer</span> يتفادى مسار الحوالة البنكية لدى <span class="en">2Checkout</span>، الذي يكلّف <strong>~<span class="num">$15</span> لكل تحويل</strong> وقد يستغرق حتى <span class="num">25</span> يوم عمل. بحجم طلباتك، رسم <span class="num">$15</span> يلتهم معظم هامش الطلب — فـ<span class="en">Payoneer</span> ليس خياراً مقبولاً فحسب، بل هو الخيار الصحيح.</p>
 
-  <p>الحقيقة الثانية أهم مما تبدو. <strong><span class="en">PayPal</span> في الأردن وصوله جزئي وعليه قيود سحب</strong> — الأردن ليس ضمن الدول ذات الوظائف الكاملة. <strong>لكنك لست بحاجة للسحب:</strong> وظيفة هذا المال أن يدفع لـ<span class="en">CJ</span>، و<span class="en">CJ</span> يقبل <span class="en">PayPal</span>. الرصيد لا يحتاج أن يلمس بنكاً أردنياً كي يعمل النشاط. السحب يهمّ فقط حين تريد إخراج المال كدخل شخصي — وهو ما لا ينبغي فعله لأشهر أصلاً.</p>
+  <h3>٢.٢ المشكلة</h3>
+  <p>أنت تدفع لـ<span class="en">CJ</span> <strong>قبل</strong> أن يصلك مال العميل، وثلاث آليات منفصلة تؤخّره:</p>
+  <table>
+    <tr><th style="width:26%">الآلية</th><th>الأثر</th></tr>
+    <tr><td><strong>وتيرة الصرف</strong></td><td>أسبوعية أو نصف شهرية أو شهرية — <strong>اختر الأسبوعية</strong> (الافتراضي على <span class="en">2Sell</span>).</td></tr>
+    <tr><td><strong>الحد الأدنى للصرف</strong></td><td><strong><span class="num">$50–100</span></strong> رصيد قبل أن تنطلق أي دفعة إطلاقاً.</td></tr>
+    <tr><td><strong>الاحتياطي الدوّار</strong></td><td><strong><span class="num">5%</span> محتجزة <span class="num">90</span> يوماً</strong> بشكل دوّار.</td></tr>
+  </table>
+  <p><strong>الحد الأدنى هو ما يؤلم في حجمك</strong>، ومن السهل إغفاله: بسعر <span class="num">$32.90</span> للطلب، تحتاج <strong><span class="num">2–4</span> طلبات مكتملة تتراكم</strong> قبل أن يتحرك أي مبلغ. الطلب الواحد يبقى معلّقاً بلا حد. والاحتياطي ليس مؤقتاً أيضاً: في الوضع المستقر تبقى <span class="num">5%</span> من إيراد آخر <span class="num">90</span> يوماً محجوزة دائماً — عاملها كخصم ثابت <span class="num">5%</span> على رأس المال العامل لا كتأخير عابر.</p>
 
   <h3>٢.٣ الدورة</h3>
   <div class="fig">
@@ -274,39 +280,66 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
       <text x="230" y="45" font-size="8.5" text-anchor="middle" fill="#52514e">تم التسليم — تتبّع مؤكَّد</text>
 
       <rect x="1" y="14" width="138" height="40" rx="3" fill="#f4faf4" stroke="var(--good)"/>
-      <text x="70" y="30" class="k" font-size="9.5" text-anchor="middle" font-weight="700">اليوم 7–13</text>
-      <text x="70" y="45" font-size="8.5" text-anchor="middle" fill="#52514e">PayPal يُفرج +$32.90</text>
+      <text x="70" y="30" class="k" font-size="9.5" text-anchor="middle" font-weight="700">اليوم 14–21</text>
+      <text x="70" y="45" font-size="8.5" text-anchor="middle" fill="#52514e">صرف إلى Payoneer +$31.26</text>
 
       <line x1="481" y1="34" x2="465" y2="34" stroke="#898781" marker-end="url(#ar)"/>
       <line x1="321" y1="34" x2="305" y2="34" stroke="#898781" marker-end="url(#ar)"/>
       <line x1="161" y1="34" x2="145" y2="34" stroke="#898781" marker-end="url(#ar)"/>
 
       <path d="M70,54 L70,80 L550,80 L550,58" fill="none" stroke="var(--good)" stroke-dasharray="4 3" marker-end="url(#arg)"/>
-      <rect x="248" y="70" width="124" height="19" fill="#fcfcfb"/>
+      <rect x="238" y="70" width="144" height="19" fill="#fcfcfb"/>
       <text x="310" y="84" class="k" font-size="9" fill="var(--good)" text-anchor="middle" font-weight="700">السيولة تعود ×2.7</text>
     </svg>
-    <div class="figcap">شكل ٢ — طول الدورة ≈ <span class="num">7–13</span> يوماً. كل طلب يُعيد ما يقارب <span class="num">2.7</span> ضعف النقد الذي استهلكه.</div>
+    <div class="figcap">شكل ٢ — أول صرف واقعياً يوم <span class="num">14–21</span>؛ وبعد استقرار الحجم تقصر الدورة إلى <span class="num">7–10</span> أيام. الـ<span class="num">5%</span> المتبقية تُفرَج بعد <span class="num">90</span> يوماً.</div>
   </div>
 
-  <h3>٢.٤ لماذا يتوقف المال عن كونه القيد</h3>
+  <div class="pagefoot"><span>دورة السيولة</span><span class="num">3 / 9</span></div>
+</div>
+
+<!-- ============ PAGE 4 : CYCLE COMPARISON ============ -->
+<div class="page compact">
+  <h2 class="sec kufi">٢ (تابع). دورة السيولة</h2>
+
+  <h3>٢.٤ مقارنة صادقة — ولماذا أثرها أقل مما يبدو</h3>
+  <table>
+    <tr><th style="width:30%"></th><th>عبر <span class="en">PayPal</span></th><th>عبر <span class="en">2Checkout ← Payoneer</span></th></tr>
+    <tr><td>أول عودة نقد</td><td>يوم <span class="num">7–13</span></td><td><strong>يوم <span class="num">14–21</span></strong></td></tr>
+    <tr><td>محفّز الإفراج</td><td>تأكيد التسليم</td><td>دفعة أسبوعية <strong>+</strong> حد أدنى <span class="num">$50–100</span></td></tr>
+    <tr><td>احتياطي دائم</td><td>لا يوجد</td><td><strong><span class="num">5%</span> لمدة <span class="num">90</span> يوماً</strong></td></tr>
+    <tr><td>رسوم المعالجة</td><td>≈ <span class="num">4.4%</span> + ثابت</td><td><strong>≈ <span class="num">3.5%</span> + <span class="num">$0.35</span></strong> (أفضل)</td></tr>
+  </table>
+  <div class="callout ok">
+    <p style="margin-bottom:0;"><strong>لكن التأخير مُغطّى إلى حد بعيد خلف بطء النمو العضوي.</strong> أول طلب عضوي متوقَّع في الأسبوع <span class="num">4–8</span>، وتأخير الصرف لا يبدأ العد إلا <em>بعد</em> وصول الطلبات. الجدولان يتداخلان ولا يتراكمان — أي أن المسار الأبطأ يكلّفك القليل جداً في الفترة التي تقرر فعلاً مصير المشروع. <strong>ولا تُدوّرها إلى «لا فرق»:</strong> الـ<span class="num">5%</span> مال محجوز فعلاً، والحد الأدنى يعني أن أول طلب أو طلبين سيبقيان دون تحصيل لأسابيع.</p>
+  </div>
+
+  <h3>٢.٥ لماذا يتوقف المال عن كونه القيد</h3>
   <table>
     <tr><th>الدورة</th><th>طلبات يمكن تمويلها</th><th>نقد خارج</th><th>نقد عائد</th><th>السيولة بعدها</th></tr>
-    <tr><td><span class="num">1</span> (يوم <span class="num">0–13</span>)</td><td><span class="num">3</span></td><td><span class="num">$34.50</span></td><td><span class="num">$98.70</span></td><td><strong><span class="num">$111</span></strong></td></tr>
-    <tr><td><span class="num">2</span> (يوم <span class="num">13–26</span>)</td><td><span class="num">9</span></td><td><span class="num">$103.50</span></td><td><span class="num">$296.10</span></td><td><strong><span class="num">$304</span></strong></td></tr>
-    <tr><td><span class="num">3</span> (يوم <span class="num">26–39</span>)</td><td><span class="num">26</span></td><td><span class="num">$299</span></td><td><span class="num">$855</span></td><td><strong><span class="num">$860</span></strong></td></tr>
+    <tr><td><span class="num">1</span> (يوم <span class="num">0–21</span>)</td><td><span class="num">3</span></td><td><span class="num">$34.50</span></td><td><span class="num">$93.78</span></td><td><strong><span class="num">$106</span></strong></td></tr>
+    <tr><td><span class="num">2</span> (يوم <span class="num">21–31</span>)</td><td><span class="num">9</span></td><td><span class="num">$103.50</span></td><td><span class="num">$281.34</span></td><td><strong><span class="num">$284</span></strong></td></tr>
+    <tr><td><span class="num">3</span> (يوم <span class="num">31–41</span>)</td><td><span class="num">24</span></td><td><span class="num">$276</span></td><td><span class="num">$750</span></td><td><strong><span class="num">$758</span></strong></td></tr>
   </table>
-  <div class="callout warn">
-    <p style="margin-bottom:0;"><strong>لا تقرأ هذا كتوقّع</strong> — فهو يفترض أنك <em>تستطيع توليد</em> ٣ ثم ٩ ثم ٢٦ طلباً، وهو بالضبط ما لن تفعله الزيارات العضوية بهذه السرعة. اقرأه للنقطة الوحيدة التي يثبتها: <strong>رأس المال يتوقف عن كونه العامل المُقيِّد بعد دورة واحدة تقريباً، وبعدها القيد الوحيد هو الطلب.</strong></p>
-  </div>
+  <p class="small" style="margin-bottom:1.5mm;"><strong>لا تقرأ هذا كتوقّع</strong> — فهو يفترض أنك <em>تستطيع توليد</em> ٣ ثم ٩ ثم ٢٤ طلباً، وهو ما لن تفعله الزيارات العضوية بهذه السرعة. النقطة الوحيدة التي يثبتها: <strong>رأس المال يتوقف عن كونه القيد بعد دورتَي صرف تقريباً (<span class="num">6–8</span> أسابيع)، وبعدها القيد الوحيد هو الطلب.</strong></p>
 
-  <h3>٢.٥ ماذا تفعل عند بلوغ السقف</h3>
+  <h3>٢.٦ عند بلوغ السقف</h3>
   <ol>
-    <li><strong>المفضّل:</strong> أوقف نشر المنتج عند بلوغ سقف الطلبات الجارية. تخسر مبيعات، وتحفظ عقدك سليماً.</li>
+    <li><strong>المفضّل:</strong> أوقف نشر المنتج عند بلوغ سقف الطلبات الجارية — تخسر مبيعات وتحفظ عقدك سليماً.</li>
     <li><strong>ممنوع:</strong> القبول والتسليم متأخراً بصمت — يخرق نافذة التسليم المُعلنة، وهي شرط صحة في السلم.</li>
     <li><strong>ممنوع:</strong> تمويله ببطاقة ائتمان أو سُلفة أو أي <span class="en">BNPL</span> (القسم ٤.١).</li>
   </ol>
 
-  <div class="pagefoot"><span>دورة السيولة</span><span class="num">3 / 8</span></div>
+  <h3>٢.٧ ترتيب العمليات — نفّذها بهذا التسلسل</h3>
+  <p>الترتيب هنا أهم من المعتاد، لأن خطوتين منه <strong>غير قابلتين للتراجع أو حرجتين زمنياً</strong>، وعكسهما يكلّفك مالاً حقيقياً.</p>
+  <ol>
+    <li><strong>اربط <span class="en">Claude</span> بـ<span class="en">Shopify</span> أولاً — قبل إنشاء أي متجر.</strong> مجاني، ولا يحتاج متجراً قائماً، ويتيح لك <em>معاينات</em> المتجر: تصف الفكرة بجملة فتحصل على معاينات بثيمات مختلفة، كل واحدة برابط تسجيل يُنشئ متجراً حقيقياً بالثيم ومنتجات مبدئية مثبّتة.</li>
+    <li><strong>استكشف بالمعاينات فقط — لا تُنشئ متجراً «تجريبياً».</strong> عرض الـ<span class="num">$1</span> للحسابات <strong>الجديدة</strong>، وحرق هذه الأهلية على متجر تدريبي طريقة باهظة لتعلّم لوحة التحكم. المعاينات لا تكلّف ولا تُنشئ شيئاً.</li>
+    <li><strong>قبل إتمام التسجيل، تأكد أن سعر <span class="num">$1</span> شهرياً ظاهر فعلاً في صفحة الدفع.</strong> هذه أثمن عشر ثوانٍ في الإعداد كله: بدون العرض تدفع <span class="num">$29 × 3 = $87</span> لثلاثة أشهر — <strong>أكثر من رأس مالك كله</strong>. إن لم يظهر السعر، اخرج وسجّل عبر <span class="en">shopify.com</span> مباشرة وطبّق الثيم المجاني يدوياً.</li>
+    <li><strong>في اليوم نفسه: قدّم طلب <span class="en">2Checkout</span>.</strong> المراجعة يدوية وهي <strong>أطول مرحلة في الخطة كلها</strong> — كل يوم تأخير يؤخّر أول مبيعة <em>قابلة للتحصيل</em>، لا أول مبيعة فقط. نفّذها بالتوازي مع بناء المتجر لا بعده.</li>
+    <li><strong>ثم اربط المتجر المُنشأ بـ<span class="en">Claude</span></strong> لإدارة صفحات المنتج وصفحات إفصاح السلم والنصوص.</li>
+  </ol>
+
+  <div class="pagefoot"><span>دورة السيولة (تابع)</span><span class="num">4 / 9</span></div>
 </div>
 
 <!-- ============ PAGE 4 : SHARIAH / SALAM ============ -->
@@ -333,7 +366,7 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
     <p style="margin-bottom:0;"><strong>ملاحظة حنفية:</strong> الفقه الحنفي الكلاسيكي يشترط حداً أدنى لأجل السلم (يُذكر عادةً نحو شهر)، ونافذتك <span class="num">5–10</span> أيام تعتمد على القول المعاصر الذي قَبِله «إسلام ويب». إن كنت مقلِّداً للحنفية فاستفتِ مفتياً حنفياً؛ والبديل حينها الوكالة أو الجعالة، لا ترك العمل.</p>
   </div>
 
-  <div class="pagefoot"><span>الإطار الشرعي</span><span class="num">4 / 8</span></div>
+  <div class="pagefoot"><span>الإطار الشرعي</span><span class="num">5 / 9</span></div>
 </div>
 
 <!-- ============ PAGE 5 : RIBA TRAP + GHISH ============ -->
@@ -371,7 +404,7 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
     <p style="margin-bottom:0;"><strong>القاعدة:</strong> إلى أن تلمس المنتج بيدك، عامل كل جملة على صفحته كشيء ستُضطر للدفاع عنه أمام العميل — لأنك ستفعل.</p>
   </div>
 
-  <div class="pagefoot"><span>الربا والغش</span><span class="num">5 / 8</span></div>
+  <div class="pagefoot"><span>الربا والغش</span><span class="num">6 / 9</span></div>
 </div>
 
 <!-- ============ PAGE 6 : PRODUCT RE-SCORE ============ -->
@@ -407,7 +440,7 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
   <p><strong>الأساسي: قبعة التبريد الهلامية للصداع</strong> — بسعر <span class="num">$27.95</span> + <span class="num">$4.95</span> شحن = <strong><span class="num">$32.90</span></strong>. تفوز لأنها المرشّح الوحيد الحاصل على تقدير عالٍ في محور المحتوى (أ، ج، هـ) ومحور الاقتصاد (ب، د) معاً. كلفة السيولة (<span class="num">3</span> خانات) هي الثمن الذي تدفعه مقابل امتلاك جمهور يشاهد فعلاً.</p>
   <p><strong>منتج إضافي:</strong> لفّاعة الرقبة/الكتف بخصم <span class="num">20%</span> بعد الشراء — ترفع قيمة الطلب بلا عمل محتوى إضافي. <strong>الاحتياطي:</strong> فتّاحة البرطمانات، ومسارها <span class="en">Pinterest</span> أولاً لا <span class="en">TikTok</span>.</p>
 
-  <div class="pagefoot"><span>اختيار المنتج</span><span class="num">6 / 8</span></div>
+  <div class="pagefoot"><span>اختيار المنتج</span><span class="num">7 / 9</span></div>
 </div>
 
 <!-- ============ PAGE 7 : ORGANIC ENGINE ============ -->
@@ -461,7 +494,7 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
   </ul>
   <p><strong>أول <span class="num">30</span> يوماً ستنتج على الأرجح صفر مبيعات أو ما يقاربه.</strong> استعد لذلك نفسياً الآن. الخطة لا تفشل عند اليوم <span class="num">30</span>؛ ووقف الخسارة في القسم ٨ موضوع عمداً بعد تلك النقطة.</p>
 
-  <div class="pagefoot"><span>محرّك الزيارات العضوي</span><span class="num">7 / 8</span></div>
+  <div class="pagefoot"><span>محرّك الزيارات العضوي</span><span class="num">8 / 9</span></div>
 </div>
 
 <!-- ============ PAGE 8 : FINANCIALS + LADDER + VERDICT ============ -->
@@ -472,19 +505,20 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
     <tr><th style="width:62%">البند (المنتج الأساسي، <span class="en">CPA</span> = <span class="num">$0</span>)</th><th>المبلغ</th></tr>
     <tr><td>السعر + الشحن المُحصَّل (<span class="en">AOV</span>)</td><td><strong>$32.90</strong></td></tr>
     <tr><td>تكلفة المنتج + الشحن الداخلي من <span class="en">CJ</span></td><td>−$11.50</td></tr>
-    <tr><td>رسوم الدفع — تقدير <span class="en">PayPal</span> عبر الحدود ≈ <span class="num">4.4%</span> + ثابت <strong>[تحقّق]</strong></td><td>−$1.94</td></tr>
+    <tr><td>رسوم الدفع — <span class="en">2Checkout 2Sell</span> ≈ <span class="num">3.5%</span> + <span class="num">$0.35</span> <strong>[تحقّق]</strong></td><td>−$1.50</td></tr>
     <tr><td>رسوم بوابة خارجية لدى <span class="en">Shopify</span> (<span class="num">2%</span>) <strong>[تحقّق]</strong></td><td>−$0.66</td></tr>
-    <tr style="background:#f6f9fe;"><td><strong>المساهمة لكل طلب</strong></td><td><strong>≈ $18.80</strong></td></tr>
+    <tr style="background:#f6f9fe;"><td><strong>المساهمة لكل طلب</strong></td><td><strong>≈ $19.24</strong></td></tr>
     <tr><td>مخصص المرتجعات والنزاعات (<span class="num">5%</span> من الإيراد)</td><td>−$1.65</td></tr>
-    <tr style="background:#f4faf4;"><td><strong>صافي الربح لكل طلب</strong></td><td><strong>≈ $17</strong></td></tr>
+    <tr style="background:#f4faf4;"><td><strong>صافي الربح لكل طلب</strong></td><td><strong>≈ $17.6</strong></td></tr>
   </table>
+  <p class="small" style="margin-bottom:1.5mm;">بخروج <span class="en">PayPal</span>: <strong>الرسوم تحسّنت قليلاً وسرعة النقد ساءت بوضوح</strong> — أفضل بـ<span class="num">$0.44</span> للطلب، مقابل انتظار <span class="num">14–21</span> يوماً بدل <span class="num">7–13</span>. <strong>على سيولة <span class="num">$47</span> التوقيت أهم من <span class="num">44</span> سنتاً.</strong></p>
   <div class="callout ok">
     <p style="margin-bottom:0;">في الخطة السابقة كان على المساهمة نفسها (<span class="num">~$18</span>) أن تغطي وسيط تكلفة اكتساب <span class="num">$32.22</span> على <span class="en">Meta</span> — أي أن الخطة كانت تخسر عند الأداء الوسيط. <strong>هنا تكلفة الاكتساب صفر، فالـ<span class="num">$17</span> ربح حقيقي.</strong> إلغاء الإعلان لم يحذف بنداً فحسب، بل حذف الآلية التي جعلت الخطة السابقة هشّة. <strong>طلب واحد يغطي التكلفة الثابتة لثلاثة أشهر؛ وثلاثة طلبات تُعيد الـ<span class="num">$50</span> كلها.</strong></p>
   </div>
 
   <h3>٧.١ سلّم إعادة الاستثمار — لا يدخل مال جديد</h3>
   <div class="fig">
-    <svg viewBox="0 0 620 128" width="100%" height="128">
+    <svg viewBox="0 0 620 128" width="100%" height="104">
       <rect x="452" y="94" width="156" height="30" rx="2" fill="#dbe9fb" stroke="var(--s1)"/>
       <text x="530" y="106" class="k" font-size="9" text-anchor="middle" font-weight="700">المستوى ١ — ‎$50</text>
       <text x="530" y="118" font-size="8" text-anchor="middle" fill="#52514e">عيّنة المنتج، ثم النطاق</text>
@@ -514,7 +548,7 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
 
   <h3>٧.٢ الحكم الصادق ووقف الخسارة</h3>
   <div class="callout warn">
-    <p style="margin-bottom:0;"><strong>الفشل الأرجح ليس مالياً بل انسحابيّ:</strong> تنشر يومياً خمسة أو ستة أسابيع، لا ترى شيئاً تقريباً، فتتوقف. هذه هي التجربة الطبيعية لا الاستثنائية. صلاحية الخطة تعتمد كلياً على استمرارك في النشر خلال فترة بلا أي تغذية راجعة — ولا شيء في هذا المستند يستطيع أن ينوب عنك في ذلك الجزء.</p>
+    <p style="margin-bottom:0;"><strong>الفشل الأرجح ليس مالياً بل انسحابيّ:</strong> تنشر يومياً خمسة أو ستة أسابيع، لا ترى شيئاً تقريباً، فتتوقف. هذه هي التجربة الطبيعية لا الاستثنائية، وصلاحية الخطة تعتمد كلياً على استمرارك في النشر خلال فترة بلا تغذية راجعة — ولا شيء في هذا المستند ينوب عنك في ذلك.</p>
   </div>
   <p><strong>وقف الخسارة مُقوَّم بالوقت لا بالمال</strong> (الخطة السابقة استعملت <span class="num">$1,000</span> إنفاق إعلاني، وهي أداة غير موجودة هنا). ألزم نفسك بهذه الآن:</p>
   <ul>
@@ -526,10 +560,10 @@ svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
   <p class="small"><strong>شرط «عدد المنشورات» هو الحامل الأساسي:</strong> لا تسمح لتقويم من <span class="num">120</span> يوماً فيه <span class="num">40</span> منشوراً أن يُحسب اختباراً عادلاً — ذلك ليس دليلاً على فشل الخطة، بل على أنها لم تُنفَّذ.</p>
 
   <div class="callout" style="border-right-width:4px;">
-    <p style="margin-bottom:0;"><strong>الخلاصة:</strong> الـ<span class="num">$50</span> تكفي لبدء هذا العمل بشكل صحيح ومتوافق مع الشريعة. ولا تكفي لجعله سريعاً. أنت تقايض نحو <strong><span class="num">4–6</span> أشهر من عمل المحتوى اليومي</strong> مقابل الـ<span class="num">$850</span> إعلانات التي لا تملكها — وهذه مقايضة حقيقية صادقة لا اختصار. وكونها صفقة جيدة أو لا يعتمد كلياً على ما إذا كنت ستقوم بالنشر فعلاً، وهو سؤال لا يجيبه غيرك قبل أن تبدأ.</p>
+    <p style="margin-bottom:0;"><strong>الخلاصة:</strong> الـ<span class="num">$50</span> تكفي لبدء هذا العمل بشكل صحيح ومتوافق مع الشريعة، ولا تكفي لجعله سريعاً. أنت تقايض نحو <strong><span class="num">4–6</span> أشهر من عمل المحتوى اليومي</strong> مقابل الـ<span class="num">$850</span> إعلانات التي لا تملكها — مقايضة صادقة لا اختصار. وكونها صفقة جيدة يعتمد كلياً على ما إذا كنت ستنشر فعلاً، وهو سؤال لا يجيبه غيرك.</p>
   </div>
 
-  <div class="pagefoot"><span>المالية · السلّم · الحكم</span><span class="num">8 / 8</span></div>
+  <div class="pagefoot"><span>المالية · السلّم · الحكم</span><span class="num">9 / 9</span></div>
 </div>
 
 </body>
