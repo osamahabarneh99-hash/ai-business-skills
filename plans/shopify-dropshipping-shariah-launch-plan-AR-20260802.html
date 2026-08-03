@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>خطة إطلاق متجر دروبشيبينغ متوافق مع الشريعة</title>
+<style>
+/* ---- fonts injected from gf.css (build step replaces the line below) ---- */
+/* arabic */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f4.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f1.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f0.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f2.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f4.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f1.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f0.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f2.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f5.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f8.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f9.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f7.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/f6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f5.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f8.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f9.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f7.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/f6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@page { size: A4; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root{
+  --surface-1:#fcfcfb; --page:#f9f9f7;
+  --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,0.10);
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100;
+  --good:#0ca30c; --warning:#fab219; --serious:#ec835a; --critical:#d03b3b;
+  --seq250:#86b6ef; --seq350:#5598e7; --seq450:#2a78d6; --seq550:#1c5cab;
+}
+html,body{ background:var(--page); }
+body{
+  font-family:'Noto Naskh Arabic', serif;
+  color:var(--ink); font-size:10.5pt; line-height:1.85;
+}
+.en{ direction:ltr; unicode-bidi:isolate; font-family:'Noto Kufi Arabic', sans-serif; font-size:.88em; color:#184f95; }
+.num{ direction:ltr; unicode-bidi:isolate; font-family:'Noto Kufi Arabic', sans-serif; font-size:.92em; }
+h1,h2,h3,h4,.kufi{ font-family:'Noto Kufi Arabic', sans-serif; line-height:1.6; }
+.page{ width:210mm; min-height:297mm; padding:16mm 15mm 14mm; background:var(--surface-1);
+  page-break-after:always; position:relative; }
+.page:last-child{ page-break-after:auto; }
+.pagefoot{ position:absolute; bottom:7mm; right:15mm; left:15mm; display:flex; justify-content:space-between;
+  font-size:7.5pt; color:var(--muted); border-top:1px solid var(--grid); padding-top:2mm; }
+h2.sec{ font-size:15pt; margin:0 0 4mm; padding-bottom:2mm; border-bottom:2px solid var(--s1); }
+h3{ font-size:11.5pt; margin:5mm 0 2mm; color:#184f95; }
+p{ margin:0 0 2.5mm; text-align:justify; }
+ul,ol{ margin:0 0 3mm 0; padding-right:6mm; }
+li{ margin-bottom:1.2mm; }
+table{ width:100%; border-collapse:collapse; font-size:8.8pt; margin:2mm 0 4mm; }
+th{ font-family:'Noto Kufi Arabic', sans-serif; font-weight:700; background:#f0efec; padding:1.6mm 2mm; text-align:right; border:1px solid var(--grid); font-size:8.6pt; }
+td{ padding:1.5mm 2mm; border:1px solid var(--grid); vertical-align:top; line-height:1.7; }
+.callout{ border:1px solid var(--grid); border-right:3px solid var(--s1); background:#f6f9fe; padding:3mm 4mm; margin:3mm 0; border-radius:2px; }
+.callout.warn{ border-right-color:var(--critical); background:#fdf5f5; }
+.callout.ok{ border-right-color:var(--good); background:#f4faf4; }
+.tiles{ display:flex; gap:3mm; margin:4mm 0; }
+.tile{ flex:1; border:1px solid var(--border); border-radius:3px; padding:3mm; background:#fff; }
+.tile .v{ font-family:'Noto Kufi Arabic', sans-serif; font-size:15pt; font-weight:700; direction:ltr; }
+.tile .l{ font-size:8pt; color:var(--ink-2); line-height:1.5; margin-top:1mm; }
+.fig{ margin:3mm 0 4mm; }
+.figcap{ font-size:8pt; color:var(--muted); margin-top:1mm; }
+svg text{ font-family:'Noto Naskh Arabic', serif; }
+svg .k{ font-family:'Noto Kufi Arabic', sans-serif; }
+.small{ font-size:8.5pt; color:var(--ink-2); }
+.legend{ display:flex; gap:5mm; font-size:8.5pt; color:var(--ink-2); margin:1mm 0 2mm; }
+.legend .sw{ display:inline-block; width:9px; height:9px; border-radius:2px; margin-left:1.5mm; vertical-align:baseline; }
+.covertitle{ font-size:24pt; font-weight:700; line-height:1.5; margin:8mm 0 4mm; }
+.coversub{ font-size:12pt; color:var(--ink-2); }
+.compact p, .compact li{ line-height:1.55; }
+.compact li{ margin-bottom:.5mm; }
+.compact ul{ margin-bottom:1mm; }
+.compact table{ font-size:8.2pt; margin:1.5mm 0 2.5mm; }
+.compact td{ padding:1mm 1.6mm; line-height:1.6; }
+.compact th{ padding:1.2mm 1.6mm; }
+.compact .callout{ padding:2.5mm 3.5mm; margin:2mm 0; }
+.compact .fig{ margin:2mm 0 2.5mm; }
+.compact .figcap{ margin-top:.5mm; line-height:1.5; }
+.compact h3{ margin:3mm 0 1.5mm; }
+.toc td{ border:none; border-bottom:1px solid var(--grid); padding:2mm 1mm; font-size:10pt; }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 : COVER ================= -->
+<div class="page" style="display:flex; flex-direction:column; justify-content:center;">
+  <div style="border-right:4px solid var(--s1); padding-right:6mm;">
+    <div class="kufi" style="color:var(--s1); font-size:11pt; letter-spacing:.5px;">خطة عمل مدعومة بالبحث · <span class="en">Research-Backed Launch Plan</span></div>
+    <h1 class="covertitle">خطة إطلاق متجر دروبشيبينغ<br>متوافق مع الشريعة الإسلامية</h1>
+    <div class="coversub">
+      بائع مقيم في الأردن ← السوق الأمريكي · مبنيّة على عقد <b>بيع السَّلَم</b> <span class="en">(Bay' al-Salam)</span><br>
+      المورّد: <span class="en">CJ Dropshipping</span> — مستودعات أمريكية · التحصيل عبر <span class="en">Payoneer</span>
+    </div>
+  </div>
+  <table class="toc" style="margin-top:14mm; max-width:150mm;">
+    <tr><td>1</td><td>الملخص التنفيذي والأرقام الحاكمة</td></tr>
+    <tr><td>2</td><td>الإطار الشرعي: شروط السَّلَم وتطبيقها في المتجر</td></tr>
+    <tr><td>3</td><td>المدفوعات من الأردن وتدفق الأموال <span class="en">(Payment Stack)</span></td></tr>
+    <tr><td>4</td><td>اختيار التخصص <span class="en">(Niche)</span> وهوامش الربح لكل وحدة</td></tr>
+    <tr><td>5</td><td>خطة الإطلاق: 14 يوماً + قواعد الإيقاف والتوسّع</td></tr>
+    <tr><td>6</td><td>سجل المخاطر <span class="en">(Risk Register)</span></td></tr>
+    <tr><td>7</td><td>النموذج المالي: سيناريوهات 30/60/90 يوماً</td></tr>
+    <tr><td>8</td><td>الحكم الصريح: أين تفشل الخطة ومتى تتوقف</td></tr>
+  </table>
+  <p class="small" style="margin-top:12mm;">أُعدّت بتاريخ <span class="num">2026-08-02</span>. كل الحقائق موثّقة بمصادر منشورة في النسخة الإنجليزية الكاملة داخل المستودع:<br><span class="en" style="font-size:8pt;">ai-business-skills/plans/shopify-dropshipping-shariah-launch-plan-20260802.md</span></p>
+</div>
+
+<!-- ================= PAGE 2 : EXEC SUMMARY ================= -->
+<div class="page">
+  <h2 class="sec">1 · الملخص التنفيذي والأرقام الحاكمة</h2>
+  <p>هذه خطة لإطلاق متجر <span class="en">Shopify</span> يبيع منتجات تحلّ مشكلة حقيقية للمستهلك الأمريكي، بشحن من مستودعات <span class="en">CJ</span> داخل أمريكا (توصيل <span class="num">3–8</span> أيام عمل)، وبهيكل تعاقدي مبني على <b>بيع السَّلَم</b>: العميل يدفع كامل الثمن مقدماً مقابل سلعة موصوفة وصفاً دقيقاً تُسلَّم في موعد معلوم. الخطة متحفظة عمداً: لا وعود دخل، وكل رقم له مصدر.</p>
+
+  <div class="tiles">
+    <div class="tile"><div class="v" style="color:#184f95;">$18–20</div><div class="l">هامش المساهمة قبل الإعلانات لكل طلب = <b>نقطة تعادل تكلفة الاستحواذ</b> <span class="en">Break-even CPA</span></div></div>
+    <div class="tile"><div class="v" style="color:var(--critical);">$32.22</div><div class="l"><b>متوسط</b> تكلفة الاستحواذ في إعلانات ميتا للتجارة الإلكترونية <span class="en">(Meta median CPA 2026)</span> — أعلى من هامشك!</div></div>
+    <div class="tile"><div class="v">$700–1,490</div><div class="l">رأس المال المطلوب للانطلاق (الحد الأدنى ← الموصى به) <span class="en">Startup Budget</span></div></div>
+    <div class="tile"><div class="v">3–8 أيام</div><div class="l">مدة التوصيل من مستودعات <span class="en">CJ US Warehouse</span> — شرط صحة السَّلَم وميزتك التنافسية</div></div>
+  </div>
+
+  <div class="callout warn">
+    <b>الجملة الأصدق في الخطة كلها:</b> المتجر «المتوسط» يخسر — لأن متوسط تكلفة الاستحواذ <span class="en">(CPA)</span> على ميتا (<span class="num">$32</span>) أعلى من هامشك (<span class="num">$18–20</span>). النجاة تتطلب أداءً أعلى من المتوسط عبر: رفع متوسط قيمة الطلب بالحِزَم <span class="en">(Bundles / AOV)</span>، وقتل المنتجات الخاسرة بسرعة، وإيرادات البريد الإلكتروني بلا تكلفة إعلانية.
+  </div>
+
+  <h3>قرارات محسومة بالبحث</h3>
+  <table>
+    <tr><th style="width:32mm;">القرار</th><th>الخلاصة</th></tr>
+    <tr><td><b>منصة الإعلانات</b></td><td><span class="en">Meta</span> فقط عند الإطلاق. حسابات <span class="en">TikTok Ads</span> المسجّلة في الأردن <b>لا تستطيع استهداف أمريكا</b> (القيد مرتبط ببلد تسجيل الحساب؛ الحل الوحيد وكالات شريكة لاحقاً).</td></tr>
+    <tr><td><b>بوابة الدفع</b></td><td><span class="en">Shopify Payments</span> غير متاح في الأردن (قائمة رسمية بـ<span class="num">40</span> دولة). الأساسي: <span class="en">2Checkout (Verifone)</span> بسحب مباشر إلى <span class="en">Payoneer</span> بلا رسوم تحويل + <span class="en">PayPal Business</span> ثانوياً. رسوم شوبيفاي الإضافية لبوابة خارجية: <span class="num">2%</span> رسمياً على خطة <span class="en">Basic</span>.</td></tr>
+    <tr><td><b>التقسيط <span class="en">BNPL</span></b></td><td><b>لا، قطعاً.</b> غير متاح أصلاً لغير المقيمين بأمريكا، وشرعاً يُدخِلك في الإعانة على الربا (فوائد وغرامات تأخير على العميل)، ويكسر شرط دفع كامل الثمن في مجلس العقد.</td></tr>
+    <tr><td><b>شركة أمريكية <span class="en">US LLC</span></b></td><td>ليست للإطلاق. <span class="en">Shopify Payments US</span> يرفض غير المقيمين بلا نشاط فعلي وبلا <span class="en">SSN</span>؛ و<span class="en">Stripe</span> عبر <span class="en">LLC</span> ممكن لكنه مكلف وعالي مخاطر التجميد. يُعاد النظر بعد 3 أشهر من سجل نظيف.</td></tr>
+    <tr><td><b>التخصص</b></td><td>الأساسي: أدوات تخفيف الصداع النصفي بالعلاج البارد <span class="en">(Migraine Cold-Therapy)</span>. الاحتياطي: أدوات المعيشة اليومية لكبار السن <span class="en">(Senior Daily-Living Aids)</span>.</td></tr>
+  </table>
+
+  <h3>الضرائب باختصار</h3>
+  <ul>
+    <li><b>الأردن:</b> دخلك خاضع لضريبة الدخل التصاعدية <span class="num">5%–30%</span> مع إعفاء شخصي <span class="num">JOD 9,000</span> (+ مثله للمُعالين) — عند أرباح السنة الأولى الواقعية ستدفع قليلاً أو لا شيء، لكن <b>التسجيل والإقرار واجبان</b>. استشر محاسباً أردنياً قبل أول <span class="num">JOD 10,000</span> إيراد.</li>
+    <li><b>أمريكا:</b> لا ضريبة مبيعات عليك عند الإطلاق — عتبات «الارتباط الاقتصادي» <span class="en">(Economic Nexus)</span> تبدأ من <span class="num">$100,000</span> سنوياً لمعظم الولايات. راجِع عند بلوغ <span class="num">$75,000</span> تراكمياً.</li>
+  </ul>
+  <div class="pagefoot"><span>خطة إطلاق دروبشيبينغ متوافقة مع الشريعة · <span class="num">2026-08-02</span></span><span class="num">2</span></div>
+</div>
+
+<!-- ================= PAGE 3 : SHARIAH ================= -->
+<div class="page">
+  <h2 class="sec">2 · الإطار الشرعي: السَّلَم بدل بيع ما لا تملك</h2>
+  <p>الدروبشيبينغ الافتراضي يصطدم بنهي النبي ﷺ: <b>«لا تبِعْ ما ليس عندك»</b>. والمخرج المعتبر عند جهات الإفتاء المعاصرة هو هيكلة البيع <b>سَلَماً</b>: بيع موصوف في الذمّة بثمن معجّل. أقرّت «إسلام ويب» صراحةً صحة دروبشيبينغ السَّلَم واعتبرت مدة تسليم محددة بـ<span class="num">«7–25</span> يوماً» أجلاً معلوماً كافياً. في المقابل ينتقد المفتي فراز آدم <span class="en">(Amanah Advisors)</span> تكييف السَّلَم لأن المورّد هو من يحمل ضمان السلعة عادةً، ويقترح عقد <b>الجُعالة</b> بديلاً. <b>الحسم العملي:</b> إذا حمّلتَ نفسك ضمان السلعة حتى تسليمها (إعادة شحن أو استرداد كامل على حسابك) سقط الاعتراض الأقوى وصحّ تكييف السَّلَم — وهذا شرط تصميم صارم في هذه الخطة، مع عرض القسم كاملاً على عالم تثق به قبل الإطلاق.</p>
+
+  <div class="fig">
+  <svg viewBox="0 0 760 240" width="100%" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#52514e"/></marker></defs>
+    <rect x="0" y="0" width="760" height="240" fill="#fcfcfb"/>
+    <!-- boxes: RTL layout: customer right, store middle, CJ left -->
+    <rect x="560" y="60" width="170" height="70" rx="6" fill="#f6f9fe" stroke="#2a78d6" stroke-width="1.5"/>
+    <text x="645" y="88" text-anchor="middle" font-size="15" font-weight="bold" class="k">العميل الأمريكي</text>
+    <text x="645" y="110" text-anchor="middle" font-size="11" fill="#52514e">Customer</text>
+    <rect x="300" y="60" width="170" height="70" rx="6" fill="#fff" stroke="#0b0b0b" stroke-width="1.5"/>
+    <text x="385" y="88" text-anchor="middle" font-size="15" font-weight="bold" class="k">المتجر (البائع سَلَماً)</text>
+    <text x="385" y="110" text-anchor="middle" font-size="11" fill="#52514e">Your Store — Salam Seller</text>
+    <rect x="40" y="60" width="170" height="70" rx="6" fill="#f4faf4" stroke="#1baf7a" stroke-width="1.5"/>
+    <text x="125" y="83" text-anchor="middle" font-size="14" font-weight="bold" class="k">مستودع CJ الأمريكي</text>
+    <text x="125" y="103" text-anchor="middle" font-size="11" fill="#52514e">CJ US Warehouse</text>
+    <text x="125" y="121" text-anchor="middle" font-size="11" fill="#52514e">(عقد شراء مستقل)</text>
+    <!-- arrows -->
+    <line x1="560" y1="80" x2="475" y2="80" stroke="#52514e" stroke-width="1.6" marker-end="url(#ar)"/>
+    <text x="517" y="70" text-anchor="middle" font-size="12" class="k">① كامل الثمن مقدماً</text>
+    <line x1="300" y1="95" x2="215" y2="95" stroke="#52514e" stroke-width="1.6" marker-end="url(#ar)"/>
+    <text x="257" y="86" text-anchor="middle" font-size="12" class="k">② أمر التوريد</text>
+    <path d="M125 130 L125 175 L645 175 L645 135" fill="none" stroke="#1baf7a" stroke-width="1.8" marker-end="url(#ar)"/>
+    <text x="385" y="167" text-anchor="middle" font-size="12" class="k">③ التسليم خلال 5–10 أيام عمل (أجل معلوم — شرط السَّلَم)</text>
+    <!-- liability band -->
+    <rect x="300" y="196" width="430" height="32" rx="4" fill="#fdf5f5" stroke="#d03b3b" stroke-width="1"/>
+    <text x="515" y="217" text-anchor="middle" font-size="12.5">⚠ الضمان على المتجر حتى التسليم: فقدان أو تلف الشحنة = إعادة شحن أو استرداد كامل على حسابك</text>
+    <rect x="40" y="196" width="245" height="32" rx="4" fill="#f0efec"/>
+    <text x="162" y="217" text-anchor="middle" font-size="12">الإلغاء قبل التسليم = إقالة باسترداد كامل</text>
+  </svg>
+  <div class="figcap">شكل 1 — تدفق عقد السَّلَم في المتجر: ثمن معجّل، سلعة موصوفة في الذمّة، أجل تسليم معلوم، وضمان على البائع.</div>
+  </div>
+
+  <h3>جدول المطابقة: شرط السَّلَم ← تطبيقه في المتجر (وفق معيار أيوفي رقم 10 <span class="en">AAOIFI SS10</span>)</h3>
+  <table>
+    <tr><th style="width:44mm;">الشرط الشرعي</th><th>التطبيق العملي</th></tr>
+    <tr><td>قبض <b>كامل الثمن</b> في مجلس العقد</td><td>الدفع ببطاقة/باي بال يُحصَّل <span class="num">100%</span> عند الطلب. ممنوع: الدفع عند الاستلام، العربون، التقسيط <span class="en">(BNPL)</span>.</td></tr>
+    <tr><td><b>ضبط الصفة</b>: سلعة مثليّة موصوفة وصفاً نافياً للجهالة</td><td>صفحة المنتج تذكر: الخامة، الأبعاد، الوزن، اللون، الكمية، محتوى العبوة. سلع مصنّعة قياسية فقط — لا مستعمل ولا قِطَع فريدة.</td></tr>
+    <tr><td>السلعة <b>دَين في الذمّة</b> لا عين معيّنة (لا يُشترط مصدرها)</td><td>الوصف عام («قبعة جل للعلاج البارد بمواصفات كذا») لا «هذه القطعة في مستودع كذا» — وهذا يلائم الدروبشيبينغ بنيوياً.</td></tr>
+    <tr><td><b>أجل ومكان تسليم معلومان</b></td><td>نافذة تسليم صريحة في صفحة المنتج والسلة والتأكيد + صفحة «الشحن والتسليم» مخصصة. المكان = عنوان العميل.</td></tr>
+    <tr><td><b>القدرة على التسليم</b> عند حلول الأجل</td><td>لا يُعرض إلا ما له مخزون أمريكي حيّ في <span class="en">CJ</span>؛ مزامنة المخزون عبر <span class="en">API</span> تُخفي المنتج آلياً عند النفاد.</td></tr>
+    <tr><td>ليست ذهباً/فضة/عملة (أموال ربوية)</td><td>فلتر المنتجات يستبعدها.</td></tr>
+    <tr><td><b>الإقالة</b> جائزة</td><td>إلغاء مجاني واسترداد كامل قبل التسليم بلا رسوم؛ المرتجعات بعد التسليم إقالة أو اتفاق جديد.</td></tr>
+  </table>
+
+  <div class="callout">
+    <b>فلتر المنتجات المحرّمة وما يجاورها:</b> كحوليات ولوازمها، قمار/يانصيب، محتوى فاحش، لحم خنزير وأغذية غير حلال، منتجات ربوية، تماثيل وأصنام وتمائم، سلع مقلّدة <span class="en">(Counterfeit)</span> — وكل منتج <b>لا يُباع إلا بتسويق خادع</b>. وبدائل التسويق الصادق: مواعيد حقيقية بدل العدّادات الوهمية، السعر الحقيقي بدل أسعار «قبل الخصم» المنفوخة، مراجعات حقيقية عبر <span class="en">Judge.me</span> بدل المشتراة، ووصفٌ لما يفعله المنتج فعلاً بدل الادعاءات الطبية.
+  </div>
+  <div class="pagefoot"><span>الإطار الشرعي</span><span class="num">3</span></div>
+</div>
+
+<!-- ================= PAGE 4 : PAYMENTS ================= -->
+<div class="page">
+  <h2 class="sec">3 · المدفوعات من الأردن وتدفق الأموال</h2>
+  <p>الأردن خارج قائمة <span class="en">Shopify Payments</span> الرسمية، فالحل بوابة خارجية. المسار المعتمد: <span class="en">2Checkout</span> (رسوم نحو <span class="num">3.5% + $0.35</span> للعملية) بتحويل مباشر إلى <span class="en">Payoneer</span> بلا رسوم، مع <span class="en">PayPal Business</span> قناةً ثانية لرفع التحويل. أبقِ رأس المال العامل دولاراً داخل <span class="en">Payoneer</span> وادفع منه لـ<span class="en">CJ</span> وميتا؛ فالسحب إلى دينار يقتطع حتى <span class="num">2%</span> صرفاً.</p>
+
+  <div class="fig">
+  <svg viewBox="0 0 760 320" width="100%" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#52514e"/></marker></defs>
+    <rect width="760" height="320" fill="#fcfcfb"/>
+    <rect x="295" y="14" width="170" height="52" rx="6" fill="#f6f9fe" stroke="#2a78d6" stroke-width="1.5"/>
+    <text x="380" y="36" text-anchor="middle" font-size="14" font-weight="bold" class="k">بطاقة العميل</text>
+    <text x="380" y="55" text-anchor="middle" font-size="11" fill="#52514e">Customer Card (USD)</text>
+    <line x1="380" y1="66" x2="380" y2="92" stroke="#52514e" stroke-width="1.6" marker-end="url(#ar2)"/>
+    <rect x="255" y="94" width="250" height="58" rx="6" fill="#fff" stroke="#0b0b0b" stroke-width="1.5"/>
+    <text x="380" y="116" text-anchor="middle" font-size="14" font-weight="bold" class="k">بوابة الدفع 2Checkout (Verifone)</text>
+    <text x="380" y="138" text-anchor="middle" font-size="11.5" fill="#52514e">رسوم ≈ 3.5% + $0.35 + رسوم Shopify 2% + احتجاز احتياطي مؤقت</text>
+    <line x1="380" y1="152" x2="380" y2="178" stroke="#52514e" stroke-width="1.6" marker-end="url(#ar2)"/>
+    <text x="440" y="170" text-anchor="middle" font-size="11" fill="#52514e">تحويل بلا رسوم</text>
+    <rect x="255" y="180" width="250" height="52" rx="6" fill="#fff7f0" stroke="#eb6834" stroke-width="1.5"/>
+    <text x="380" y="202" text-anchor="middle" font-size="14" font-weight="bold" class="k">رصيد Payoneer بالدولار</text>
+    <text x="380" y="222" text-anchor="middle" font-size="11.5" fill="#52514e">مركز الخزينة — أبقِ الدولار هنا</text>
+    <line x1="300" y1="232" x2="150" y2="262" stroke="#52514e" stroke-width="1.5" marker-end="url(#ar2)"/>
+    <line x1="380" y1="232" x2="380" y2="262" stroke="#52514e" stroke-width="1.5" marker-end="url(#ar2)"/>
+    <line x1="460" y1="232" x2="610" y2="262" stroke="#52514e" stroke-width="1.5" marker-end="url(#ar2)"/>
+    <rect x="60" y="264" width="180" height="44" rx="6" fill="#f4faf4" stroke="#1baf7a" stroke-width="1.3"/>
+    <text x="150" y="283" text-anchor="middle" font-size="12.5" font-weight="bold" class="k">فواتير المورد CJ</text>
+    <text x="150" y="300" text-anchor="middle" font-size="10.5" fill="#52514e">تكلفة البضاعة + الشحن (USD)</text>
+    <rect x="290" y="264" width="180" height="44" rx="6" fill="#f6f9fe" stroke="#2a78d6" stroke-width="1.3"/>
+    <text x="380" y="283" text-anchor="middle" font-size="12.5" font-weight="bold" class="k">إعلانات Meta</text>
+    <text x="380" y="300" text-anchor="middle" font-size="10.5" fill="#52514e">ميزانية الاختبار والتوسع (USD)</text>
+    <rect x="520" y="264" width="180" height="44" rx="6" fill="#f0efec" stroke="#898781" stroke-width="1.3"/>
+    <text x="610" y="283" text-anchor="middle" font-size="12.5" font-weight="bold" class="k">بنك أردني (شهرياً)</text>
+    <text x="610" y="300" text-anchor="middle" font-size="10.5" fill="#52514e">سحب JOD: صرف حتى 2% + رسم ثابت</text>
+  </svg>
+  <div class="figcap">شكل 2 — تدفق الأموال <span class="en">(Money Flow)</span>: من بطاقة العميل إلى الخزينة الدولارية ثم المصاريف التشغيلية، والسحب للدينار شهرياً لا لكل طلب.</div>
+  </div>
+
+  <h3>مقارنة خيارات التحصيل</h3>
+  <table>
+    <tr><th>الخيار</th><th>الرسوم</th><th>الربط بـ<span class="en">Payoneer</span></th><th>الملاحظة الحاسمة</th></tr>
+    <tr><td><span class="en">2Checkout (2Sell)</span> — <b>الأساسي</b></td><td><span class="num">≈3.5% + $0.35</span> (+<span class="num">2%</span> عابر للحدود أحياناً)</td><td>مباشر وبلا رسوم تحويل</td><td>توقّع احتياطياً مُحتجزاً <span class="num">(5–10%</span> لـ<span class="num">60–90</span> يوماً) كتاجر جديد — مُدرج في الميزانية</td></tr>
+    <tr><td><span class="en">PayPal Business</span> — ثانوي</td><td><span class="num">≈3.5–4.5%</span></td><td>سحب للبنك المحلي</td><td>الأردن ضمن فئة «وصول جزئي»؛ حجوزات <span class="num">21</span> يوماً للبائع الجديد — رفع أرقام التتبع يومياً يفكّها</td></tr>
+    <tr><td><span class="en">PayTabs Jordan</span> — احتياطي</td><td>حسب الطلب</td><td>تسوية بالدينار محلياً</td><td>يضيف تحويل عملة إضافياً؛ فقط إن تعثّر الأساسيان</td></tr>
+  </table>
+  <div class="callout warn"><b>تحذير ربوي تشغيلي:</b> لا تموّل الإعلانات أبداً بقروض <span class="en">Shopify Capital</span> أو «سلف» البوابات أو بطاقة ائتمان بفوائد — هنا يقع كثير من المتاجر في الربا الصريح. إعلانات من نقد متوفر فقط.</div>
+  <div class="pagefoot"><span>المدفوعات وتدفق الأموال</span><span class="num">4</span></div>
+</div>
+
+<!-- ================= PAGE 5 : NICHE ================= -->
+<div class="page">
+  <h2 class="sec">4 · التخصص المختار وهوامش الربح</h2>
+  <p>قُيّمت ستة تخصصات «تحلّ ألماً حقيقياً» بمعايير: شدة المشكلة، أدلة الطلب الموثقة، الهامش، المنافسة، الملاءمة الشرعية. <b>الأساسي: تخفيف الصداع النصفي بالعلاج البارد</b> — أكثر من <span class="num">40</span> مليون أمريكي مصاب، وسوق الأجهزة القابلة للارتداء ينمو من <span class="num">$500M</span> نحو <span class="num">$1.8B</span> بحلول <span class="num">2033</span>، والمنتج خفيف غير قابل للكسر وقابل للتسويق الصادق. <b>الاحتياطي: أدوات المعيشة لكبار السن</b> — أقل التخصصات منافسةً مع نمو هيكلي (سوق الأجهزة المساعدة <span class="num">$32.78B</span> في <span class="num">2026</span>).</p>
+
+  <h3>اقتصاديات الوحدة <span class="en">(Unit Economics)</span> — متوسط قيمة طلب <span class="num">$36</span></h3>
+  <div class="legend">
+    <span><span class="sw" style="background:var(--s1);"></span>تكلفة البضاعة والشحن <span class="en">COGS</span> $13.50</span>
+    <span><span class="sw" style="background:var(--s2);"></span>رسوم الدفع والمنصة والاسترداد $4.50</span>
+    <span><span class="sw" style="background:var(--s3);"></span>هامش المساهمة قبل الإعلانات $18.00</span>
+  </div>
+  <div class="fig">
+  <svg viewBox="0 0 760 110" width="100%" xmlns="http://www.w3.org/2000/svg">
+    <rect width="760" height="110" fill="#fcfcfb"/>
+    <!-- stacked bar rtl: start right x=730 total width 660 => $36 -->
+    <!-- widths: 13.5/36=247.5, 4.5/36=82.5, 18/36=330 ; 2px gaps -->
+    <rect x="482.5" y="28" width="247.5" height="34" fill="#2a78d6" rx="4"/>
+    <rect x="398"   y="28" width="82.5"  height="34" fill="#eb6834"/>
+    <rect x="66"    y="28" width="330"   height="34" fill="#1baf7a" rx="4"/>
+    <text x="606" y="50" text-anchor="middle" font-size="13.5" fill="#fff" class="k">$13.50</text>
+    <text x="439" y="50" text-anchor="middle" font-size="13.5" fill="#fff" class="k">$4.50</text>
+    <text x="231" y="50" text-anchor="middle" font-size="13.5" fill="#fff" class="k">$18.00 ← نقطة تعادل CPA</text>
+    <line x1="66" y1="72" x2="730" y2="72" stroke="#c3c2b7" stroke-width="1"/>
+    <text x="730" y="90" text-anchor="end" font-size="12" fill="#898781">$0</text>
+    <text x="66" y="90" text-anchor="start" font-size="12" fill="#898781">$36 (AOV)</text>
+  </svg>
+  <div class="figcap">شكل 3 — تفكيك متوسط قيمة الطلب: ما يتبقى بعد البضاعة والرسوم هو سقف ما يمكن دفعه للإعلان عن كل عميل.</div>
+  </div>
+
+  <h3>قائمة المنتجات المختصرة (مستودع <span class="en">CJ</span> الأمريكي) — <b>التكاليف تقديرية حتى تُوثَّق من حسابك</b></h3>
+  <table>
+    <tr><th>المنتج</th><th>تكلفة <span class="en">CJ</span> + شحن (تقدير)</th><th>سعر البيع</th><th>قيمة الطلب</th><th>الرسوم</th><th>الهامش قبل الإعلان</th></tr>
+    <tr><td>قبعة جل للصداع النصفي (لف <span class="num">360°</span>) <span class="en">Gel Migraine Cap</span></td><td class="num">$10–13</td><td class="num">$27.95</td><td class="num">$32.90</td><td class="num">≈$2.52</td><td class="num"><b>$17.4–20.4</b></td></tr>
+    <tr><td><b>حزمة</b>: قبعة + قناع عيون جل <span class="en">(Bundle)</span></td><td class="num">$15–19</td><td class="num">$39.95</td><td class="num">$39.95</td><td class="num">≈$2.99</td><td class="num"><b>$18.0–22.0</b></td></tr>
+    <tr><td>لفافة ضغط بارد للرقبة والكتف (بيع إضافي) <span class="en">Upsell</span></td><td class="num">$9–12</td><td class="num">$24.95</td><td class="num">$29.90</td><td class="num">≈$2.32</td><td class="num">$15.6–18.6</td></tr>
+    <tr><td colspan="6" style="background:#f0efec;"><b>الاحتياطي (كبار السن):</b> ملقاط التقاط طويل (عبوتان) هامش <span class="num">$21–24</span> · طقم لبس الجوارب هامش <span class="num">$18–21</span> · فتّاحة برطمانات <span class="num">5</span>-في-<span class="num">1</span> هامش <span class="num">$17–20</span></td></tr>
+  </table>
+  <div class="callout"><b>قبل أول دولار إعلانات:</b> موقع <span class="en">CJ</span> العام محجوب آلياً، فالتحقق يتم من حسابك أنت: مخزون أمريكي ≥ <span class="num">200</span> وحدة، معالجة ≤ يومين، وعرض شحن نهائي لكل منتج أعلاه — وإلا استُبعد المنتج (شرط القدرة على التسليم شرعاً وتشغيلياً).</div>
+  <div class="pagefoot"><span>التخصص والهوامش</span><span class="num">5</span></div>
+</div>
+
+<!-- ================= PAGE 6 : 14 DAYS ================= -->
+<div class="page">
+  <h2 class="sec">5 · خطة الإطلاق: 14 يوماً</h2>
+  <p>الإيقاع مستمدّ من صيغة «تحدي الدروبشيبينغ بالذكاء الاصطناعي في أسبوع» <span class="en">(1-Week AI Challenge)</span> بعد تعديلها للواقع: الأسبوع الإضافي يمتصّ ما تتجاهله الفيديوهات — موافقات بوابات الدفع، وإحماء حساب ميتا، وتوثيق مخزون <span class="en">CJ</span>. أصدق نتيجة موثقة لتحدي أسبوع واحد: ربح <span class="num">$81.56</span> فقط من إيراد <span class="num">$402</span> — الأسبوع الأول لتعلّم أي منتج يعمل، لا للدخل.</p>
+
+  <div class="fig">
+  <svg viewBox="0 0 760 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+    <rect width="760" height="150" fill="#fcfcfb"/>
+    <!-- timeline RTL: day1 right. total days 14 → width 700, right x=730 -->
+    <!-- phases: d1-2 setup(2), d3-5 build(3), d6-7 warmup(2), d8-11 test(4), d12-14 decide(3) ; px/day=50 -->
+    <rect x="630" y="40" width="98"  height="38" fill="#86b6ef" rx="4"/>
+    <rect x="480" y="40" width="148" height="38" fill="#5598e7"/>
+    <rect x="380" y="40" width="98"  height="38" fill="#3987e5"/>
+    <rect x="180" y="40" width="198" height="38" fill="#2a78d6"/>
+    <rect x="30"  y="40" width="148" height="38" fill="#1c5cab" rx="4"/>
+    <text x="679" y="63" text-anchor="middle" font-size="12" fill="#0b0b0b" class="k">تأسيس وطلبات البوابات</text>
+    <text x="554" y="63" text-anchor="middle" font-size="12" fill="#fff" class="k">بناء المتجر والسياسات</text>
+    <text x="429" y="63" text-anchor="middle" font-size="12" fill="#fff" class="k">إحماء وفحص</text>
+    <text x="279" y="63" text-anchor="middle" font-size="12" fill="#fff" class="k">اختبار إعلانات Meta ($60/يوم)</text>
+    <text x="104" y="63" text-anchor="middle" font-size="12" fill="#fff" class="k">قرار: قتل / تكرار / توسّع</text>
+    <text x="679" y="95" text-anchor="middle" font-size="11" fill="#52514e">أيام 1–2</text>
+    <text x="554" y="95" text-anchor="middle" font-size="11" fill="#52514e">أيام 3–5</text>
+    <text x="429" y="95" text-anchor="middle" font-size="11" fill="#52514e">أيام 6–7</text>
+    <text x="279" y="95" text-anchor="middle" font-size="11" fill="#52514e">أيام 8–11 (لا تلمس الميزانية 72 ساعة)</text>
+    <text x="104" y="95" text-anchor="middle" font-size="11" fill="#52514e">أيام 12–14</text>
+    <text x="380" y="128" text-anchor="middle" font-size="11.5" fill="#898781">أهم مهام اليوم 1: التقديم لـ 2Checkout وPayPal فوراً — الموافقات هي أطول مسار حرج في الخطة كلها</text>
+  </svg>
+  <div class="figcap">شكل 4 — الجدول الزمني للأسبوعين الأولين <span class="en">(Launch Timeline)</span>.</div>
+  </div>
+
+  <h3>قواعد القتل والتوسّع <span class="en">(Kill / Scale Rules)</span> — تُكتب مسبقاً ولا يُعاد التفاوض عليها</h3>
+  <table>
+    <tr><th style="width:30mm;">المستوى</th><th>القاعدة</th></tr>
+    <tr><td>إعلان <span class="en">(Creative)</span></td><td>أوقفه عند إنفاق <span class="num">$15</span> ونسبة نقر <span class="en">CTR</span> أقل من <span class="num">0.8%</span>، أو <span class="num">$25</span> بلا أي نقرة.</td></tr>
+    <tr><td>مجموعة إعلانية <span class="en">(Ad Set)</span></td><td>أوقفها عند إنفاق <span class="num">$30</span> بلا شراء، أو ثلاثة أيام فوق ضعف نقطة التعادل.</td></tr>
+    <tr><td>منتج <span class="en">(Product)</span></td><td>اقتله عند <span class="num">$150–200</span> إنفاقاً إجمالياً بلا شراء واحد. لا استثناء بحجة «إعلان أخير».</td></tr>
+    <tr><td>توسّع <span class="en">(Scale)</span></td><td>فقط بعد ≥ <span class="num">5</span> مشتريات بتكلفة استحواذ ≤ نقطة التعادل: زد الميزانية <span class="num">20–30%</span> كل <span class="num">48</span> ساعة، وتوقّع ارتفاع التكلفة <span class="num">10–20%</span> مع كل مضاعفة. أضِف بيعاً إضافياً بعد الشراء قبل تجاوز <span class="num">$100</span>/يوم.</td></tr>
+    <tr><td>حماية الحساب</td><td>توثيق النشاط التجاري + مصادقة ثنائية من اليوم الأول؛ لا ادعاءات علاجية؛ لا أكثر من تعديلَي ميزانية يومياً؛ لا تنشئ حساباً جديداً أثناء استئناف حظر أبداً.</td></tr>
+  </table>
+  <p class="small">أدوات الذكاء الاصطناعي في التنفيذ: <span class="en">ChatGPT</span> لمسودات النصوص وزوايا التسويق (مع مراجعتك الصادقة لكل ادعاء)، مولّدات فيديو <span class="en">UGC</span> بشرط ألا ينتحل الممثل الافتراضي تجربة شخصية كاذبة — عرضٌ للمنتج لا شهادة مزيفة، ومزامنة المخزون عبر <span class="en">CJ API</span>.</p>
+  <div class="pagefoot"><span>خطة 14 يوماً</span><span class="num">6</span></div>
+</div>
+
+<!-- ================= PAGE 7 : RISKS ================= -->
+<div class="page">
+  <h2 class="sec">6 · سجل المخاطر <span class="en">(Risk Register)</span></h2>
+
+  <div class="fig">
+  <svg viewBox="0 0 760 330" width="100%" xmlns="http://www.w3.org/2000/svg">
+    <rect width="760" height="330" fill="#fcfcfb"/>
+    <!-- matrix area: x 140..710 (RTL: impact axis left-to-right reversed), y 20..280 -->
+    <!-- 3x3 zones; probability vertical (up=high), impact horizontal (right=low, left=high for RTL) -->
+    <g>
+      <!-- rows y: high 20-106, med 106-193, low 193-280 ; cols x(RTL): high impact 140-330, med 330-520, low 520-710 -->
+      <rect x="140" y="20"  width="190" height="86" fill="#d03b3b" opacity="0.18"/>
+      <rect x="330" y="20"  width="190" height="86" fill="#ec835a" opacity="0.16"/>
+      <rect x="520" y="20"  width="190" height="86" fill="#fab219" opacity="0.14"/>
+      <rect x="140" y="106" width="190" height="87" fill="#ec835a" opacity="0.16"/>
+      <rect x="330" y="106" width="190" height="87" fill="#fab219" opacity="0.14"/>
+      <rect x="520" y="106" width="190" height="87" fill="#0ca30c" opacity="0.10"/>
+      <rect x="140" y="193" width="190" height="87" fill="#fab219" opacity="0.14"/>
+      <rect x="330" y="193" width="190" height="87" fill="#0ca30c" opacity="0.10"/>
+      <rect x="520" y="193" width="190" height="87" fill="#0ca30c" opacity="0.07"/>
+    </g>
+    <!-- axes labels -->
+    <text x="730" y="63"  text-anchor="start" font-size="11.5" class="k">احتمال مرتفع</text>
+    <text x="730" y="152" text-anchor="start" font-size="11.5" class="k">متوسط</text>
+    <text x="730" y="238" text-anchor="start" font-size="11.5" class="k">منخفض</text>
+    <text x="235" y="300" text-anchor="middle" font-size="11.5" class="k">أثر مرتفع</text>
+    <text x="425" y="300" text-anchor="middle" font-size="11.5" class="k">أثر متوسط</text>
+    <text x="615" y="300" text-anchor="middle" font-size="11.5" class="k">أثر منخفض</text>
+    <text x="425" y="322" text-anchor="middle" font-size="11" fill="#898781">الأثر Impact ←</text>
+    <!-- risk dots (numbered) -->
+    <g font-size="12" font-weight="bold">
+      <circle cx="200" cy="50"  r="12" fill="#0b0b0b"/><text x="200" y="54" text-anchor="middle" fill="#fff">1</text>
+      <circle cx="255" cy="80"  r="12" fill="#0b0b0b"/><text x="255" y="84" text-anchor="middle" fill="#fff">2</text>
+      <circle cx="300" cy="118" r="12" fill="#0b0b0b"/><text x="300" y="122" text-anchor="middle" fill="#fff">3</text>
+      <circle cx="215" cy="145" r="12" fill="#0b0b0b"/><text x="215" y="149" text-anchor="middle" fill="#fff">4</text>
+      <circle cx="380" cy="140" r="12" fill="#0b0b0b"/><text x="380" y="144" text-anchor="middle" fill="#fff">5</text>
+      <circle cx="240" cy="225" r="12" fill="#0b0b0b"/><text x="240" y="229" text-anchor="middle" fill="#fff">6</text>
+      <circle cx="565" cy="60"  r="12" fill="#0b0b0b"/><text x="565" y="64" text-anchor="middle" fill="#fff">7</text>
+      <circle cx="420" cy="230" r="12" fill="#0b0b0b"/><text x="420" y="234" text-anchor="middle" fill="#fff">8</text>
+    </g>
+  </svg>
+  <div class="figcap">شكل 5 — مصفوفة المخاطر (احتمال × أثر). المناطق الملوّنة إرشادية والأرقام مشروحة في الجدول أدناه.</div>
+  </div>
+
+  <table>
+    <tr><th style="width:8mm;">#</th><th style="width:52mm;">الخطر</th><th>الإجراء الوقائي <span class="en">(Mitigation)</span></th></tr>
+    <tr><td class="num">1</td><td><b>اقتصاديات الإعلان لا تتعادل</b> — متوسط <span class="en">CPA</span> السوق أعلى من هامشك</td><td>حِزَم لرفع قيمة الطلب ≥ <span class="num">$40</span>؛ قواعد قتل مُلزمة؛ توقُّع <span class="num">1</span> منتج ناجح من كل <span class="num">8–15</span>؛ إيراد بريدي بلا تكلفة استحواذ؛ حدّ خسارة صارم (قسم 8).</td></tr>
+    <tr><td class="num">2</td><td><b>حجز الأموال</b> لدى البوابة/باي بال واحتياطيات التاجر الجديد</td><td>سيولة تغطي <span class="num">45–60</span> يوماً من تكلفة البضاعة؛ رفع أرقام التتبع فور الشحن؛ عدم تركيز كل التدفق في معالج واحد.</td></tr>
+    <tr><td class="num">3</td><td><b>تقييد حساب إعلانات ميتا</b> (تشديد إنفاذ <span class="num">2026</span> على الحسابات الجديدة)</td><td>توثيق + مصادقة ثنائية يوم <span class="num">1</span>؛ إحماء إنفاق تدريجي؛ لا ادعاءات صحية؛ بطاقة دفع موثوقة؛ لا حسابات موازية أثناء الاستئناف.</td></tr>
+    <tr><td class="num">4</td><td><b>نزاعات وردّ مدفوعات</b> <span class="en">(Chargebacks)</span> تتجاوز عتبات المراقبة (<span class="num">0.9%</span>)</td><td>الشحن الأمريكي السريع؛ تتبع لكل طلب؛ سياسة «استرداد قبل النزاع» — استرداد <span class="num">$30</span> أرخص من نزاع؛ صفحات منتج صادقة تقلّل «مخالف للوصف».</td></tr>
+    <tr><td class="num">5</td><td><b>نفاد مخزون <span class="en">CJ</span> أو بطء المعالجة</b> — وهو أيضاً خرقٌ لشرط السَّلَم</td><td>مزامنة مخزون آلية تُخفي المنتج دون <span class="num">30</span> وحدة؛ اشتراط معالجة ≤ يومين؛ منتج بديل جاهز؛ عند خطر تأخّر: تخيير العميل بين الانتظار أو استرداد كامل (إقالة).</td></tr>
+    <tr><td class="num">6</td><td><b>إجراءات شوبيفاي</b> (تقليد، ادعاءات مضللة)</td><td>لا منتجات مقلّدة إطلاقاً؛ فلتر الصدق الشرعي نفسه هو فلتر الامتثال للمنصة — تدقيق واحد يخدم الاثنين.</td></tr>
+    <tr><td class="num">7</td><td><b>تآكل الرسوم والصرف</b> (بوابة + <span class="num">2%</span> شوبيفاي + صرف <span class="en">Payoneer</span>)</td><td>إبقاء الدولار في <span class="en">Payoneer</span> والدفع منه؛ سحب شهري واحد للدينار؛ فوترة شوبيفاي سنوية.</td></tr>
+    <tr><td class="num">8</td><td><b>فجوة امتثال ضريبي</b> (الأردن/أمريكا)</td><td>استشارة محاسب مبكرة؛ سجلات نظيفة؛ مراجعة عتبات ولايات أمريكا عند <span class="num">$75k</span>.</td></tr>
+  </table>
+  <div class="pagefoot"><span>سجل المخاطر</span><span class="num">7</span></div>
+</div>
+
+<!-- ================= PAGE 8 : FINANCIALS + VERDICT ================= -->
+<div class="page compact" style="padding-top:10mm;">
+  <h2 class="sec">7 · النموذج المالي والحكم الصريح</h2>
+
+  <h3>السيناريوهات: صافي النقد التراكمي <span class="en">(Cumulative Net Cash)</span></h3>
+  <div class="legend">
+    <span><span class="sw" style="background:var(--s1);"></span>متحفظ <span class="en">Conservative</span> — لا منتج ناجح</span>
+    <span><span class="sw" style="background:var(--s2);"></span>واقعي <span class="en">Realistic</span> — منتج حدّي يوم <span class="num">45</span>≈</span>
+    <span><span class="sw" style="background:var(--s3);"></span>متفائل <span class="en">Optimistic</span> — منتج قوي يوم <span class="num">30</span>≈</span>
+  </div>
+  <div class="fig">
+  <svg viewBox="0 0 760 300" style="width:70%;display:block;margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+    <rect width="760" height="300" fill="#fcfcfb"/>
+    <!-- y scale: -1000..2000 → plot y 20..260 ; zero at y = 20 + 2000/3000*240 = 180 -->
+    <g stroke="#e1e0d9" stroke-width="1">
+      <line x1="60" y1="20"  x2="720" y2="20"/>
+      <line x1="60" y1="100" x2="720" y2="100"/>
+      <line x1="60" y1="260" x2="720" y2="260"/>
+    </g>
+    <line x1="60" y1="180" x2="720" y2="180" stroke="#c3c2b7" stroke-width="1.5"/>
+    <g font-size="11" fill="#898781">
+      <text x="52" y="24"  text-anchor="end">$2,000+</text>
+      <text x="52" y="104" text-anchor="end">$1,000+</text>
+      <text x="52" y="184" text-anchor="end">$0</text>
+      <text x="52" y="264" text-anchor="end">$1,000-</text>
+    </g>
+    <!-- groups RTL: 30d right (center 620), 60d center (center 390), 90d left (center 160); bar w=42 gap=8 -->
+    <!-- helper: h = v/12.5 px ; up from 180 if +, down if - -->
+    <!-- 30d: cons -550 → h44; real -350 → h28 ; opt -100 → h8 -->
+    <rect x="649" y="180" width="42" height="44" fill="#2a78d6" rx="3"/>
+    <rect x="599" y="180" width="42" height="28" fill="#eb6834" rx="3"/>
+    <rect x="549" y="180" width="42" height="8"  fill="#1baf7a" rx="3"/>
+    <text x="670" y="238" text-anchor="middle" font-size="11" fill="#52514e">550-</text>
+    <text x="620" y="222" text-anchor="middle" font-size="11" fill="#52514e">350-</text>
+    <text x="570" y="202" text-anchor="middle" font-size="11" fill="#52514e">100-</text>
+    <!-- 60d: cons -850 → 68; real -250 → 20; opt +450 → 36 up -->
+    <rect x="419" y="180" width="42" height="68" fill="#2a78d6" rx="3"/>
+    <rect x="369" y="180" width="42" height="20" fill="#eb6834" rx="3"/>
+    <rect x="319" y="144" width="42" height="36" fill="#1baf7a" rx="3"/>
+    <text x="440" y="262" text-anchor="middle" font-size="11" fill="#52514e">850-</text>
+    <text x="390" y="214" text-anchor="middle" font-size="11" fill="#52514e">250-</text>
+    <text x="340" y="138" text-anchor="middle" font-size="11" fill="#0b0b0b">450+</text>
+    <!-- 90d: cons -950 → 76; real +350 → 28 up; opt +1900 → 152 up -->
+    <rect x="189" y="180" width="42" height="76" fill="#2a78d6" rx="3"/>
+    <rect x="139" y="152" width="42" height="28" fill="#eb6834" rx="3"/>
+    <rect x="89"  y="28"  width="42" height="152" fill="#1baf7a" rx="3"/>
+    <text x="210" y="270" text-anchor="middle" font-size="11" fill="#52514e">950-</text>
+    <text x="160" y="146" text-anchor="middle" font-size="11" fill="#0b0b0b">350+</text>
+    <text x="110" y="22"  text-anchor="middle" font-size="11" fill="#0b0b0b" class="k">1,900+</text>
+    <g font-size="12.5" class="k">
+      <text x="620" y="290" text-anchor="middle">بعد 30 يوماً</text>
+      <text x="390" y="290" text-anchor="middle">بعد 60 يوماً</text>
+      <text x="160" y="290" text-anchor="middle">بعد 90 يوماً</text>
+    </g>
+  </svg>
+  <div class="figcap">شكل 6 — صافي النقد التراكمي بالدولار. ما دون الصفر خسارة. الافتراضات: اختبار <span class="num">4–5</span> منتجات؛ «الواقعي» = منتج واحد بتكلفة استحواذ <span class="num">$18</span> وربح <span class="num">$150–550</span> بعد <span class="num">90</span> يوماً؛ «المتفائل» يقارب أفضل <span class="num">10%</span> من الحسابات (<span class="en">CPA $14</span>) — نادر.</div>
+  </div>
+
+  <table>
+    <tr><th></th><th>الحد الأدنى</th><th>الموصى به</th></tr>
+    <tr><td><b>ميزانية الانطلاق</b> (اشتراك + نطاق + إعلانات اختبار <span class="num">2–3</span> منتجات + احتياطي استرداد + سيولة تشغيل)</td><td class="num"><b>≈ $700</b></td><td class="num"><b>≈ $1,490</b></td></tr>
+    <tr><td><b>نقطة التعادل</b></td><td colspan="2">≈ <span class="num">11</span> طلباً شهرياً لتغطية الثابت فقط؛ واسترداد كامل رأس المال يحتاج ≈ <span class="num">83</span> طلباً موجب الهامش بعد الإعلانات.</td></tr>
+  </table>
+
+  <h2 class="sec" style="margin-top:2mm;">8 · الحكم الصريح ومتى تتوقف</h2>
+  <p><b>أرجح أسباب الفشل بالترتيب:</b> (<span class="num">1</span>) تكلفة استحواذ لا تنزل تحت الهامش — قاتل المتاجر الأول؛ (<span class="num">2</span>) اختناق السيولة رغم «ربحية الورق» بسبب الحجوزات — تدفع لـ<span class="en">CJ</span> وميتا قبل أن تقبض؛ (<span class="num">3</span>) تقييد حساب ميتا أثناء أول منتج ناجح.</p>
+  <div class="callout warn" style="padding:2.5mm 3.5mm; margin:2mm 0;">
+    <b>شروط التوقف — اكتبها حيث لا تستطيع تعديلها:</b>
+    <ul style="margin:1mm 0 0;">
+      <li>منتج: <span class="num">$150–200</span> إنفاقاً بلا شراء = قتل فوري.</li>
+      <li>المشروع كله: <span class="num">5</span> منتجات / ≈ <span class="num">$1,000</span> إنفاق إعلاني / <span class="num">90</span> يوماً دون منتجٍ يحقق <span class="en">CPA ≤ $22</span> على إنفاق ≥ <span class="num">$150</span> ← <b>توقف نهائياً</b>. مزيد من المال ليس دليلاً.</li>
+      <li>نسبة نزاعات > <span class="num">0.9%</span> في أي شهر ← أوقف الإعلانات وأصلح التسليم قبل أن يوقفك المعالج.</li>
+      <li>إن وجدت نفسك «تحتاج» ندرة مزيفة أو أسعاراً منفوخة أو ادعاءً طبياً لتربح — فالنموذج لا يعمل إلا بالخداع، <b>وهذه إشارة توقف شرعية وتجارية معاً</b>.</li>
+    </ul>
+  </div>
+  <div class="callout ok" style="padding:2.5mm 3.5mm; margin:2mm 0;"><b>دليل الاستمرار والتوسّع:</b> منتج واحد بـ ≥ <span class="num">10</span> مشتريات بتكلفة ≤ <span class="num">$18</span>، ونسبة استرداد < <span class="num">6%</span>، وتسليم منضبط داخل النافذة المعلنة. هذه التركيبة نادرة وثمينة — وكل ما في الأقسام <span class="num">5–6</span> وُجد لاكتشافها بأرخص كلفة وحمايتها متى ظهرت.</div>
+  <p class="small">المصادر الكاملة بالروابط (فتاوى، وثائق شوبيفاي الرسمية، معيار أيوفي، بيانات الأسواق، معايير ميتا <span class="num">2026</span>) في النسخة الإنجليزية داخل المستودع: <span class="en" style="font-size:7.5pt;">plans/shopify-dropshipping-shariah-launch-plan-20260802.md</span></p>
+  <div class="pagefoot"><span>النموذج المالي والحكم الصريح</span><span class="num">8</span></div>
+</div>
+
+</body>
+</html>
