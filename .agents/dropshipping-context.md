@@ -33,10 +33,12 @@ Last updated: 2026-08-16 (readiness intake completed)
 
 | | |
 |---|---|
-| Assets owned | **Payoneer only.** No Shopify store, no eBay seller account, no CJ account yet. |
-| Risk capital | **Under $100 total** — money that can be lost entirely without harm. |
+| Assets owned | **Nothing.** Corrected 2026-08-16 — Payoneer does not exist either. All three accounts (Payoneer, eBay, CJ) are created from scratch in Phase 0 of the active plan. |
+| Risk capital | **Under $100 total.** Note this is now *working capital*, not ad budget: eBay holds new-seller payouts, so CJ orders must be funded out of pocket first. Realistic ceiling ~5-8 concurrent orders. |
 | Time | 7–15 h/week realistic (not 15–30). |
 | Experience | **Has never sold online.** First venture. Explain mechanics; assume no prior knowledge. |
+| Samples | **Will not buy product samples.** User decision 2026-08-16. Quality control runs on competitor negative-feedback mining instead — see the plan's Phase 5. |
+| Images | Produced with AI tools. Hard limit: enhancement of presentation is allowed, alteration of the product's true appearance is not — under salam, description accuracy is a validity condition, so a misleading image touches contract validity, not just eBay policy. |
 
 **What this invalidates.** The written plan (`plans/…`) assumes a $300–500 ad-test budget and 2–4 h/day.
 Neither holds. At under $100, Shopify Basic ($39/mo, recurring) plus domain plus a sample consumes the
@@ -94,6 +96,8 @@ From plan §1. These are structural — they shape the store build, not just the
 | 2026-08-02 | Launch plan written: Shopify + CJ + Payoneer, salam structure. |
 | 2026-08-16 | TrendTrack rejected — no budget. Replaced with Terapeak-led free stack (§3). |
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
+| 2026-08-16 | Verified from eBay's own pages: Jordan is a registerable seller country, and Payoneer serves Jordan. **But Jordan is on eBay's HiPO covered list (effective 2026-07-13): new sellers without history are blocked from an UNPUBLISHED set of categories, discoverable only by attempting a listing.** Plan resequenced — category-eligibility test now precedes all production work. |
+| 2026-08-16 | User decisions: no product samples; images produced with AI within Shariah/eBay limits; all three accounts to be created and linked. Plan v2 written. |
 | 2026-08-16 | **eBay-first confirmed by user.** Lean plan written: `plans/ebay-cj-lean-launch-plan-20260816.md` — 8–10 weeks, $0 until the sample, gated on Jordan payout eligibility. |
 | 2026-08-16 | Readiness intake: Payoneer only, <$100 risk capital, 7–15 h/week, zero selling experience. Shopify + paid ads ruled out as non-viable at this budget; **eBay-first recommended, reversing the earlier Shopify-first call.** Pending user confirmation. |
 | 2026-08-16 | Skill packages evaluated. Adopted: `mardab96/ecommerce-claude-skills` (margin/BE-ROAS scripts), plus `cross-border-ecommerce`, `dropshipping-product-research`, `shopify-dropshipping` from `nexscope-ai/eCommerce-Skills`. **Rejected: the 5 eBay skills in nexscope — 35-line stubs, no frontmatter, no methodology.** |
