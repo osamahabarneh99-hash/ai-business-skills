@@ -12,7 +12,7 @@
 >    A stale context file is worse than none. Commit the update.
 > 4. The user writes in Arabic. Reply in Arabic unless asked otherwise.
 
-Last updated: 2026-08-16
+Last updated: 2026-08-16 (readiness intake completed)
 
 ---
 
@@ -28,6 +28,27 @@ Last updated: 2026-08-16
 | Second channel | eBay — under evaluation, **not started**, see §4 |
 | Compliance frame | Shariah — structured as a **salam** contract |
 | Budget posture | Lean. Paid tools are rejected by default; free alternatives required. |
+
+## 1b. Operator readiness (intake 2026-08-16 — settled, do not re-ask)
+
+| | |
+|---|---|
+| Assets owned | **Payoneer only.** No Shopify store, no eBay seller account, no CJ account yet. |
+| Risk capital | **Under $100 total** — money that can be lost entirely without harm. |
+| Time | 7–15 h/week realistic (not 15–30). |
+| Experience | **Has never sold online.** First venture. Explain mechanics; assume no prior knowledge. |
+
+**What this invalidates.** The written plan (`plans/…`) assumes a $300–500 ad-test budget and 2–4 h/day.
+Neither holds. At under $100, Shopify Basic ($39/mo, recurring) plus domain plus a sample consumes the
+entire budget before any traffic is bought — and the plan's own kill/scale rules need $300–500 to
+produce a statistically meaningful signal. **Shopify + paid ads is not viable at this budget.** Do not
+propose it. The 30-day timeline stretches to roughly 8–10 weeks at 7–15 h/week.
+
+**What this implies.** The binding constraint is the *cost of traffic*, not readiness. eBay supplies
+buyer traffic at no ad cost, has no fixed monthly fee (~250 free listings/mo; ~13% final value fee on
+sale only), and unlocks Terapeak free. It trades money for time — the correct trade when time is the
+abundant resource. This **reverses** the earlier "Shopify-first" recommendation, which assumed a
+funded launch.
 
 ## 2. Shariah constraints (hard design constraints, not preferences)
 
@@ -61,7 +82,9 @@ From plan §1. These are structural — they shape the store build, not just the
 ## 4. eBay — what is known before starting
 
 - **Policy is favourable.** eBay permits dropshipping from a **wholesale supplier**, and prohibits buying from another retailer/marketplace (Amazon, Walmart) to ship to the buyer. CJ is a wholesale supplier, so **CJ → eBay is policy-compliant**. Penalty for arbitrage: listing removal, restriction, permanent suspension.
-- **The blocker is operational, not policy** — see §3.
+- **CJ has a native, official eBay integration** — connect the eBay store inside the CJ dashboard for listing, real-time inventory sync, automated order processing, and tracking pushback. This substantially narrows the automation gap noted in §3: the missing piece is an MCP for *the assistant*, not automation for *the operator*.
+- **UNVERIFIED AND BLOCKING: can a Jordan-registered seller receive eBay payouts?** eBay Managed Payments is now the only payout route (PayPal is retired) and pays to a bank account or Payoneer, but the eBay–Payoneer partnership is limited to specific countries and Jordan's status could not be confirmed from public sources. **Verify this in an actual eBay registration flow before any other eBay work.** If Jordan is unsupported, the eBay route collapses and the channel decision must be reopened.
+- **eBay may fit salam *better* than a self-hosted store** (for the scholar to confirm, not the assistant): fixed-price Buy It Now with immediate payment required satisfies "full price at the contract session" — **auctions must be excluded**, since they break payment-at-contract; eBay's mandatory handling-time and delivery-estimate fields satisfy the delivery-specification condition; and eBay's Money Back Guarantee structurally forces the seller to bear risk until delivery rather than relying on self-written terms.
 - **The existing plan does not cover eBay at all.** It is Shopify + CJ only. Adding eBay needs a written addendum covering: eBay fee structure, Jordan-based seller account requirements, and — critically — **how eBay delivery timelines interact with the salam deferment condition**. Write that addendum *before* creating the first listing.
 
 ## 5. Decisions log
@@ -71,6 +94,7 @@ From plan §1. These are structural — they shape the store build, not just the
 | 2026-08-02 | Launch plan written: Shopify + CJ + Payoneer, salam structure. |
 | 2026-08-16 | TrendTrack rejected — no budget. Replaced with Terapeak-led free stack (§3). |
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
+| 2026-08-16 | Readiness intake: Payoneer only, <$100 risk capital, 7–15 h/week, zero selling experience. Shopify + paid ads ruled out as non-viable at this budget; **eBay-first recommended, reversing the earlier Shopify-first call.** Pending user confirmation. |
 | 2026-08-16 | Skill packages evaluated. Adopted: `mardab96/ecommerce-claude-skills` (margin/BE-ROAS scripts), plus `cross-border-ecommerce`, `dropshipping-product-research`, `shopify-dropshipping` from `nexscope-ai/eCommerce-Skills`. **Rejected: the 5 eBay skills in nexscope — 35-line stubs, no frontmatter, no methodology.** |
 
 ## 6. Open — needs the user's answer
