@@ -24,8 +24,8 @@ Last updated: 2026-08-16 (readiness intake completed)
 | Target market | United States |
 | Supplier | CJ Dropshipping, US warehouses (wholesale supplier — this classification matters, see §4) |
 | Payouts | Payoneer — **Shopify Payments is not available to Jordan-registered sellers** |
-| Primary channel | Shopify |
-| Second channel | eBay — under evaluation, **not started**, see §4 |
+| Shopify | **Deferred.** Not viable under $100 (see §1b). Remains the target once a real ad budget exists. |
+| **Primary channel** | **eBay** — confirmed 2026-08-16. Chosen over Shopify on budget grounds, see §1b. |
 | Compliance frame | Shariah — structured as a **salam** contract |
 | Budget posture | Lean. Paid tools are rejected by default; free alternatives required. |
 
@@ -94,19 +94,21 @@ From plan §1. These are structural — they shape the store build, not just the
 | 2026-08-02 | Launch plan written: Shopify + CJ + Payoneer, salam structure. |
 | 2026-08-16 | TrendTrack rejected — no budget. Replaced with Terapeak-led free stack (§3). |
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
+| 2026-08-16 | **eBay-first confirmed by user.** Lean plan written: `plans/ebay-cj-lean-launch-plan-20260816.md` — 8–10 weeks, $0 until the sample, gated on Jordan payout eligibility. |
 | 2026-08-16 | Readiness intake: Payoneer only, <$100 risk capital, 7–15 h/week, zero selling experience. Shopify + paid ads ruled out as non-viable at this budget; **eBay-first recommended, reversing the earlier Shopify-first call.** Pending user confirmation. |
 | 2026-08-16 | Skill packages evaluated. Adopted: `mardab96/ecommerce-claude-skills` (margin/BE-ROAS scripts), plus `cross-border-ecommerce`, `dropshipping-product-research`, `shopify-dropshipping` from `nexscope-ai/eCommerce-Skills`. **Rejected: the 5 eBay skills in nexscope — 35-line stubs, no frontmatter, no methodology.** |
 
 ## 6. Open — needs the user's answer
 
-1. **Shopify-first, or Shopify + eBay together?** This is the branch point; everything downstream depends on it. Shopify is ready today; eBay is fully manual until an integration exists.
+1. ~~Shopify-first vs eBay~~ — **resolved 2026-08-16: eBay first.** The live blocker is now the Gate 0 payout-eligibility check in the lean plan; nothing else starts until it passes.
 2. Hanafi deferment question (§2) — has a scholar been consulted?
-3. No product selected yet. Week 1 of the 30-day plan (product research → shortlist of 10 → top 3 → 1) has not been run.
+3. No product selected yet. Phase 2 of the lean plan (Terapeak → 10 candidates → 3 → 1) has not been run.
 
 ## 7. Where things live
 
 ```
-plans/shopify-dropshipping-shariah-launch-plan-20260802.md   full plan (EN)
+plans/ebay-cj-lean-launch-plan-20260816.md                    ACTIVE plan (AR) — follow this one
+plans/shopify-dropshipping-shariah-launch-plan-20260802.md   original funded plan (EN) — reference
 plans/…-AR-20260802.html / .pdf                              Arabic versions
 modules/dropshipping/en/29-dropshipping-mastery-global/      12-chapter playbook
 modules/dropshipping/workflows/en/dropshipping-launch-global.md   30-day execution plan
