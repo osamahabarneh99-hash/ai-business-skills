@@ -85,27 +85,50 @@ eBay reviews the account, the truthful facts are the defence. Household linking 
 device) may trigger a review even when everything is genuine; that is a disclosed risk, not a reason to
 hide anything.
 
-### Likely diagnosis of Osama's suspension — worth checking before appealing
+### Actual cause of Osama's suspension — corrected 2026-08-17
 
-eBay's selling-limits page states: *"Registration of new accounts in order to **circumvent sales limits**
-on eBay is prohibited. In this case, **all of your accounts may be suspended indefinitely**."*
+**Supersedes the earlier "circumventing selling limits" diagnosis, which was wrong.**
 
-That matches the reported facts closely: two accounts on one identity, followed by suspension. If the
-second account was opened while the first was near or at its selling limit, this is almost certainly the
-clause that was applied — and it explains why the suspension hit rather than a warning. It is also why
-holding two accounts is permitted in general but was not here: the prohibition is about *purpose*, not
-about the count.
+What actually happened, per Osama: in earlier sessions an AI assistant advised him to register a
+**Business** account. It later emerged he needed a **Personal** account, since he has no registered
+business. When he found the type could not be converted, the same assistant advised him to create a
+second email and register again. He followed that advice, ending with two accounts on one identity —
+and the suspension followed.
 
-Bearing on an appeal: if the second account genuinely had a different purpose — a separate product line,
-or buying separate from selling — that is a defensible position and worth stating plainly. If it was
-opened to get more listing headroom, an appeal is unlikely to succeed and the effort is better spent
-supporting the brother's account.
+**Both premises check out against eBay's own documentation:**
 
-### Also open: Osama's own suspension may be appealable
+- Business accounts are "best suited for registered business entities or sole proprietors" — he is
+  neither, so he was on the wrong type.
+- eBay states plainly: *"once you've upgraded your personal account to a business account, **it won't be
+  possible to revert back to a personal account**."* The one-way door is real, and re-registering was
+  the only visible remedy.
+- eBay also states: *"Creating a new account is not the best way to get back to work on eBay after a
+  blocking"* — confirming the advice he was given was wrong.
 
-Because multiple accounts are permitted in principle, the suspension turns on whether the second account
-was created to dodge a selling limit. If it was not, an appeal is worth filing. If it was a fees issue,
-eBay's own page says a one-time payment resolves it. **Not yet attempted.**
+**Why this materially strengthens an appeal.** The prohibition is on registering accounts *to
+circumvent selling limits or policy consequences*. His purpose was **correcting an account-type error
+that eBay's own product makes uncorrectable in place**. That is a different intent, and it is true —
+so it can be stated plainly rather than spun.
+
+Further, eBay's own guidance: *"The first eBay account suspension for a policy violation is usually
+**not indefinite**"* and it invites members to make contact, show they understand what went wrong, and
+commit to following the rules.
+
+**Do not repeat the earlier assessment that an appeal is probably futile. It is not.**
+
+### Sequencing decision — appeal BEFORE the brother registers
+
+Recommended order, and the reasoning:
+
+1. **Read the actual suspension message** in My eBay → Messages. eBay emails the specific reason. Every
+   diagnosis above is inference; the real reason is sitting in his inbox. Stop guessing first.
+2. **Appeal.** Low cost, days not weeks, and a first policy suspension is usually reversible.
+3. **Only if the appeal fails, have the brother register.**
+
+Why this order: if the appeal succeeds, Osama sells on his own account and the household-linking risk
+disappears entirely — no brother account needed. And registering the brother from the same household
+*while* Osama's suspension is unresolved is the worst possible timing, since it is exactly the pattern
+eBay's fraud systems look for.
 
 ### Consequence for the plan
 
@@ -246,6 +269,7 @@ described only in prose.
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
 | 2026-08-16 | Verified from eBay's own pages: Jordan is a registerable seller country, and Payoneer serves Jordan. **But Jordan is on eBay's HiPO covered list (effective 2026-07-13): new sellers without history are blocked from an UNPUBLISHED set of categories, discoverable only by attempting a listing.** Plan resequenced — category-eligibility test now precedes all production work. |
 | 2026-08-16 | Brother's readiness re-intake: **no assets at all including no bank account**, under $100, **15–30 h/week**, no selling experience. Timeline compresses to ~5–6 weeks; Phase 0 gains a bank-account step ahead of Payoneer; budget-driven decisions unchanged. Also discovered a constraint never covered: **monthly selling limits and category limits** cap listing volume regardless of available time, and both active and sold listings count toward the monthly cap. Guidance recorded: spend the extra hours on depth, not volume. |
+| 2026-08-17 | **Suspension cause corrected.** Not limit-circumvention. Osama was advised in earlier AI sessions to register a Business account, then — on discovering the type cannot be reverted — advised to register again with a new email. Both premises verified against eBay's docs: business→personal reversion is impossible, and eBay itself says creating a new account after a block is the wrong remedy. Intent was account-type correction, not limit evasion, which is a materially stronger appeal position. **Sequence changed: appeal first, brother registers only if it fails.** |
 | 2026-08-16 | **Operator changed.** Osama's own eBay account was suspended (two accounts on one identity). His **brother** will be the actual seller — own identity, device, bank, and control of the profits — with Osama advising only. Verified at source that multiple accounts are permitted in principle and that the no-new-account rule binds the suspended member, so a genuinely separate person is legitimate. Compliance line and standing rule recorded in §1c. Readiness re-intake started, since every constraint in §1b was measured on Osama. |
 | 2026-08-16 | **Fee audit found a material omission.** All margin math rested on an unverified `13.25% + $0.30`. eBay's international-fees page lists **Jordan under "Rest of APAC"**, carrying an **international fee of 1.30% on every US sale** — charged on the total including shipping and tax — which was entirely absent, and a **currency conversion charge of 3.0%**, not the 2% assumed. Corrected across the skill, the Arabic plan and the illustrated PDF: gross per order moves from $15.12 to **$14.43**. The FVF percentage is category-dependent and is now labelled a placeholder. Conclusion vs Shopify is unchanged. |
 | 2026-08-16 | Skill coverage audited against the plan's six phases. Two gaps filled: `ebay-listing-craft` (Cassini placement — item specifics are the dominant lever and were entirely uncovered) and `ebay-post-sale-ops` (seller standards, returns, cases — where accounts actually die). **Thresholds were then verified against eBay's own page and three claims in the first draft were wrong.** Corrected: cases closed without seller resolution are capped at a flat **2** ("2 or 0.3%, whichever is *higher*"), so at low volume the flat number governs and it is the only truly binding limit; the defect rate demotes you only if defects span **more than 4 different buyers**, so one early cancellation cannot demote you; and **late shipment alone never causes Below Standard in the US program** — it is a Top Rated and Best Match issue. Operating rule stands but for a better reason: never let a dispute reach case stage, because the case budget is 2 and low volume cannot dilute it. Deliberately NOT built: account setup (one-time), ads (no budget), scaling (premature). |
