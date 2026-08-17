@@ -432,23 +432,29 @@ bash /home/user/ai-business-skills/install.sh --global</pre>
   <figure>
   <svg class="sv" viewBox="0 0 700 170" width="700" height="170">
     <line x1="30" y1="140" x2="670" y2="140" stroke="#16191C" stroke-width=".8"/>
-    <rect x="560" y="30" width="100" height="110" fill="#0E5A56"/>
-    <text x="610" y="24" text-anchor="middle" class="lbl" font-size="8.4" fill="#0E5A56">29.99</text>
-    <rect x="440" y="30" width="90" height="16" fill="#9E2B2B" opacity=".8"/>
-    <text x="485" y="24" text-anchor="middle" class="lbl" font-size="8.4" fill="#9E2B2B">−4.27</text>
-    <text x="485" y="60" text-anchor="middle" font-size="8" fill="#6E7A7E">رسوم eBay</text>
-    <rect x="320" y="30" width="90" height="37" fill="#9E2B2B" opacity=".62"/>
-    <text x="365" y="24" text-anchor="middle" class="lbl" font-size="8.4" fill="#9E2B2B">−10.00</text>
-    <text x="365" y="82" text-anchor="middle" font-size="8" fill="#6E7A7E">بضاعة + شحن</text>
-    <rect x="200" y="30" width="90" height="3" fill="#9E2B2B" opacity=".45"/>
-    <text x="245" y="24" text-anchor="middle" class="lbl" font-size="8.4" fill="#9E2B2B">−0.60</text>
-    <text x="245" y="48" text-anchor="middle" font-size="8" fill="#6E7A7E">صرف وتحويل</text>
-    <rect x="60" y="84" width="100" height="56" fill="#0E5A56"/>
-    <text x="110" y="78" text-anchor="middle" class="lbl" font-size="9.4" fill="#0E5A56">15.12</text>
-    <text x="110" y="156" text-anchor="middle" font-size="8.6" fill="#0E5A56">الربح الإجمالي</text>
-    <text x="610" y="156" text-anchor="middle" font-size="8.6" fill="#414A4E">سعر البيع</text>
+    <rect x="568" y="30" width="92" height="110" fill="#0E5A56"/>
+    <text x="614" y="24" text-anchor="middle" class="lbl" font-size="8.4" fill="#0E5A56">29.99</text>
+    <rect x="452" y="30" width="76" height="16" fill="#9E2B2B" opacity=".85"/>
+    <text x="490" y="24" text-anchor="middle" class="lbl" font-size="8.2" fill="#9E2B2B">−4.27</text>
+    <text x="490" y="60" text-anchor="middle" font-size="7.6" fill="#6E7A7E">رسوم eBay</text>
+    <rect x="356" y="30" width="76" height="2" fill="#9A7B3F"/>
+    <text x="394" y="24" text-anchor="middle" class="lbl" font-size="8.2" fill="#9A7B3F">−0.39</text>
+    <text x="394" y="46" text-anchor="middle" font-size="7.6" fill="#9A7B3F">رسم دولي 1.30%</text>
+    <rect x="260" y="30" width="76" height="37" fill="#9E2B2B" opacity=".62"/>
+    <text x="298" y="24" text-anchor="middle" class="lbl" font-size="8.2" fill="#9E2B2B">−10.00</text>
+    <text x="298" y="82" text-anchor="middle" font-size="7.6" fill="#6E7A7E">بضاعة + شحن</text>
+    <rect x="164" y="30" width="76" height="4" fill="#9A7B3F"/>
+    <text x="202" y="24" text-anchor="middle" class="lbl" font-size="8.2" fill="#9A7B3F">−0.90</text>
+    <text x="202" y="48" text-anchor="middle" font-size="7.6" fill="#9A7B3F">تحويل عملة 3.0%</text>
+    <rect x="44" y="87" width="92" height="53" fill="#0E5A56"/>
+    <text x="90" y="81" text-anchor="middle" class="lbl" font-size="9.4" fill="#0E5A56">14.43</text>
+    <text x="90" y="156" text-anchor="middle" font-size="8.6" fill="#0E5A56">الربح الإجمالي</text>
+    <text x="614" y="156" text-anchor="middle" font-size="8.6" fill="#414A4E">سعر البيع</text>
   </svg>
-  <figcaption>Fig. 6 — Unit economics waterfall · USD per order</figcaption>
+  <figcaption>Fig. 6 — Unit economics waterfall · USD per order · gold = Jordan-specific fees</figcaption>
+  </figure>
+  <div class="warn" style="margin-bottom:4mm"><strong>رسمان يخصّان الأردن تحديدًا</strong> — متحقَّق منهما من <a href="https://export.ebay.com/en/fees-regulations-policies/seller-fees/international-fees">صفحة الرسوم الدولية</a>: eBay تصنّف الأردن ضمن «Rest of APAC»، فيُفرض <strong>رسم دولي 1.30%</strong> على <strong>كل</strong> بيع أمريكي — ويُحسب على إجمالي المبلغ شاملًا الشحن والضريبة، فصل الشحن يرفعه. و<strong>تحويل العملة 3.0%</strong> لا 2%. ونسبة الرسوم النهائية <strong>تختلف بالفئة</strong> (2.5%–15.3%) — تحقق منها لفئتك.</div>
+  <figure style="margin:0">
   </figure>
 
   <table>
@@ -456,7 +462,7 @@ bash /home/user/ai-business-skills/install.sh --global</pre>
     <tbody>
       <tr><td>تكلفة اكتساب المشتري</td><td class="num" style="color:var(--pass)">$0</td><td class="num">$8–12</td></tr>
       <tr><td>رسوم شهرية ثابتة</td><td class="num" style="color:var(--pass)">$0</td><td class="num">$39</td></tr>
-      <tr class="tot"><td>صافي الربح للطلب</td><td class="num" style="color:var(--pass)">≈ $15</td><td class="num">≈ $4–7</td></tr>
+      <tr class="tot"><td>صافي الربح للطلب</td><td class="num" style="color:var(--pass)">≈ $14</td><td class="num">≈ $4–7</td></tr>
     </tbody>
   </table>
   <p style="margin-bottom:0">بحجم منخفض، الرسوم الثابتة والإعلانات تبتلع Shopify. <strong>هذا سبب رياضي لعكس الترتيب، لا تفضيل للمنصة.</strong></p>

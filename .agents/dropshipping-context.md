@@ -89,6 +89,40 @@ From plan §1. These are structural — they shape the store build, not just the
 - **eBay may fit salam *better* than a self-hosted store** (for the scholar to confirm, not the assistant): fixed-price Buy It Now with immediate payment required satisfies "full price at the contract session" — **auctions must be excluded**, since they break payment-at-contract; eBay's mandatory handling-time and delivery-estimate fields satisfy the delivery-specification condition; and eBay's Money Back Guarantee structurally forces the seller to bear risk until delivery rather than relying on self-written terms.
 - **The existing plan does not cover eBay at all.** It is Shopify + CJ only. Adding eBay needs a written addendum covering: eBay fee structure, Jordan-based seller account requirements, and — critically — **how eBay delivery timelines interact with the salam deferment condition**. Write that addendum *before* creating the first listing.
 
+## 4b. Verification ledger — what is confirmed and what is NOT
+
+Treat anything in the right column as an assumption. Do not repeat it to the user as fact, and do not
+let a financial or strategic decision rest on it without checking first.
+
+**Verified at primary source (eBay's own pages, 2026-08-16)**
+
+- Jordan is on eBay's seller-registration country list — registration is possible.
+- Jordan is on the HiPO covered-country list, effective 2026-07-13; restricted categories are
+  deliberately unpublished.
+- Seller standards: cases capped at a flat **2** ("2 or 0.3%, whichever is higher"); defect rate demotes
+  only above 2% **and** across **more than 4 buyers**; late shipment alone never causes Below Standard
+  in the US program.
+- **International fee 1.30%** — Jordan is listed under "Rest of APAC". Applies to every US sale, charged
+  on the total including shipping and tax.
+- **Seller currency conversion 3.0%** for Jordan's band.
+- Regulatory operating fee does **not** apply to ebay.com listings.
+
+**NOT verified — flagged, still open**
+
+| Claim | Status |
+|---|---|
+| **Can a Jordan seller actually receive eBay payouts, and is Payoneer offered?** | **THE blocking unknown.** Gate 0 of the plan. Only the live registration flow answers it. |
+| Final value fee percentage | Category-dependent, ~2.5–15.3% + per-order fee. The 13.25% in the worked example is a **placeholder**. Confirm for the actual category. |
+| Per-order fee amount | Unconfirmed. |
+| New-seller payout hold duration (~21 days used) | Directionally right, exact terms unconfirmed. |
+| ~250 free listings/month | Unconfirmed. |
+| CJ US-warehouse delivery 2–7 days | Supplier's own claim, not independently checked. |
+| Terapeak's 3-year data depth | Secondary sources only. |
+| Evaluation window (3 vs 12 months, 400-transaction rule) | Removed as a stated fact. Only the seller's own dashboard is authoritative. |
+| Best Offer breaking payment-at-contract under salam | My inference, not a ruling. For a scholar. |
+
+**Standing instruction:** when one of these gets confirmed, move it up, cite where, and date it.
+
 ## 5. Decisions log
 
 | Date | Decision |
@@ -97,6 +131,7 @@ From plan §1. These are structural — they shape the store build, not just the
 | 2026-08-16 | TrendTrack rejected — no budget. Replaced with Terapeak-led free stack (§3). |
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
 | 2026-08-16 | Verified from eBay's own pages: Jordan is a registerable seller country, and Payoneer serves Jordan. **But Jordan is on eBay's HiPO covered list (effective 2026-07-13): new sellers without history are blocked from an UNPUBLISHED set of categories, discoverable only by attempting a listing.** Plan resequenced — category-eligibility test now precedes all production work. |
+| 2026-08-16 | **Fee audit found a material omission.** All margin math rested on an unverified `13.25% + $0.30`. eBay's international-fees page lists **Jordan under "Rest of APAC"**, carrying an **international fee of 1.30% on every US sale** — charged on the total including shipping and tax — which was entirely absent, and a **currency conversion charge of 3.0%**, not the 2% assumed. Corrected across the skill, the Arabic plan and the illustrated PDF: gross per order moves from $15.12 to **$14.43**. The FVF percentage is category-dependent and is now labelled a placeholder. Conclusion vs Shopify is unchanged. |
 | 2026-08-16 | Skill coverage audited against the plan's six phases. Two gaps filled: `ebay-listing-craft` (Cassini placement — item specifics are the dominant lever and were entirely uncovered) and `ebay-post-sale-ops` (seller standards, returns, cases — where accounts actually die). **Thresholds were then verified against eBay's own page and three claims in the first draft were wrong.** Corrected: cases closed without seller resolution are capped at a flat **2** ("2 or 0.3%, whichever is *higher*"), so at low volume the flat number governs and it is the only truly binding limit; the defect rate demotes you only if defects span **more than 4 different buyers**, so one early cancellation cannot demote you; and **late shipment alone never causes Below Standard in the US program** — it is a Top Rated and Best Match issue. Operating rule stands but for a better reason: never let a dispute reach case stage, because the case budget is 2 and low volume cannot dilute it. Deliberately NOT built: account setup (one-time), ads (no budget), scaling (premature). |
 | 2026-08-16 | Ported `trend-research-guide.md` from `dnh33/webshop-ux-expert` into `modules/dropshipping/en/product-research-ebay-cj/SKILL.md`. Not a translation — three of its assumptions fail here (paid ads create demand; social engagement is the primary signal; enter trends early), and it had **no margin dimension at all**. Re-weighted the 0-100 score around Terapeak completed-sales data and margin-after-fees, added four hard rejects, and **inverted the trend-lifecycle advice**: with no ad budget you harvest existing search demand, so emerging trends are the riskier stage and peak is the safest. |
 | 2026-08-16 | The five nexscope eBay skills were rejected at install for missing YAML frontmatter. Frontmatter was added and they installed, then **all five were deleted with the user's consent** — they are 35-line capability lists with no method, and `ebay-product-research` recommends *arbitrage* sourcing, the exact practice eBay bans for dropshipping. A hollow skill that auto-triggers on eBay questions displaces correct reasoning, so it is worse than none. Replaced by one real skill: `modules/dropshipping/en/ebay-cj-jordan/SKILL.md` (195 lines), installed at `~/.claude/skills/ebay-cj-jordan/`. **Do not reinstall the nexscope eBay skills.** |

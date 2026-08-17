@@ -88,10 +88,28 @@ Representative unit economics at a $29.99 sale price:
 | Line | Amount |
 |---|---|
 | Sale price | $29.99 |
-| eBay final value fee (~13.25% + $0.30) | −$4.27 |
+| eBay final value fee (**category-dependent**, ~2.5–15.3% + per-order fee) | −$4.27 |
+| **International fee — 1.30%** | −$0.39 |
 | CJ product + shipping | −$10.00 |
-| Payout / FX (~2%) | −$0.60 |
-| **Gross profit** | **≈ $15.12** |
+| **Seller currency conversion — 3.0%** | −$0.90 |
+| **Gross profit** | **≈ $14.43** |
+
+**Two fees specific to a Jordan-registered seller, verified on eBay's
+[international fees page](https://export.ebay.com/en/fees-regulations-policies/seller-fees/international-fees):**
+
+- **International fee, 1.30%.** eBay classifies **Jordan under "Rest of APAC"**. The fee applies because
+  the buyer's address is outside the seller's registered country — i.e. **on every US sale, always**. It
+  is charged on the *total* amount of the sale: item price **plus handling, plus the shipping the buyer
+  selects, plus sales tax**, so charging shipping separately raises it.
+- **Seller currency conversion, 3.0%.** Listing in USD and paying out to a non-USD account triggers
+  conversion. Only Malaysia and Israel get 2.5%; Latin America pays 3.5%; Jordan sits in the 3.0% band.
+
+A volume discount cuts the international fee to 1.10% at $3,000+ monthly sales **and** Above Standard
+seller level — irrelevant at launch, worth knowing later.
+
+The final value fee percentage is **category-dependent** (roughly 2.5%–15.3% plus a per-order fee).
+Confirm the rate for the exact category on eBay's US selling-fees page before trusting any margin
+figure — do not carry the 13.25% placeholder above into a real decision.
 
 Verify against the operator's real numbers with `margin_stack.py` from
 `mardab96/ecommerce-claude-skills` once 10+ real orders exist.
