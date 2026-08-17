@@ -128,6 +128,34 @@ Compressed for a single operator finding a first product:
 Once a product is live, this shrinks to a monthly scan — listing quality and fulfilment matter more
 than finding the next product.
 
+## 6b. Working across devices — Terapeak lives on the operator's machine
+
+Terapeak runs inside the operator's eBay Seller Hub. **The assistant cannot reach it**: there is no
+eBay MCP, and eBay.com blocks automated fetching. So the loop is manual by necessity:
+
+```
+operator reads Terapeak  →  fills the capture CSV  →  pastes/uploads it here
+                          →  assistant scores, ranks, flags rejects
+                          →  operator runs the eligibility draft on the winner
+```
+
+Use `plans/terapeak-capture-template.csv`. Its columns map one-to-one onto the six scoring dimensions,
+so a filled row can be scored directly with no follow-up questions. Ten candidates per round.
+
+**Do not accept a candidate described in prose.** "It sells well and looks cheap" cannot be scored.
+Ask for the row. If a field is genuinely unavailable, mark it `unknown` rather than guessing — an
+unknown is visible, a guess is not.
+
+### On Terapeak's data depth
+
+Secondary sources say three years. **Unverified, and not on the critical path.** The scoring above needs
+only the **trailing 90 days**, so the method works at any depth eBay actually offers. Depth matters only
+for the seasonality dimension, worth 10 points of 100.
+
+Resolve it in about a minute once the account exists: open `Seller Hub → Research → Product Research`,
+open the date-range selector, and note the furthest-back range offered. Record the real answer in the
+verification ledger in `.agents/dropshipping-context.md` and stop treating it as an assumption.
+
 ## 7. From score to listing
 
 When a candidate clears 75 and passes the eligibility gate:

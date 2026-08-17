@@ -123,6 +123,25 @@ let a financial or strategic decision rest on it without checking first.
 
 **Standing instruction:** when one of these gets confirmed, move it up, cite where, and date it.
 
+### Portability — the operator works on a different device and account
+
+Nothing installed under `~/.claude/skills/` survives; those installs were made in an ephemeral
+container. **Git is the only carrier**, and every skill, plan and this context file are committed, so a
+clone reproduces the whole setup. On a new machine:
+
+```bash
+git clone <this repo> && cd ai-business-skills
+bash modules/dropshipping/install-ebay-skills.sh
+```
+
+Then open the repo as the working directory — `CLAUDE.md` and this file load automatically, on any
+device and under any Claude account. If a future session finds the eBay skills missing, the fix is to
+run that script, not to rewrite them.
+
+**Terapeak is on the operator's machine, not reachable from here.** Research flows in through
+`plans/terapeak-capture-template.csv`; the assistant scores filled rows. Never score a candidate
+described only in prose.
+
 ## 5. Decisions log
 
 | Date | Decision |
