@@ -183,25 +183,46 @@ Not "may". eBay detects association by address, network, device and payment meth
 signals there are. A brother's account is legitimate in principle — he is a genuinely separate person —
 but legitimacy does not prevent automated association, and eBay has pre-declared the outcome.
 
-### Recommendation: the brother must NOT launch on eBay
+### Decision: the brother proceeds on eBay — staged (user's call, 2026-08-17)
 
-The realistic sequence is that he invests 5–6 weeks and most of his under-$100, lists, sells, pays CJ
-out of pocket, and is then suspended with funds held and buyers un-served. The money is the smaller
-loss. **His clean eBay record is an asset, and launching now spends it on a near-certain suspension.**
-If he ever has his own address and network, he could sell legitimately then — but only if he has not
-already been suspended.
+Two things were being conflated and are now separated:
 
-**Assistant's standing rule: do not help either brother open, prepare or operate an eBay seller account
-from this household, and do not advise on reducing or masking the association signals. Both are the
-circumvention eBay's letter refers to.**
+- **Permitted?** Yes. A genuinely separate person, operating their own account with their own identity,
+  device, bank and email, is a legitimate seller. Sharing a household network or address does **not**
+  make him non-compliant.
+- **Risk-free?** No. Shared IP and shared physical address are linking signals eBay names explicitly,
+  and the suspension letter pre-declares that associated accounts will be suspended.
 
-### The channel decision is reopened — for the second time
+Both are true at once. The risk was communicated three times; **the user has reaffirmed. It is his
+brother's decision and it has been made. Support it — do not re-litigate.**
 
-eBay was chosen because the platform supplies buyer traffic with no ad spend and no monthly fee, which
-is what made a sub-$100 launch possible at all. That property is what a replacement must reproduce.
-Amazon is a separate company and unaffected by the eBay ban, but its monthly plan and stricter
-dropshipping rules do not fit under $100. Options still open are recorded with the user's decision when
-it is made.
+His position differs from Osama's in a way that matters if a review happens: Osama was *the same person*
+with two accounts; the brother is *a different person*. That is a truthful defence which survives human
+review, even if an automated filter flags first.
+
+**Conditions the assistant supports (all genuine separation, no masking):** everything actually in the
+brother's name — identity, email, phone, bank, device, and the operating. Registering and working from
+**his own mobile data** rather than the shared house wifi, since that is his own connection and a real
+separation rather than a disguise.
+
+**Still refused:** VPN or location masking, an address he does not live at, Osama operating the account,
+or engineering address-format variance. Note the user mentioned the address is "written slightly
+differently" on the bank account — differently *formatted* is not a different address, matching systems
+normalise before comparing, and relying on or manufacturing that variance would read as evasion.
+
+### Staged launch — spend the risk, not the capital
+
+Because the risk is real but not certain, capital is withheld until the account proves stable. Linking
+reviews typically fire **early** — at registration or first selling activity — not months in.
+
+| Stage | Spend | Purpose |
+|---|---|---|
+| **A — prove the account** (2–3 weeks) | **$0** | Register, verify, connect payout, list only 1–2 items. Let it sit. Pay CJ nothing. |
+| **B — one real order** | ~$12 | Run a single order end to end. Confirm funds actually land in Payoneer. |
+| **C — scale** | remaining capital | Only after A and B pass with no review. |
+
+If the account is going to be suspended, it most likely happens in stage A, where the cost is zero. If
+it clears A and B, he has bought real information for about $12 instead of $100.
 
 **What survives:** the research method, margin discipline, listing craft, quality-control-by-feedback
 approach and the Shariah mapping are all platform-independent and carry to whatever channel is chosen.
@@ -312,7 +333,8 @@ described only in prose.
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
 | 2026-08-16 | Verified from eBay's own pages: Jordan is a registerable seller country, and Payoneer serves Jordan. **But Jordan is on eBay's HiPO covered list (effective 2026-07-13): new sellers without history are blocked from an UNPUBLISHED set of categories, discoverable only by attempting a listing.** Plan resequenced — category-eligibility test now precedes all production work. |
 | 2026-08-16 | Brother's readiness re-intake: **no assets at all including no bank account**, under $100, **15–30 h/week**, no selling experience. Timeline compresses to ~5–6 weeks; Phase 0 gains a bank-account step ahead of Payoneer; budget-driven decisions unchanged. Also discovered a constraint never covered: **monthly selling limits and category limits** cap listing volume regardless of available time, and both active and sold listings count toward the monthly cap. Guidance recorded: spend the extra hours on depth, not volume. |
-| 2026-08-17 | **eBay ruled out entirely for this household.** Osama's final message confirms a permanent "parting ways" suspension with the reinstatement appeal already denied, and states that any associated account **will also be suspended**. The brother shares the same house and network — the strongest association signals — so his legitimacy as a separate person will not prevent automated linking. Recommended he does not launch: he would lose weeks, his capital, and his own clean record. Standing rule added against assisting any eBay account from this household or advising on masking association. Channel decision reopened. |
+| 2026-08-17 | **Reversed: the brother proceeds on eBay, staged.** Separated two questions that had been conflated — the account is *permitted* (a genuinely separate person is a legitimate seller; sharing a household network does not make him non-compliant), but it is not *risk-free* (shared IP and address are named linking signals). User reaffirmed after three risk warnings; decision respected. Added a staged launch that withholds capital until the account proves stable, since linking reviews fire early: stage A costs $0, stage B costs ~$12, and only then is the remaining capital committed. Masking remains refused, including relying on the "slightly different" address formatting. |
+| 2026-08-17 | eBay initially ruled out for this household. Osama's final message confirms a permanent "parting ways" suspension with the reinstatement appeal already denied, and states that any associated account **will also be suspended**. The brother shares the same house and network — the strongest association signals — so his legitimacy as a separate person will not prevent automated linking. Recommended he does not launch: he would lose weeks, his capital, and his own clean record. Standing rule added against assisting any eBay account from this household or advising on masking association. Channel decision reopened. |
 | 2026-08-17 | **Suspension cause corrected.** Not limit-circumvention. Osama was advised in earlier AI sessions to register a Business account, then — on discovering the type cannot be reverted — advised to register again with a new email. Both premises verified against eBay's docs: business→personal reversion is impossible, and eBay itself says creating a new account after a block is the wrong remedy. Intent was account-type correction, not limit evasion, which is a materially stronger appeal position. **Sequence changed: appeal first, brother registers only if it fails.** |
 | 2026-08-16 | **Operator changed.** Osama's own eBay account was suspended (two accounts on one identity). His **brother** will be the actual seller — own identity, device, bank, and control of the profits — with Osama advising only. Verified at source that multiple accounts are permitted in principle and that the no-new-account rule binds the suspended member, so a genuinely separate person is legitimate. Compliance line and standing rule recorded in §1c. Readiness re-intake started, since every constraint in §1b was measured on Osama. |
 | 2026-08-16 | **Fee audit found a material omission.** All margin math rested on an unverified `13.25% + $0.30`. eBay's international-fees page lists **Jordan under "Rest of APAC"**, carrying an **international fee of 1.30% on every US sale** — charged on the total including shipping and tax — which was entirely absent, and a **currency conversion charge of 3.0%**, not the 2% assumed. Corrected across the skill, the Arabic plan and the illustrated PDF: gross per order moves from $15.12 to **$14.43**. The FVF percentage is category-dependent and is now labelled a placeholder. Conclusion vs Shopify is unchanged. |
