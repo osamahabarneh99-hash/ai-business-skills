@@ -210,6 +210,43 @@ or engineering address-format variance. Note the user mentioned the address is "
 differently" on the bank account — differently *formatted* is not a different address, matching systems
 normalise before comparing, and relying on or manufacturing that variance would read as evasion.
 
+### Two updates from the operator (2026-08-17)
+
+**1. Home wifi cannot be avoided.** The mobile-data suggestion is withdrawn — it is not available to
+him. Shared IP is therefore a fixed condition, not a mitigable one. This does not change the
+permitted/risk-free split above; it removes one mitigation and makes the staged launch load-bearing
+rather than merely prudent.
+
+**2. There is a one-month gap** between Osama's suspension and the brother's registration, and the
+brother is independent in everything except the network.
+
+**What the gap is worth — state it accurately.** It is a strong argument against circumvention *intent*:
+a person circumventing registers immediately, not a month later with separate bank, device, email and
+identity. It will carry weight with a **human reviewer**.
+
+**What it is not worth.** Automated linking does not weigh intent or elapsed time — it matches signals.
+eBay states it *retains* account data specifically to trace connections between new accounts and
+suspended ones, and names no expiry. One month does not age out the association.
+
+**So the gap is a defence, not a prevention.** It will not stop a review being opened; it may well win
+one. Plan accordingly: assume a review is possible and be ready to answer it immediately.
+
+### Prepare the defence before it is needed
+
+Assemble before he registers, so a response goes out same-day rather than being drafted under pressure:
+
+- **Timeline** — date of Osama's suspension and date of the brother's registration, documented. The gap
+  is the core of the argument.
+- **Identity and separation evidence** — his ID, his bank account in his name, his device, his email and
+  phone, all ready to produce.
+- **A short written statement of facts in English**, drafted in advance: a different person; his own
+  account which he operates himself; own bank, identity and device; sharing only residence and internet
+  connection; registered a month after his brother's suspension with no operational connection.
+
+**The condition that carries all of it:** he must genuinely be the one logging in, messaging buyers and
+placing CJ orders. If a review surfaces login or activity patterns that contradict the statement, the
+defence collapses — and takes the parts that were true down with it.
+
 ### Staged launch — spend the risk, not the capital
 
 Because the risk is real but not certain, capital is withheld until the account proves stable. Linking
@@ -333,6 +370,7 @@ described only in prose.
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
 | 2026-08-16 | Verified from eBay's own pages: Jordan is a registerable seller country, and Payoneer serves Jordan. **But Jordan is on eBay's HiPO covered list (effective 2026-07-13): new sellers without history are blocked from an UNPUBLISHED set of categories, discoverable only by attempting a listing.** Plan resequenced — category-eligibility test now precedes all production work. |
 | 2026-08-16 | Brother's readiness re-intake: **no assets at all including no bank account**, under $100, **15–30 h/week**, no selling experience. Timeline compresses to ~5–6 weeks; Phase 0 gains a bank-account step ahead of Payoneer; budget-driven decisions unchanged. Also discovered a constraint never covered: **monthly selling limits and category limits** cap listing volume regardless of available time, and both active and sold listings count toward the monthly cap. Guidance recorded: spend the extra hours on depth, not volume. |
+| 2026-08-17 | Home wifi cannot be avoided, so the mobile-data mitigation is withdrawn and shared IP is a fixed condition — the staged launch becomes load-bearing. Recorded the one-month gap between suspension and the brother's registration, and what it is worth: a strong argument against circumvention intent that should win a human review, but no protection against automated linking, which weighs signals rather than intent or elapsed time. Added a defence-readiness pack to assemble before registering, so a review can be answered same-day. |
 | 2026-08-17 | **Reversed: the brother proceeds on eBay, staged.** Separated two questions that had been conflated — the account is *permitted* (a genuinely separate person is a legitimate seller; sharing a household network does not make him non-compliant), but it is not *risk-free* (shared IP and address are named linking signals). User reaffirmed after three risk warnings; decision respected. Added a staged launch that withholds capital until the account proves stable, since linking reviews fire early: stage A costs $0, stage B costs ~$12, and only then is the remaining capital committed. Masking remains refused, including relying on the "slightly different" address formatting. |
 | 2026-08-17 | eBay initially ruled out for this household. Osama's final message confirms a permanent "parting ways" suspension with the reinstatement appeal already denied, and states that any associated account **will also be suspended**. The brother shares the same house and network — the strongest association signals — so his legitimacy as a separate person will not prevent automated linking. Recommended he does not launch: he would lose weeks, his capital, and his own clean record. Standing rule added against assisting any eBay account from this household or advising on masking association. Channel decision reopened. |
 | 2026-08-17 | **Suspension cause corrected.** Not limit-circumvention. Osama was advised in earlier AI sessions to register a Business account, then — on discovering the type cannot be reverted — advised to register again with a new email. Both premises verified against eBay's docs: business→personal reversion is impossible, and eBay itself says creating a new account after a block is the wrong remedy. Intent was account-type correction, not limit evasion, which is a materially stronger appeal position. **Sequence changed: appeal first, brother registers only if it fails.** |
