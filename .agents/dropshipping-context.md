@@ -52,6 +52,51 @@ sale only), and unlocks Terapeak free. It trades money for time — the correct 
 abundant resource. This **reverses** the earlier "Shopify-first" recommendation, which assumed a
 funded launch.
 
+## 1c. OPERATOR CHANGE — read before anything else (2026-08-16)
+
+**The person who will run the eBay account is no longer the person this plan was written for.**
+
+| | |
+|---|---|
+| Original planner | Osama — had an eBay account that was **suspended** (had created two accounts on one identity, believing it was permitted) |
+| **Actual operator** | **His brother** — his own identity, device, email, phone, bank account. He does the work, receives the profits into his own account, and controls them. |
+| Osama's role | Adviser only. He relays guidance; he does not operate the account. |
+
+### The compliance line — this is factual, not cosmetic
+
+eBay's [multiple accounts page](https://export.ebay.com/en/first-steps/how-use-ebay-seller-account/multiple-accounts)
+states plainly: **"You can register multiple accounts on eBay, and many members do so."** Multiple
+accounts are *not* themselves a violation. What is prohibited is "registering new accounts to avoid
+buying and selling restrictions or limits, or other policy consequences" — and separately,
+**"You can't open a new account, if your account is suspended."**
+
+That last rule binds *the suspended member*. A genuinely different person, with their own identity and
+running their own business, is a legitimate separate member. So:
+
+- **Legitimate** — the brother registers, operates, decides and is paid. Osama advises him the way any
+  consultant would.
+- **Circumvention** — Osama operates it while it stands in the brother's name. Even with the brother's
+  bank account, if Osama is the real operator this is the suspended member selling, and it would cost
+  **the brother** his ability to sell, not just Osama.
+
+**Assistant's standing rule: never help place Osama's identity, payment method or operation onto the
+brother's account, and never advise on masking the household link.** Advise transparency instead — if
+eBay reviews the account, the truthful facts are the defence. Household linking (shared address, network,
+device) may trigger a review even when everything is genuine; that is a disclosed risk, not a reason to
+hide anything.
+
+### Also open: Osama's own suspension may be appealable
+
+Because multiple accounts are permitted in principle, the suspension turns on whether the second account
+was created to dodge a selling limit. If it was not, an appeal is worth filing. If it was a fees issue,
+eBay's own page says a one-time payment resolves it. **Not yet attempted.**
+
+### Consequence for the plan
+
+Every constraint in §1b — under $100, 7–15 h/week, no selling experience — was measured on Osama. Those
+figures drove the channel choice, the 5–8 concurrent order ceiling and the 8–10 week schedule.
+**They must be re-baselined against the brother before any of it is relied on.** Re-intake in progress.
+
 ## 2. Shariah constraints (hard design constraints, not preferences)
 
 From plan §1. These are structural — they shape the store build, not just the marketing copy.
@@ -150,6 +195,7 @@ described only in prose.
 | 2026-08-16 | TrendTrack rejected — no budget. Replaced with Terapeak-led free stack (§3). |
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
 | 2026-08-16 | Verified from eBay's own pages: Jordan is a registerable seller country, and Payoneer serves Jordan. **But Jordan is on eBay's HiPO covered list (effective 2026-07-13): new sellers without history are blocked from an UNPUBLISHED set of categories, discoverable only by attempting a listing.** Plan resequenced — category-eligibility test now precedes all production work. |
+| 2026-08-16 | **Operator changed.** Osama's own eBay account was suspended (two accounts on one identity). His **brother** will be the actual seller — own identity, device, bank, and control of the profits — with Osama advising only. Verified at source that multiple accounts are permitted in principle and that the no-new-account rule binds the suspended member, so a genuinely separate person is legitimate. Compliance line and standing rule recorded in §1c. Readiness re-intake started, since every constraint in §1b was measured on Osama. |
 | 2026-08-16 | **Fee audit found a material omission.** All margin math rested on an unverified `13.25% + $0.30`. eBay's international-fees page lists **Jordan under "Rest of APAC"**, carrying an **international fee of 1.30% on every US sale** — charged on the total including shipping and tax — which was entirely absent, and a **currency conversion charge of 3.0%**, not the 2% assumed. Corrected across the skill, the Arabic plan and the illustrated PDF: gross per order moves from $15.12 to **$14.43**. The FVF percentage is category-dependent and is now labelled a placeholder. Conclusion vs Shopify is unchanged. |
 | 2026-08-16 | Skill coverage audited against the plan's six phases. Two gaps filled: `ebay-listing-craft` (Cassini placement — item specifics are the dominant lever and were entirely uncovered) and `ebay-post-sale-ops` (seller standards, returns, cases — where accounts actually die). **Thresholds were then verified against eBay's own page and three claims in the first draft were wrong.** Corrected: cases closed without seller resolution are capped at a flat **2** ("2 or 0.3%, whichever is *higher*"), so at low volume the flat number governs and it is the only truly binding limit; the defect rate demotes you only if defects span **more than 4 different buyers**, so one early cancellation cannot demote you; and **late shipment alone never causes Below Standard in the US program** — it is a Top Rated and Best Match issue. Operating rule stands but for a better reason: never let a dispute reach case stage, because the case budget is 2 and low volume cannot dilute it. Deliberately NOT built: account setup (one-time), ads (no budget), scaling (premature). |
 | 2026-08-16 | Ported `trend-research-guide.md` from `dnh33/webshop-ux-expert` into `modules/dropshipping/en/product-research-ebay-cj/SKILL.md`. Not a translation — three of its assumptions fail here (paid ads create demand; social engagement is the primary signal; enter trends early), and it had **no margin dimension at all**. Re-weighted the 0-100 score around Terapeak completed-sales data and margin-after-fees, added four hard rejects, and **inverted the trend-lifecycle advice**: with no ad budget you harvest existing search demand, so emerging trends are the riskier stage and peak is the safest. |
