@@ -1,6 +1,6 @@
 ---
 name: ebay-post-sale-ops
-description: "Running eBay orders after the sale without losing the account: seller performance standards and their exact thresholds, why a new seller is measured over 12 months so early defects persist, the CJ fulfilment loop and tracking discipline, buyer messaging, returns and Money Back Guarantee cases, feedback recovery, and supplier stock-out handling. Includes the salam obligation to bear risk until delivery and how refunds consume working capital. Trigger on: eBay order, fulfil order, tracking, late shipment, defect rate, seller standards, Below Standard, buyer message, return request, INAD, not as described, eBay case, Money Back Guarantee, negative feedback, refund, out of stock."
+description: "Running eBay orders after the sale without losing the account: seller performance standards with their real qualifiers (cases are capped at a flat 2 whichever way the percentage falls; a defect only demotes you if it spans more than 4 buyers; late shipment alone never causes Below Standard in the US program), the CJ fulfilment loop and tracking discipline, buyer messaging, returns and Money Back Guarantee cases, feedback recovery, and supplier stock-out handling. Includes the salam obligation to bear risk until delivery and how refunds consume working capital. Trigger on: eBay order, fulfil order, tracking, late shipment, defect rate, seller standards, Below Standard, buyer message, return request, INAD, not as described, eBay case, Money Back Guarantee, negative feedback, refund, out of stock."
 metadata:
   emoji: "🛡️"
   category: ecommerce
@@ -13,30 +13,54 @@ Listing mistakes cost impressions and are fixable tomorrow. Post-sale mistakes c
 which is slow to earn and slow to repair. For a new seller in a HiPO country the margin for error is
 already narrower than average. This is the highest-stakes area of the operation.
 
-## 1. The metric that decides everything
+## 1. The thresholds that decide everything
 
-eBay evaluates on the **20th of each month**. The window depends on volume:
+Verified against eBay's own
+[seller performance standards](https://export.ebay.com/en/growth/seller-performance/global-seller-performance-standards)
+page. **Read the qualifiers — they invert the naive reading of the percentages.**
 
-> **Sellers under 400 transactions in 3 months are evaluated over the past 12 MONTHS.**
+| Metric | Below Standard trigger | Top Rated |
+|---|---|---|
+| **Cases closed without seller resolution** | More than **2 cases**, *or* 0.3% of transactions — **whichever is higher** | ≤ 2 (or 0.3%) |
+| **Transaction defect rate** | Above 2% **and** only if the defects involve **more than 4 different buyers** | ≤ 0.5%, across ≤ 3 buyers |
+| **Late shipment rate** | **On its own, does not cause Below Standard** in the US program | ≤ 5 late (or 3%) |
 
-That is the single most important fact here. With 10 sales, **one defect is a 10% defect rate** —
-five times the Below Standard threshold — and it stays in the denominator for a **full year**.
+### What this actually means at your volume
 
-US thresholds ([eBay seller standards policy](https://www.ebay.com/help/policies/selling-policies/seller-standards-policy?id=4347)):
+**Cases are the binding constraint, and nothing else is close.** Because the allowance is
+"2 cases *or* 0.3%, whichever is **higher**", at low volume the percentage is irrelevant and you are
+governed by the flat number: **you get 2 cases; the 3rd puts you Below Standard.** That is your entire
+budget for the evaluation period, regardless of how many orders you ship.
 
-| Metric | Top Rated | Above Standard | **Below Standard** |
-|---|---|---|---|
-| Transaction defect rate | ≤ 0.50% | ≤ 2% | **> 2%** |
-| Cases closed without seller resolution | ≤ 0.30% | ≤ 0.30% | **> 0.30%** |
-| Late shipment rate | ≤ 3% | ≤ 7% | **> 7%** |
-| Tracking uploaded on time & validated | ≥ 95% | — | — |
+**The defect rate has more headroom than it appears.** A single cancellation on 10 sales is a 10% defect
+rate on paper, but Below Standard also requires defects across **more than 4 different buyers**. One
+defect cannot demote you. This does not make cancellations safe — they still block Top Rated and they
+accumulate — but it means one early mistake is not fatal.
 
-Below Standard means **higher final value fees and search demotion** until performance recovers — for a
-seller whose only traffic is organic search, demotion is close to fatal.
+**Late shipment will not, by itself, make you Below Standard in the US program.** It still matters: it
+blocks Top Rated and feeds Best Match placement, which is your only traffic source. Treat it as a
+ranking problem, not an account-survival problem.
 
-**Operating conclusion:** in the first ~50 sales, resolve every dispute in the buyer's favour
-immediately, even at a loss on that order. A $12 refund is cheaper than a defect that sits in a
-12-month denominator. This is commercial arithmetic, not generosity.
+### Operating rule
+
+**Never let a dispute become a case.** Not because defects are catastrophic — they are more forgiving
+than they look — but because the case allowance is a flat **2**, and it is the one limit low volume
+cannot dilute. Refund or accept the return during the *request* stage, every time, even at a loss on
+that order. A $12 refund is cheaper than spending a third of your case budget.
+
+### If you do go Below Standard
+
+Consequences compound, and one of them hits your cash directly:
+
+- Lower placement in Best Match — with no ads, this is the severe one
+- Selling limits may be reduced
+- Blocked from Promoted Listings
+- **Funds held until tracking shows the item is moving** — tightens an already tight cash cycle
+- Cannot deduct from a buyer's refund for an item returned used or damaged
+
+Check your live figures at the [seller standards dashboard](https://sellerstandards.ebay.com/dashboard)
+rather than relying on any table, including this one — evaluation windows differ by volume (3 or 12
+months) and by regional program, and only your own dashboard shows which applies to you.
 
 ## 2. What counts as a defect
 
@@ -50,10 +74,12 @@ refund you issue directly. **So the escape route is always the same: resolve it 
 becomes a case.** A buyer you refunded quickly costs you money. A buyer who escalated to eBay costs you
 the account.
 
-## 3. Late shipment rate — the one fully in your control
+## 3. Late shipment — a ranking problem you fully control
 
 Counted late when tracking is not uploaded and validated within your stated handling time, or the
-carrier scan shows delivery after the estimate.
+carrier scan shows delivery after the estimate. It will not make you Below Standard on its own in the
+US program, but it blocks Top Rated and drags Best Match placement — and placement is your only source
+of buyers.
 
 - Set handling time you can honour on your **worst** day, not your best.
 - Order from CJ the **same day** the order lands. Every hour spent is handling time consumed.
