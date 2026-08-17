@@ -97,6 +97,34 @@ Every constraint in §1b — under $100, 7–15 h/week, no selling experience �
 figures drove the channel choice, the 5–8 concurrent order ceiling and the 8–10 week schedule.
 **They must be re-baselined against the brother before any of it is relied on.** Re-intake in progress.
 
+## 1d. Operator baseline — the BROTHER (re-intake 2026-08-16). Supersedes §1b.
+
+| | |
+|---|---|
+| Assets | **Absolutely none.** No eBay account, **no bank account**, no Payoneer, no CJ. |
+| Risk capital | **Under $100** — unchanged from the original baseline |
+| Time | **15–30 h/week** — roughly double Osama's |
+| Experience | **Never sold online** — unchanged |
+
+**What changed, and what it means**
+
+- **Timeline compresses.** The plan was paced for 7–15 h/week over 8–10 weeks. At 15–30 h/week the same
+  work lands in roughly **5–6 weeks**.
+- **Phase 0 gains a step at the front.** He has **no bank account**, and Payoneer verification wants one
+  for withdrawal. Sequence is now: **bank account → Payoneer → eBay → CJ → link.**
+- **Budget and experience are unchanged**, so the eBay-first decision, the 5–8 concurrent-order ceiling
+  and the beginner-level explanation all still hold.
+
+**The trap in this profile: time is abundant, money and platform limits are not.** The instinct with
+30 hours a week is to list more. He cannot — volume is capped three separate ways: working capital
+(~5–8 concurrent orders), monthly selling limits, and category limits. Extra hours must go into
+**depth, not breadth**:
+
+1. Screen far more candidates in Terapeak before picking — the pick matters more than the pace.
+2. Complete every item specific and shoot better images — this is where free placement comes from.
+3. Answer buyers within the hour — a ranking factor that costs nothing.
+4. Research the next product while the first runs, without listing it yet.
+
 ## 2. Shariah constraints (hard design constraints, not preferences)
 
 From plan §1. These are structural — they shape the store build, not just the marketing copy.
@@ -195,6 +223,7 @@ described only in prose.
 | 2026-08-16 | TrendTrack rejected — no budget. Replaced with Terapeak-led free stack (§3). |
 | 2026-08-16 | eBay confirmed policy-compliant via CJ, but deferred pending the §4 addendum. |
 | 2026-08-16 | Verified from eBay's own pages: Jordan is a registerable seller country, and Payoneer serves Jordan. **But Jordan is on eBay's HiPO covered list (effective 2026-07-13): new sellers without history are blocked from an UNPUBLISHED set of categories, discoverable only by attempting a listing.** Plan resequenced — category-eligibility test now precedes all production work. |
+| 2026-08-16 | Brother's readiness re-intake: **no assets at all including no bank account**, under $100, **15–30 h/week**, no selling experience. Timeline compresses to ~5–6 weeks; Phase 0 gains a bank-account step ahead of Payoneer; budget-driven decisions unchanged. Also discovered a constraint never covered: **monthly selling limits and category limits** cap listing volume regardless of available time, and both active and sold listings count toward the monthly cap. Guidance recorded: spend the extra hours on depth, not volume. |
 | 2026-08-16 | **Operator changed.** Osama's own eBay account was suspended (two accounts on one identity). His **brother** will be the actual seller — own identity, device, bank, and control of the profits — with Osama advising only. Verified at source that multiple accounts are permitted in principle and that the no-new-account rule binds the suspended member, so a genuinely separate person is legitimate. Compliance line and standing rule recorded in §1c. Readiness re-intake started, since every constraint in §1b was measured on Osama. |
 | 2026-08-16 | **Fee audit found a material omission.** All margin math rested on an unverified `13.25% + $0.30`. eBay's international-fees page lists **Jordan under "Rest of APAC"**, carrying an **international fee of 1.30% on every US sale** — charged on the total including shipping and tax — which was entirely absent, and a **currency conversion charge of 3.0%**, not the 2% assumed. Corrected across the skill, the Arabic plan and the illustrated PDF: gross per order moves from $15.12 to **$14.43**. The FVF percentage is category-dependent and is now labelled a placeholder. Conclusion vs Shopify is unchanged. |
 | 2026-08-16 | Skill coverage audited against the plan's six phases. Two gaps filled: `ebay-listing-craft` (Cassini placement — item specifics are the dominant lever and were entirely uncovered) and `ebay-post-sale-ops` (seller standards, returns, cases — where accounts actually die). **Thresholds were then verified against eBay's own page and three claims in the first draft were wrong.** Corrected: cases closed without seller resolution are capped at a flat **2** ("2 or 0.3%, whichever is *higher*"), so at low volume the flat number governs and it is the only truly binding limit; the defect rate demotes you only if defects span **more than 4 different buyers**, so one early cancellation cannot demote you; and **late shipment alone never causes Below Standard in the US program** — it is a Top Rated and Best Match issue. Operating rule stands but for a better reason: never let a dispute reach case stage, because the case budget is 2 and low volume cannot dilute it. Deliberately NOT built: account setup (one-time), ads (no budget), scaling (premature). |

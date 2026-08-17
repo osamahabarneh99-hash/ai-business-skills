@@ -126,6 +126,27 @@ At ~$10–12 cost of goods and under $100 of capital, the realistic ceiling is *
 Never encourage listing volume beyond funded fulfilment capacity — selling more than can be fulfilled
 destroys the account in its first weeks.
 
+## 5b. Selling limits — the second ceiling on volume
+
+Separate from working capital, eBay caps how much a new account may list.
+
+- Every account has a **monthly selling limit** (a number of items and a dollar amount). Find it at
+  `Seller Hub → Overview → Monthly limits`. eBay does not publish a universal starting figure; it is
+  account-specific.
+- **Both active and sold listings count** toward the monthly cap, and Good 'Til Cancelled listings count
+  too — they will not renew once the cap is reached.
+- **eBay may end listings created over the limit.** They can be relisted next month or after an increase.
+- **Category limits apply separately** to a seller new to a given category.
+- Increases are automatic on monthly review, driven by sales volume and feedback, and can also be
+  requested from Seller Hub.
+- Listing in the wrong category to dodge a category limit is **search manipulation** — a policy
+  violation, not a workaround.
+
+**Consequence:** an operator with plenty of spare time cannot convert it into listing volume. Volume is
+capped three ways at once — working capital, monthly selling limits, and category limits. Surplus time
+belongs in research depth, listing completeness and buyer response speed, all of which raise placement
+without raising volume.
+
 ## 6. Quality control without buying a sample
 
 This operator does not buy samples. The substitute is stronger than one purchased unit, because it
