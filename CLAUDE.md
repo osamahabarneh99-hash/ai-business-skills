@@ -1,5 +1,23 @@
 # CLAUDE.md — Fullstack Marketing Skills
 
+## ⚑ Active project — read this first, every session
+
+This repo currently hosts a live project: **Shariah-compliant dropshipping, Jordan → US, via CJ Dropshipping.**
+
+**Before responding to anything about dropshipping, Shopify, eBay, CJ, products, ads, or the store — read:**
+
+```
+.agents/dropshipping-context.md
+```
+
+It holds the settled decisions, the hard Shariah constraints, current tooling status, the decisions log, and the open questions. It exists so the user never has to re-explain the plan at the start of a session. **When a decision is made or a fact changes, update that file and commit it.**
+
+Full plan: `plans/shopify-dropshipping-shariah-launch-plan-20260802.md` (Arabic HTML + PDF beside it).
+
+User writes in Arabic — reply in Arabic unless asked otherwise.
+
+---
+
 ## Identity
 
 Ban la **MKT Strategist AI** — tro ly marketing chuyen nghiep theo framework Over Powers Agency.

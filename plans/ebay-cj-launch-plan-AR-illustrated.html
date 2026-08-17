@@ -1,0 +1,554 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<title>خطة إطلاق eBay + CJ</title>
+<style>
+:root{
+  --paper:#FCFBF8; --ink:#16191C; --ink2:#414A4E; --muted:#6E7A7E;
+  --rule:#DCD8CF; --accent:#0E5A56; --accent-soft:#E2EDEB;
+  --gold:#9A7B3F; --gold-soft:#F2EAD9;
+  --pass:#1F7A4D; --blocked:#9E2B2B; --blocked-soft:#F5E3E1;
+  --kufi:"Noto Kufi Arabic","Noto Sans",sans-serif;
+  --naskh:"Noto Naskh Arabic","Noto Sans",serif;
+  --mono:"DejaVu Sans Mono",monospace;
+}
+@page{size:A4;margin:14mm 14mm 12mm}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--naskh);
+  font-size:10pt;line-height:1.75;direction:rtl;text-align:right;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+code,.m{font-family:var(--mono);direction:ltr;unicode-bidi:isolate;font-size:.84em;color:var(--ink2)}
+a{color:var(--accent);text-decoration:none;border-bottom:.4pt solid var(--accent)}
+h1,h2,h3{font-family:var(--kufi);font-weight:700;letter-spacing:0}
+.page{page-break-after:always}
+.page:last-child{page-break-after:auto}
+section{page-break-inside:avoid;margin:0 0 7.5mm}
+figure{margin:5mm 0;page-break-inside:avoid}
+figcaption{font-family:var(--mono);font-size:7pt;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);margin-top:2.5mm;text-align:center;direction:ltr}
+
+/* ---------- cover ---------- */
+.cover{height:268mm;display:flex;flex-direction:column;justify-content:space-between;padding-top:6mm}
+.cover figure{margin:0 0 6mm;flex:1;display:flex;flex-direction:column;justify-content:center}
+.cv-top{display:flex;justify-content:space-between;align-items:flex-start;
+  font-family:var(--mono);font-size:7pt;letter-spacing:.16em;color:var(--muted);direction:ltr;
+  border-bottom:1.6pt solid var(--ink);padding-bottom:3mm}
+.cv-mid{flex:0 0 auto;display:flex;flex-direction:column;justify-content:flex-start;padding:10mm 0 0}
+.cv-mid h1{font-size:29pt;line-height:1.26;margin:0 0 6mm;padding-right:7mm;text-align:right}
+.cv-rule{width:44mm;height:2.4pt;background:var(--accent);margin:0 0 6mm 0;margin-right:0}
+.cv-sub{font-size:11.5pt;color:var(--ink2);max-width:118mm;line-height:1.75;padding-right:2mm}
+.cv-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:.5pt solid var(--rule);
+  border-bottom:.5pt solid var(--rule)}
+.cv-facts div{padding:4mm 3mm;border-left:.5pt solid var(--rule)}
+.cv-facts div:last-child{border-left:none}
+.cv-facts .n{font-family:var(--kufi);font-size:19pt;line-height:1;color:var(--accent);
+  font-variant-numeric:tabular-nums;display:block;margin-bottom:1.5mm}
+.cv-facts .l{font-size:8pt;color:var(--muted);line-height:1.45}
+.cv-bot{font-family:var(--mono);font-size:6.6pt;letter-spacing:.09em;color:var(--muted);direction:ltr;
+  border-top:1.6pt solid var(--ink);padding-top:3mm;display:flex;justify-content:space-between}
+
+/* ---------- headings ---------- */
+.eyebrow{font-family:var(--mono);font-size:7pt;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);margin:0 0 1.5mm;direction:ltr}
+h2{font-size:16.5pt;margin:0 0 3mm;padding-bottom:2mm;border-bottom:1.1pt solid var(--ink)}
+h3{font-size:11.5pt;margin:6mm 0 2mm;color:var(--accent)}
+p{margin:0 0 3mm}
+.lead{font-size:11pt;color:var(--ink2);margin-bottom:4mm}
+
+/* ---------- tables ---------- */
+table{width:100%;border-collapse:collapse;font-size:8.9pt;margin:2.5mm 0}
+th,td{padding:2.1mm 2.4mm;text-align:right;border-bottom:.4pt solid var(--rule);vertical-align:top}
+th{font-family:var(--mono);font-size:6.8pt;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--muted);font-weight:400;border-bottom:.9pt solid var(--ink);direction:ltr;text-align:right}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;direction:ltr;text-align:left;font-size:8.6pt}
+tr:last-child td{border-bottom:none}
+.tot td{border-top:.9pt solid var(--ink);font-weight:700;border-bottom:none!important}
+
+/* ---------- semantic marks ---------- */
+.tag{font-family:var(--mono);font-size:6.6pt;letter-spacing:.08em;padding:.6mm 1.8mm;
+  text-transform:uppercase;white-space:nowrap;direction:ltr;display:inline-block}
+.t-ok{background:var(--accent-soft);color:var(--accent)}
+.t-no{background:var(--blocked-soft);color:var(--blocked)}
+.t-gate{background:var(--gold-soft);color:var(--gold)}
+.gate{border:.5pt solid var(--gold);border-right:2.4pt solid var(--gold);
+  background:var(--gold-soft);padding:4mm 4.5mm;margin:4mm 0}
+.gate h3{margin:0 0 2mm;color:var(--gold)}
+.note{border-right:2.4pt solid var(--accent);background:var(--accent-soft);
+  padding:3.5mm 4mm;margin:3.5mm 0;font-size:9.4pt}
+.warn{border-right:2.4pt solid var(--blocked);background:var(--blocked-soft);
+  padding:3.5mm 4mm;margin:3.5mm 0;font-size:9.4pt}
+ul,ol{margin:0 0 3mm;padding-right:5mm}
+li{margin-bottom:1.4mm}
+.ck{list-style:none;padding-right:0}
+.ck li{padding-right:6mm;position:relative}
+.ck li::before{content:"";position:absolute;right:0;top:1.7mm;width:2.6mm;height:2.6mm;
+  border:.6pt solid var(--muted)}
+pre{background:#F4F2EC;border:.4pt solid var(--rule);padding:3mm 3.5mm;overflow:hidden;
+  direction:ltr;text-align:left;font-family:var(--mono);font-size:7.4pt;line-height:1.65;margin:3mm 0}
+svg{display:block;margin:0 auto;max-width:100%}
+.sv text{font-family:var(--naskh);direction:rtl}
+.sv .lbl{font-family:var(--mono);direction:ltr}
+</style></head><body>
+
+<!-- ============ COVER ============ -->
+<div class="page cover">
+  <div class="cv-top">
+    <span>MIZAN · ميزان</span><span>PLAN v2 · 2026-08-16</span><span>JORDAN → US</span>
+  </div>
+  <div class="cv-mid">
+    <h1>خطة إطلاق<br><span class="ltr">eBay + CJ</span></h1>
+    <div class="cv-rule"></div>
+    <p class="cv-sub">مسار صفر تكلفة من الأردن إلى السوق الأمريكي — إنشاء الحسابات وربطها، اختيار المنتج ببيانات بيع فعلية، وأول عملية بيع خلال <span class='ltr'>٨&ndash;١٠</span> أسابيع.</p>
+  </div>
+
+  <!-- Mizan scale motif -->
+  <figure>
+  <svg class="sv" viewBox="0 0 700 190" width="700" height="190" role="img" aria-label="ميزان">
+    <line x1="350" y1="24" x2="350" y2="150" stroke="#16191C" stroke-width="1.5"/>
+    <line x1="150" y1="52" x2="550" y2="52" stroke="#16191C" stroke-width="2.3"/>
+    <circle cx="350" cy="52" r="5.4" fill="#0E5A56"/>
+    <path d="M350 150 L305 168 L395 168 Z" fill="none" stroke="#16191C" stroke-width="1.5"/>
+    <line x1="290" y1="168" x2="410" y2="168" stroke="#16191C" stroke-width="2.3"/>
+    <!-- right pan -->
+    <line x1="150" y1="52" x2="150" y2="86" stroke="#16191C" stroke-width=".7"/>
+    <path d="M104 86 Q150 120 196 86" fill="none" stroke="#0E5A56" stroke-width="2"/>
+    <!-- left pan -->
+    <line x1="550" y1="52" x2="550" y2="86" stroke="#16191C" stroke-width=".7"/>
+    <path d="M504 86 Q550 120 596 86" fill="none" stroke="#9A7B3F" stroke-width="2"/>
+    <!-- measure ticks along beam -->
+    <g stroke="#DCD8CF" stroke-width=".6">
+      <line x1="190" y1="44" x2="190" y2="52"/><line x1="230" y1="46" x2="230" y2="52"/>
+      <line x1="270" y1="44" x2="270" y2="52"/><line x1="310" y1="46" x2="310" y2="52"/>
+      <line x1="390" y1="46" x2="390" y2="52"/><line x1="430" y1="44" x2="430" y2="52"/>
+      <line x1="470" y1="46" x2="470" y2="52"/><line x1="510" y1="44" x2="510" y2="52"/>
+    </g>
+    <text x="150" y="140" text-anchor="middle" font-size="12.5" fill="#0E5A56">ما تحقّقنا منه</text>
+    <text x="550" y="140" text-anchor="middle" font-size="12.5" fill="#9A7B3F">ما ينتظر التحقّق</text>
+  </svg>
+  </figure>
+
+  <div class="cv-facts">
+    <div><span class="n">3</span><span class="l">حسابات تُنشأ وتُربط</span></div>
+    <div><span class="n ltr">$0</span><span class="l">حتى أول عملية بيع</span></div>
+    <div><span class="n">6</span><span class="l">مراحل ببوابات عبور</span></div>
+    <div><span class="n">10</span><span class="l">أسابيع حتى القرار</span></div>
+  </div>
+
+  <div class="cv-bot"><span>SHARIAH · SALAM STRUCTURE</span><span>CJ DROPSHIPPING · US WAREHOUSES</span><span>PAYONEER</span></div>
+</div>
+
+<!-- ============ PAGE 2 — VERIFIED ============ -->
+<div class="page">
+<section>
+  <p class="eyebrow">01 — Verified</p>
+  <h2>ما تحقّقنا منه فعليًا</h2>
+  <p class="lead">كل سطر أدناه مقروء من صفحات eBay الرسمية مباشرة، لا من مصدر ثانوي ولا من تخمين.</p>
+  <table>
+    <thead><tr><th>الحقيقة</th><th style="width:22mm">الحالة</th><th style="width:58mm">الأثر</th></tr></thead>
+    <tbody>
+      <tr><td>الأردن مدرج في <a href="https://www.ebay.com/help/selling/selling/start-selling-ebay?id=4081">قائمة eBay الرسمية للدول المسموح لها بالبيع</a></td><td><span class="tag t-ok">مؤكد</span></td><td>التسجيل ممكن — البوابة التي حذّرنا منها سابقًا اجتزناها</td></tr>
+      <tr><td><a href="https://www.payoneer.com/">Payoneer</a> متاح في الأردن</td><td><span class="tag t-ok">مؤكد</span></td><td>مجاني، والتحقق <span class='ltr'>٣&ndash;٥</span> أيام عمل</td></tr>
+      <tr><td>eBay تسمح بالدروبشيبينغ من مورّد جملة وتمنع الشراء من متجر تجزئة</td><td><span class="tag t-ok">مؤكد</span></td><td>CJ مورّد جملة ← المسار متوافق</td></tr>
+      <tr><td>الأردن ضمن <a href="https://export.ebay.com/en/fees-regulations-policies/ebay-policies/high-risk-category-policy-category-block-in-certain-hipo-countries/">دول HiPO عالية المخاطر</a></td><td><span class="tag t-no">قيد</span></td><td>حظر فئات غير معلنة — يعيد ترتيب الخطة</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="warn">
+    <h3 style="color:var(--blocked);margin-top:0">القيد الذي غيّر ترتيب الخطة</h3>
+    <p style="margin-bottom:2mm">سياسة «فئات تتطلب جاهزية إضافية» نافذة منذ <strong>١٣ يوليو ٢٠٢٦</strong> — أي قبل شهر من كتابة هذه الخطة.</p>
+    <ul style="margin-bottom:0">
+      <li>البائع الجديد بلا سجل بيع <strong>يُمنع</strong> من الإدراج في فئات معينة.</li>
+      <li><strong>eBay ترفض نشر قائمة هذه الفئات</strong> — نصًّا، لمنع الالتفاف عليها. تعرفها فقط حين تحاول الإدراج.</li>
+      <li>الخروج منها <strong>آلي</strong>: تبني سجلًا وأداءً، وeBay ترفع القيد دوريًا بلا طلب منك.</li>
+    </ul>
+  </div>
+  <p>لذلك أُدرجت <strong>المرحلة ٣ — بوابة الفئة</strong> قبل أي عمل إنتاجي: لا يُستثمر وقت في منتج قبل التأكد أن فئته مفتوحة.</p>
+</section>
+
+<section>
+  <p class="eyebrow">02 — Sequence</p>
+  <h2>الخط الزمني</h2>
+  <figure>
+  <svg class="sv" viewBox="0 0 700 210" width="700" height="210">
+    <g class="lbl" font-size="7.5" fill="#6E7A7E" text-anchor="middle">
+      <text x="640" y="12">W1</text><text x="575" y="12">W2</text><text x="478" y="12">W3–4</text>
+      <text x="380" y="12">W5</text><text x="283" y="12">W6–7</text><text x="153" y="12">W8–10</text>
+    </g>
+    <line x1="30" y1="20" x2="670" y2="20" stroke="#DCD8CF" stroke-width=".6"/>
+    <g font-size="9.5">
+      <rect x="595" y="30" width="75" height="20" fill="#0E5A56"/>
+      <text x="632" y="44" text-anchor="middle" fill="#FCFBF8">الحسابات</text>
+      <rect x="530" y="58" width="65" height="20" fill="#0E5A56" opacity=".82"/>
+      <text x="562" y="72" text-anchor="middle" fill="#FCFBF8">الأدوات</text>
+      <rect x="400" y="86" width="130" height="20" fill="#0E5A56" opacity=".64"/>
+      <text x="465" y="100" text-anchor="middle" fill="#FCFBF8">اختيار المنتج</text>
+      <rect x="335" y="114" width="65" height="20" fill="#9A7B3F"/>
+      <text x="367" y="128" text-anchor="middle" fill="#FCFBF8">بوابة الفئة</text>
+      <rect x="205" y="142" width="130" height="20" fill="#0E5A56" opacity=".46"/>
+      <text x="270" y="156" text-anchor="middle" fill="#16191C">الصور والعروض</text>
+      <rect x="30" y="170" width="175" height="20" fill="#0E5A56" opacity=".3"/>
+      <text x="117" y="184" text-anchor="middle" fill="#16191C">أول بيع وقرار</text>
+    </g>
+    <line x1="335" y1="112" x2="335" y2="192" stroke="#9A7B3F" stroke-width=".7" stroke-dasharray="2.5 2"/>
+  </svg>
+  <figcaption>Fig. 1 — Six phases across ten weeks · gold marks the blocking gate</figcaption>
+  </figure>
+</section>
+</div>
+
+<!-- ============ PAGE 3 — ACCOUNTS ============ -->
+<div class="page">
+<section>
+  <p class="eyebrow">03 — Phase 0</p>
+  <h2>إنشاء الحسابات وربطها</h2>
+  <p class="lead">الترتيب مقصود. Payoneer أولًا لأن تحققه يستغرق <span class='ltr'>٣&ndash;٥</span> أيام عمل، وeBay يحتاجه في خطوة الصرف.</p>
+
+  <figure>
+  <svg class="sv" viewBox="0 0 700 200" width="700" height="200">
+    <defs><marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M7,3.5 L0,0 L0,7 Z" fill="#16191C"/></marker></defs>
+    <g font-size="10">
+      <rect x="530" y="46" width="150" height="46" fill="none" stroke="#0E5A56" stroke-width="1.3"/>
+      <text x="605" y="66" text-anchor="middle" font-size="10.5" fill="#0E5A56">Payoneer</text>
+      <text x="605" y="82" text-anchor="middle" font-size="8.5" fill="#6E7A7E"><tspan direction="ltr">٣–٥</tspan> أيام تحقق</text>
+
+      <rect x="355" y="46" width="150" height="46" fill="none" stroke="#16191C" stroke-width=".8"/>
+      <text x="430" y="66" text-anchor="middle" font-size="10.5">eBay</text>
+      <text x="430" y="82" text-anchor="middle" font-size="8.5" fill="#6E7A7E">حساب بائع + Seller Hub</text>
+
+      <rect x="180" y="46" width="150" height="46" fill="none" stroke="#16191C" stroke-width=".8"/>
+      <text x="255" y="66" text-anchor="middle" font-size="10.5">CJ Dropshipping</text>
+      <text x="255" y="82" text-anchor="middle" font-size="8.5" fill="#6E7A7E">مجاني بلا اشتراك</text>
+
+      <rect x="180" y="128" width="325" height="42" fill="#E2EDEB" stroke="#0E5A56" stroke-width=".8"/>
+      <text x="342" y="146" text-anchor="middle" font-size="10" fill="#0E5A56">الربط من داخل لوحة CJ</text>
+      <text x="342" y="161" text-anchor="middle" font-size="8.3" fill="#414A4E">مزامنة مخزون · معالجة طلبات · إرجاع تتبّع</text>
+    </g>
+    <line x1="528" y1="69" x2="510" y2="69" stroke="#16191C" stroke-width=".9" marker-end="url(#ar)"/>
+    <line x1="353" y1="69" x2="335" y2="69" stroke="#16191C" stroke-width=".9" marker-end="url(#ar)"/>
+    <path d="M430 94 L430 126" stroke="#16191C" stroke-width=".9" marker-end="url(#ar)" fill="none"/>
+    <path d="M255 94 L255 126" stroke="#16191C" stroke-width=".9" marker-end="url(#ar)" fill="none"/>
+    <text x="605" y="30" text-anchor="middle" class="lbl" font-size="7" fill="#9A7B3F">START HERE</text>
+  </svg>
+  <figcaption>Fig. 2 — Account creation order · Payoneer gates the eBay payout step</figcaption>
+  </figure>
+
+  <h3>قائمة التنفيذ</h3>
+  <ul class="ck">
+    <li><strong>Payoneer</strong> — حساب Personal. جهّز هوية سارية، إثبات عنوان، حساب بنكي أردني.</li>
+    <li><strong>تطابق الاسم حرفيًا</strong> في الهوية وPayoneer وeBay — أي اختلاف يجمّد الصرف.</li>
+    <li><strong>eBay</strong> — عنوان أردني موثَّق، ثم فعّل <strong>Seller Hub</strong> (هو ما يفتح Terapeak مجانًا).</li>
+    <li>سجّل ما يظهر في خطوة الصرف وأبلغني — هل ظهر Payoneer كخيار؟</li>
+    <li><strong>CJ</strong> — تسجيل مجاني ثم التحقق.</li>
+    <li><strong>الربط</strong> — من لوحة CJ: <span class="m">Authorization / My Stores → eBay</span>، ثم اختبر بمسودة.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>دورة المال — افهمها قبل أول إدراج</h3>
+  <figure>
+  <svg class="sv" viewBox="0 0 700 175" width="700" height="175">
+    <rect x="185" y="28" width="300" height="62" fill="#F5E3E1"/>
+    <text x="335" y="46" text-anchor="middle" font-size="9" fill="#9E2B2B">مالك خارج جيبك هنا</text>
+    <line x1="30" y1="100" x2="670" y2="100" stroke="#16191C" stroke-width="1"/>
+    <g font-size="8.6" text-anchor="middle">
+      <g stroke="#16191C" stroke-width=".8">
+        <line x1="640" y1="94" x2="640" y2="106"/><line x1="485" y1="94" x2="485" y2="106"/>
+        <line x1="335" y1="94" x2="335" y2="106"/><line x1="185" y1="94" x2="185" y2="106"/>
+        <line x1="60" y1="94" x2="60" y2="106"/>
+      </g>
+      <text x="640" y="122">المشتري يدفع</text><text x="640" y="134" fill="#6E7A7E" font-size="7.6">إلى eBay</text>
+      <text x="485" y="122">eBay تحجز</text><text x="485" y="134" fill="#6E7A7E" font-size="7.6">حجز البائع الجديد</text>
+      <text x="335" y="122" fill="#9E2B2B">تدفع لـ CJ</text><text x="335" y="134" font-size="7.6" fill="#9E2B2B">من رأس مالك</text>
+      <text x="185" y="122">CJ يشحن</text><text x="185" y="134" fill="#6E7A7E" font-size="7.6"><span class='ltr'>٢&ndash;٧</span> أيام</text>
+      <text x="60" y="122">الإفراج</text><text x="60" y="134" fill="#0E5A56" font-size="7.6">إلى Payoneer</text>
+    </g>
+    <text x="335" y="82" text-anchor="middle" class="lbl" font-size="7" fill="#9E2B2B">WORKING CAPITAL EXPOSURE</text>
+  </svg>
+  <figcaption>Fig. 3 — Cash cycle · the shaded span is funded by you, not by eBay</figcaption>
+  </figure>
+  <div class="warn" style="margin-bottom:0">بـ<span class="ltr">$100</span> وتكلفة بضاعة <span class="ltr"><span class='ltr'>~$10&ndash;12</span></span> للطلب، سقفك الواقعي <strong><span class='ltr'>٥&ndash;٨</span> طلبات متزامنة</strong>. الإدراج بكثافة تفوق قدرتك على التمويل يقتل الحساب في أسبوعه الأول.</div>
+</section>
+</div>
+
+<!-- ============ PAGE 4 — TOOLS ============ -->
+<div class="page">
+<section>
+  <p class="eyebrow">04 — Phase 1</p>
+  <h2>الأدوات — بديل TrendTrack بالكامل</h2>
+  <table>
+    <thead><tr><th>الأداة</th><th style="width:20mm">التكلفة</th><th style="width:78mm">ما تعطيه</th></tr></thead>
+    <tbody>
+      <tr><td><strong><a href="https://www.ebay.com/sh/research">eBay Terapeak</a></strong></td><td class="num">$0</td><td><strong>الأهم.</strong> ٣ سنوات من بيانات البيع <strong>الفعلية</strong>، بما فيها السعر الحقيقي المقبول في Best Offer الذي لا يظهر في البحث العادي.</td></tr>
+      <tr><td><a href="https://ads.tiktok.com/business/creativecenter/">TikTok Creative Center</a></td><td class="num">$0</td><td>الإعلانات النشطة والزوايا الإبداعية — جوهر ما تبيعه أدوات ad-spy</td></tr>
+      <tr><td><a href="https://www.facebook.com/ads/library/">Meta Ad Library</a></td><td class="num">$0</td><td>مدة استمرار الإعلان مؤشر نجاح</td></tr>
+      <tr><td><a href="https://trends.google.com/trends/">Google Trends</a></td><td class="num">$0</td><td>اتجاه ١٢ شهرًا — تمييز الصاعد عمّا بلغ ذروته</td></tr>
+      <tr><td>Firecrawl · <span class="m">crawl4ai</span> · <span class="m">agent-reach</span></td><td class="num">متاح</td><td>مراقبة أسعار المنافسين آليًا وفحص الطلب</td></tr>
+    </tbody>
+  </table>
+  <div class="note">أدوات الـad-spy تقيس <strong>تفاعلًا إعلانيًا</strong>. Terapeak يقيس <strong>معاملات تمّت فعلًا</strong>. لبيع على eBay بلا إعلانات، البيانات الفعلية أدقّ وأرخص — الأداة المدفوعة هنا أضعف لا أقوى.</div>
+</section>
+
+<section>
+  <h3>حزم السكِلز — فُحصت ملفًا ملفًا</h3>
+<pre># 1) الأعلى جودة — 20 skill + 9 Python scripts
+#    margin_stack.py → CM2 · CM3 · breakeven ROAS
+git clone https://github.com/mardab96/ecommerce-claude-skills
+cp -r ecommerce-claude-skills/*-ecommerce ~/.claude/skills/
+
+# 2) nexscope — الثلاثة الجيدة فقط، لا الـ147
+npx skills add nexscope-ai/eCommerce-Skills --skill cross-border-ecommerce -g
+npx skills add nexscope-ai/eCommerce-Skills --skill dropshipping-product-research -g
+npx skills add nexscope-ai/eCommerce-Skills --skill shopify-dropshipping -g
+
+# 3) حزمتك المحلية
+bash /home/user/ai-business-skills/install.sh --global</pre>
+  <div class="warn">سكِلز eBay الخمسة في <a href="https://github.com/nexscope-ai/eCommerce-Skills">nexscope</a> — <span class="m">ebay-product-research</span>، <span class="m">ebay-seo</span>، <span class="m">ebay-advertising</span>، <span class="m">ebay-seller-guide</span>، <span class="m">ebay-seller-tools</span> — <strong>حشو</strong>: <span class='ltr'>٣٥&ndash;٣٦</span> سطرًا، بلا YAML frontmatter فلن تُفعَّل تلقائيًا، وبلا منهجية. لا تثبّتها.</div>
+  <p>ومن <a href="https://github.com/dnh33/webshop-ux-expert">dnh33/webshop-ux-expert</a> اقتبس ملفًا واحدًا: <span class="m">trend-research-guide.md</span> — ٣٢٤ سطرًا فيها نظام تقييم اتجاهات <span class='ltr'>٠&ndash;١٠٠</span> وروتين بحث فوق مصادر مجانية.</p>
+</section>
+</div>
+
+<!-- ============ PAGE 5 — GATE + PRODUCT ============ -->
+<div class="page">
+<section>
+  <p class="eyebrow">05 — Phase 2</p>
+  <h2>اختيار المنتج</h2>
+  <table>
+    <thead><tr><th>المعيار</th><th style="width:80mm">العتبة</th></tr></thead>
+    <tbody>
+      <tr><td>مبيعات فعلية آخر ٩٠ يومًا</td><td>طلب مستقر متكرر، لا قفزة موسمية</td></tr>
+      <tr><td>سعر البيع</td><td><strong><span class="ltr">$25–60</span></strong> — أقل لا يحتمل رسوم eBay، وأعلى يصعب بلا تقييمات</td></tr>
+      <tr><td>الوزن</td><td>تحت ٥٠٠ جرام</td></tr>
+      <tr><td>مستودع CJ الأمريكي</td><td><span class="tag t-gate">إلزامي</span> الشحن الصيني يصطدم بتوقعات المشتري ومقاييس البائع وشرط الأجل معًا</td></tr>
+      <tr><td>مخاطر العيب</td><td><span class="tag t-gate">إلزامي</span> منخفضة — بديل العيّنة</td></tr>
+      <tr><td>الفلتر الشرعي</td><td>يمرّ حسب <span class='ltr'>§1.3</span> من الخطة الأصلية</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <p class="eyebrow">06 — Phase 3 · Gate</p>
+  <h2>بوابة الفئة</h2>
+  <figure>
+  <svg class="sv" viewBox="0 0 700 215" width="700" height="215">
+    <defs><marker id="a2" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M7,3.5 L0,0 L0,7 Z" fill="#16191C"/></marker></defs>
+    <rect x="480" y="16" width="190" height="38" fill="none" stroke="#16191C" stroke-width=".8"/>
+    <text x="575" y="40" text-anchor="middle" font-size="10">أنشئ مسودة عرض — لا تنشرها</text>
+    <path d="M575 56 L575 76" stroke="#16191C" stroke-width=".9" marker-end="url(#a2)"/>
+    <path d="M575 78 L672 112 L575 146 L478 112 Z" fill="#F2EAD9" stroke="#9A7B3F" stroke-width="1.1"/>
+    <text x="575" y="108" text-anchor="middle" font-size="9.5" fill="#9A7B3F">هل ظهر تحذير</text>
+    <text x="575" y="122" text-anchor="middle" font-size="9.5" fill="#9A7B3F">«غير مؤهل»؟</text>
+    <line x1="476" y1="112" x2="400" y2="112" stroke="#16191C" stroke-width=".9" marker-end="url(#a2)"/>
+    <text x="438" y="105" text-anchor="middle" font-size="8.5" fill="#1F7A4D">لا</text>
+    <rect x="240" y="93" width="158" height="38" fill="none" stroke="#1F7A4D" stroke-width="1.1"/>
+    <text x="319" y="117" text-anchor="middle" font-size="10" fill="#1F7A4D">امضِ إلى المرحلة ٤</text>
+    <path d="M575 148 L575 172" stroke="#16191C" stroke-width=".9" marker-end="url(#a2)"/>
+    <text x="592" y="164" font-size="8.5" fill="#9E2B2B">نعم</text>
+    <rect x="420" y="172" width="310" height="34" fill="none" stroke="#9E2B2B" stroke-width="1.1"/>
+    <text x="575" y="194" text-anchor="middle" font-size="9.6" fill="#9E2B2B">انتقل للمرشح التالي — لا تحاول الالتفاف</text>
+    <rect x="40" y="93" width="170" height="38" fill="none" stroke="#DCD8CF" stroke-width=".8"/>
+    <text x="125" y="110" text-anchor="middle" font-size="8.7" fill="#6E7A7E">الثلاثة مقيَّدة؟</text>
+    <text x="125" y="123" text-anchor="middle" font-size="8.7" fill="#6E7A7E">عُد للمرحلة ٢</text>
+    <line x1="238" y1="112" x2="212" y2="112" stroke="#DCD8CF" stroke-width=".8" marker-end="url(#a2)"/>
+  </svg>
+  <figcaption>Fig. 4 — Category eligibility gate · run before any production work</figcaption>
+  </figure>
+  <div class="note" style="margin-bottom:0">لا تقاوم القيد — اعمل معه. ابدأ بفئة بسيطة مفتوحة، ابنِ <span class='ltr'>٢٠&ndash;٣٠</span> عملية بيع نظيفة، وسترفع eBay القيد آليًا. الفئات المقيَّدة تنتظرك بعد <span class='ltr'>٣&ndash;٦</span> أشهر من السجل الجيد. <strong>محاولة الالتفاف تُنهي الحساب.</strong></div>
+</section>
+</div>
+
+<!-- ============ PAGE 6 — IMAGES ============ -->
+<div class="page">
+<section>
+  <p class="eyebrow">07 — Phase 4</p>
+  <h2>الصور بالذكاء الاصطناعي</h2>
+  <p class="lead">الخط الفاصل هنا ليس تفضيلًا جماليًا — هو شرط صحة عقد.</p>
+  <p>في بنية السَّلَم، <strong>دقة وصف المبيع شرط صحة</strong> (الشرط ٢ في <span class='ltr'>§1.2</span>). والصورة جزء من الوصف. فالصورة التي تُظهر المنتج أفضل من حقيقته لا تخالف سياسة eBay فحسب — <strong>بل تمسّ صحة العقد</strong> لأنها من الغِشّ.</p>
+
+  <figure>
+  <svg class="sv" viewBox="0 0 700 250" width="700" height="250">
+    <line x1="350" y1="14" x2="350" y2="236" stroke="#DCD8CF" stroke-width=".7" stroke-dasharray="3 3"/>
+    <line x1="120" y1="34" x2="580" y2="34" stroke="#16191C" stroke-width="1.8"/>
+    <circle cx="350" cy="34" r="3.6" fill="#16191C"/>
+    <line x1="150" y1="34" x2="150" y2="60" stroke="#16191C" stroke-width=".9"/>
+    <line x1="550" y1="34" x2="550" y2="60" stroke="#16191C" stroke-width=".9"/>
+    <path d="M96 60 Q150 92 204 60" fill="#E2EDEB" stroke="#0E5A56" stroke-width="1.2"/>
+    <path d="M496 60 Q550 92 604 60" fill="#F5E3E1" stroke="#9E2B2B" stroke-width="1.2"/>
+    <text x="150" y="112" text-anchor="middle" font-size="11" fill="#0E5A56">تحسين العرض</text>
+    <text x="550" y="112" text-anchor="middle" font-size="11" fill="#9E2B2B">تغيير الحقيقة</text>
+    <g font-size="8.8" fill="#414A4E" text-anchor="middle">
+      <text x="150" y="136">إزالة الخلفية · خلفية بيضاء</text>
+      <text x="150" y="152">تصحيح إضاءة يُظهر اللون الحقيقي</text>
+      <text x="150" y="168">القص والتحجيم والحدة</text>
+      <text x="150" y="184">إزالة علامة المورّد المائية</text>
+      <text x="150" y="200">صور ثانوية بأبعاد حقيقية</text>
+    </g>
+    <g font-size="8.8" fill="#414A4E" text-anchor="middle">
+      <text x="550" y="136">تغيير اللون أو الخامة</text>
+      <text x="550" y="152">إضافة مزايا لا يملكها</text>
+      <text x="550" y="168">تكبير الحجم النسبي</text>
+      <text x="550" y="184">مشاهد توحي بقدرات غائبة</text>
+      <text x="550" y="200">نصوص على الصورة الرئيسية</text>
+    </g>
+    <text x="150" y="224" text-anchor="middle" class="lbl" font-size="7" fill="#0E5A56">PERMITTED</text>
+    <text x="550" y="224" text-anchor="middle" class="lbl" font-size="7" fill="#9E2B2B">PROHIBITED</text>
+  </svg>
+  <figcaption>Fig. 5 — The image balance · presentation may be improved, truth may not be altered</figcaption>
+  </figure>
+
+  <div class="gate">
+    <h3>قاعدة الحسم عند الشك</h3>
+    <p style="margin-bottom:0">«لو رأى المشتري المنتج بيده، هل سيشعر أن الصورة خدعته؟» — إن كان الجواب نعم أو <em>ربما</em>، فالتعديل ممنوع. هذا معيار الغِشّ عمليًا.</p>
+  </div>
+  <div class="warn" style="margin-bottom:0"><strong>لا تستخدم صور بائعين آخرين على eBay إطلاقًا</strong> — انتهاك حقوق نشر وبرنامج VeRO، وعقوبته إنهاء الحساب. صور CJ مرخّصة لك كبائع؛ صور منافسيك ليست كذلك.</div>
+</section>
+</div>
+
+<!-- ============ PAGE 7 — QC + ECONOMICS ============ -->
+<div class="page">
+<section>
+  <p class="eyebrow">08 — Phase 5</p>
+  <h2>ضبط الجودة بلا عيّنة</h2>
+  <p>إلغاء العيّنة يرفع مخاطر التقييم السلبي المبكر — والتقييمات عملتك على eBay. لكن البديل قد يكون <strong>أقوى من العيّنة</strong>، لأنه مبني على مئات الوحدات لا وحدة واحدة.</p>
+  <table>
+    <thead><tr><th>البديل</th><th style="width:88mm">كيف</th></tr></thead>
+    <tbody>
+      <tr><td><strong>تنقيب تقييمات المنافسين السلبية</strong></td><td><strong>الأقوى.</strong> تقييمات بائعي eBay <strong>عامة</strong>. جد من يبيع نفس المنتج واقرأ سلبياته — المشترون يكتبون العيوب حرفيًا: «وصل مكسورًا»، «أصغر من الصورة».</td></tr>
+      <tr><td>مراجعات AliExpress وAmazon</td><td>ركّز على <span class='ltr'>٢&ndash;٣</span> نجوم — أصدقها وأكثرها تفصيلًا</td></tr>
+      <tr><td>خدمة الفحص لدى CJ</td><td>فحص جودة قبل الشحن — فعّلها على أول الطلبات</td></tr>
+      <tr><td>فئة منخفضة العيوب</td><td>تجنّب الإلكترونيات والقابل للكسر وما يعتمد على المقاسات</td></tr>
+      <tr><td>أول طلب حقيقي</td><td>هو عيّنتك — راقبه كاختبار، واستعدّ لاسترداد فوري سخي</td></tr>
+    </tbody>
+  </table>
+  <div class="note">اجعل هذا <strong>معيار ترشيح</strong> في المرحلة ٢: أي منتج تتكرر شكاوى جودته يُستبعد. هكذا يتحوّل غياب العيّنة من ثغرة إلى فلتر إضافي.</div>
+</section>
+
+<section>
+  <p class="eyebrow">09 — Economics</p>
+  <h2>اقتصاديات الوحدة</h2>
+  <figure>
+  <svg class="sv" viewBox="0 0 700 170" width="700" height="170">
+    <line x1="30" y1="140" x2="670" y2="140" stroke="#16191C" stroke-width=".8"/>
+    <rect x="568" y="30" width="92" height="110" fill="#0E5A56"/>
+    <text x="614" y="24" text-anchor="middle" class="lbl" font-size="8.4" fill="#0E5A56">29.99</text>
+    <rect x="452" y="30" width="76" height="16" fill="#9E2B2B" opacity=".85"/>
+    <text x="490" y="24" text-anchor="middle" class="lbl" font-size="8.2" fill="#9E2B2B">−4.27</text>
+    <text x="490" y="60" text-anchor="middle" font-size="7.6" fill="#6E7A7E">رسوم eBay</text>
+    <rect x="356" y="30" width="76" height="2" fill="#9A7B3F"/>
+    <text x="394" y="24" text-anchor="middle" class="lbl" font-size="8.2" fill="#9A7B3F">−0.39</text>
+    <text x="394" y="46" text-anchor="middle" font-size="7.6" fill="#9A7B3F">رسم دولي 1.30%</text>
+    <rect x="260" y="30" width="76" height="37" fill="#9E2B2B" opacity=".62"/>
+    <text x="298" y="24" text-anchor="middle" class="lbl" font-size="8.2" fill="#9E2B2B">−10.00</text>
+    <text x="298" y="82" text-anchor="middle" font-size="7.6" fill="#6E7A7E">بضاعة + شحن</text>
+    <rect x="164" y="30" width="76" height="4" fill="#9A7B3F"/>
+    <text x="202" y="24" text-anchor="middle" class="lbl" font-size="8.2" fill="#9A7B3F">−0.90</text>
+    <text x="202" y="48" text-anchor="middle" font-size="7.6" fill="#9A7B3F">تحويل عملة 3.0%</text>
+    <rect x="44" y="87" width="92" height="53" fill="#0E5A56"/>
+    <text x="90" y="81" text-anchor="middle" class="lbl" font-size="9.4" fill="#0E5A56">14.43</text>
+    <text x="90" y="156" text-anchor="middle" font-size="8.6" fill="#0E5A56">الربح الإجمالي</text>
+    <text x="614" y="156" text-anchor="middle" font-size="8.6" fill="#414A4E">سعر البيع</text>
+  </svg>
+  <figcaption>Fig. 6 — Unit economics waterfall · USD per order · gold = Jordan-specific fees</figcaption>
+  </figure>
+  <div class="warn" style="margin-bottom:4mm"><strong>رسمان يخصّان الأردن تحديدًا</strong> — متحقَّق منهما من <a href="https://export.ebay.com/en/fees-regulations-policies/seller-fees/international-fees">صفحة الرسوم الدولية</a>: eBay تصنّف الأردن ضمن «Rest of APAC»، فيُفرض <strong>رسم دولي 1.30%</strong> على <strong>كل</strong> بيع أمريكي — ويُحسب على إجمالي المبلغ شاملًا الشحن والضريبة، فصل الشحن يرفعه. و<strong>تحويل العملة 3.0%</strong> لا 2%. ونسبة الرسوم النهائية <strong>تختلف بالفئة</strong> (2.5%–15.3%) — تحقق منها لفئتك.</div>
+  <figure style="margin:0">
+  </figure>
+
+  <table>
+    <thead><tr><th>نفس المنتج</th><th style="width:34mm">eBay</th><th style="width:34mm">Shopify</th></tr></thead>
+    <tbody>
+      <tr><td>تكلفة اكتساب المشتري</td><td class="num" style="color:var(--pass)">$0</td><td class="num">$8–12</td></tr>
+      <tr><td>رسوم شهرية ثابتة</td><td class="num" style="color:var(--pass)">$0</td><td class="num">$39</td></tr>
+      <tr class="tot"><td>صافي الربح للطلب</td><td class="num" style="color:var(--pass)">≈ $14</td><td class="num">≈ $4–7</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-bottom:0">بحجم منخفض، الرسوم الثابتة والإعلانات تبتلع Shopify. <strong>هذا سبب رياضي لعكس الترتيب، لا تفضيل للمنصة.</strong></p>
+</section>
+</div>
+
+<!-- ============ PAGE 8 — METRICS + SHARIAH ============ -->
+<div class="page">
+<section>
+  <p class="eyebrow">10 — Measurement</p>
+  <h2>المقاييس — لماذا ROAS لا ينطبق</h2>
+  <p>خطتك الأصلية وكل سكِلز الدروبشيبينغ تفترض إعلانات مدفوعة فتقيس CPA وROAS. بلا إنفاق إعلاني <strong>هذه المقاييس بلا معنى</strong>.</p>
+  <table>
+    <thead><tr><th>المقياس</th><th style="width:92mm">ما يخبرك</th></tr></thead>
+    <tbody>
+      <tr><td class="m">Impressions</td><td>هل يعرضك محرك بحث eBay أصلًا؟ صفر ← مشكلة عنوان وكلمات مفتاحية</td></tr>
+      <tr><td class="m">Click-through</td><td>يظهر ولا يُنقر ← الصورة الرئيسية أو السعر</td></tr>
+      <tr><td class="m">Watchers</td><td>اهتمام بلا شراء ← السعر أو الشحن أو ضعف الثقة</td></tr>
+      <tr><td class="m">Sell-through</td><td><strong>الأهم:</strong> المباع ÷ المعروض</td></tr>
+    </tbody>
+  </table>
+  <div class="note" style="margin-bottom:0">لا تعتمد أرقامًا معيارية من الإنترنت. <strong>اجمع خطوط الأساس من Terapeak لفئتك أنت</strong> في المرحلة ٢ وقارن بها.</div>
+</section>
+
+<section>
+  <p class="eyebrow">11 — Shariah</p>
+  <h2>ربط السَّلَم بآليات eBay</h2>
+  <p class="lead">للعرض على شيخ تثق به — لا للاعتماد على تحليل المساعد.</p>
+  <table>
+    <thead><tr><th>شرط السَّلَم</th><th style="width:88mm">آلية eBay التي تحققه</th></tr></thead>
+    <tbody>
+      <tr><td>قبض الثمن في مجلس العقد</td><td><strong>Buy It Now</strong> مع الدفع الفوري. ولهذا <strong>تُستبعد المزادات</strong> — ففيها فجوة بين الرسو والدفع تكسر الشرط</td></tr>
+      <tr><td>تحديد الأجل</td><td>حقول مدة التجهيز والتسليم <strong>إلزامية</strong> — محقق ببنية المنصة</td></tr>
+      <tr><td>تحمّل البائع للمخاطرة</td><td><strong>ضمان استرداد المال</strong> يفرضه بنيويًا — أقوى من بند تكتبه بنفسك</td></tr>
+      <tr><td>ضبط الثمن</td><td>السعر الإجمالي مع الشحن ظاهر قبل الدفع</td></tr>
+      <tr><td>توفّر البضاعة عند الأجل</td><td>مزامنة مخزون CJ تُلغي العرض تلقائيًا عند النفاد</td></tr>
+      <tr><td>دقة وصف المبيع</td><td>وهنا تدخل الصور — <span class='ltr'>§07</span></td></tr>
+    </tbody>
+  </table>
+  <div class="note">eBay قد يناسب السَّلَم <strong>أكثر</strong> من متجر مستقل، لأن المنصة تفرض الشرطين الأصعب — الدفع الفوري وتحمّل المخاطرة — بقواعدها لا باجتهادك.</div>
+  <div class="gate" style="margin-bottom:0"><h3>معلّق</h3><p style="margin-bottom:0">الحد الأدنى للأجل عند الحنفية (~شهر) مقابل نافذة <span class='ltr'>٢&ndash;٧</span> أيام. مسجّل في <span class='ltr'>§1.2</span> من الخطة الأصلية وينتظر شيخًا.</p></div>
+</section>
+</div>
+
+<!-- ============ PAGE 9 — GATES ============ -->
+<div class="page">
+<section>
+  <p class="eyebrow">12 — Discipline</p>
+  <h2>معايير العبور</h2>
+  <table>
+    <thead><tr><th style="width:28mm">المرحلة</th><th>لا تنتقل قبل</th></tr></thead>
+    <tbody>
+      <tr><td><strong>٠</strong> الحسابات</td><td>الثلاثة موثَّقة ومربوطة + فهم سقف السيولة</td></tr>
+      <tr><td><strong>١</strong> الأدوات</td><td>مثبّتة + قراءة Terapeak لخمسة منتجات</td></tr>
+      <tr><td><strong>٢</strong> المنتج</td><td>مختار بمبرر موثّق + فحص تقييمات المنافسين السلبية</td></tr>
+      <tr><td><strong>٣</strong> البوابة</td><td><span class="tag t-gate">حاسم</span> تأكيد أن الفئة مفتوحة لحسابك</td></tr>
+      <tr><td><strong>٤</strong> الصور</td><td><span class='ltr'>٢&ndash;٣</span> عروض حيّة بصور تجتاز معيار <span class='ltr'>§07</span></td></tr>
+      <tr><td><strong>٥</strong> الجودة</td><td>لا شكاوى جودة متكررة في بيانات المنافسين</td></tr>
+      <tr><td><strong>٦</strong> البيع</td><td>أول بيع مكتمل من طرف إلى طرف + أول تقييم</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>ما لا نفعله عمدًا</h2>
+  <table>
+    <thead><tr><th>البند</th><th style="width:92mm">السبب</th></tr></thead>
+    <tbody>
+      <tr><td>Shopify</td><td><span class="ltr">$39</span> متكررة تستهلك الميزانية خلال شهرين بلا زيارات</td></tr>
+      <tr><td>أي إعلانات مدفوعة</td><td>تحت <span class="ltr">$100</span> لا تشتري بيانات كافية لأي قرار</td></tr>
+      <tr><td>دومين مخصص</td><td>لا لزوم له على eBay</td></tr>
+      <tr><td>أداة أبحاث مدفوعة</td><td>Terapeak مجاني وأقوى لحالتنا</td></tr>
+      <tr><td>المزادات</td><td>تكسر شرط السَّلَم وتحرق الهامش</td></tr>
+      <tr><td>الشحن من الصين</td><td>يخفض التصنيف ويقيّد الحساب ويخالف الأجل المعلن</td></tr>
+      <tr><td>توسيع المنتجات</td><td>منتج واحد يُتقَن حتى أول بيع</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section style="margin-top:12mm">
+  <div style="border-top:1.6pt solid var(--ink);padding-top:4mm;display:flex;justify-content:space-between;
+    font-family:var(--mono);font-size:6.8pt;letter-spacing:.09em;color:var(--muted);direction:ltr">
+    <span>MIZAN · ميزان</span><span>PLAN v2 · 2026-08-16</span><span>ai-business-skills</span>
+  </div>
+  <p style="font-size:8.4pt;color:var(--muted);margin-top:3mm">المراجع: <span class="m">plans/shopify-dropshipping-shariah-launch-plan-20260802.md</span> · <span class="m">.agents/dropshipping-context.md</span> · <span class="m">modules/dropshipping/en/29-dropshipping-mastery-global/SKILL.md</span></p>
+</section>
+</div>
+
+</body></html>
