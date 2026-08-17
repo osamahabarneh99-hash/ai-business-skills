@@ -139,6 +139,26 @@ Separate from working capital, eBay caps how much a new account may list.
 - **Category limits apply separately** to a seller new to a given category.
 - Increases are automatic on monthly review, driven by sales volume and feedback, and can also be
   requested from Seller Hub.
+- **A Store subscription does not raise the selling limit.** Do not buy one expecting more headroom.
+- At the cap you cannot create listings, **raise prices**, or add items until a listing ends or the
+  month rolls over.
+
+**eBay's own worked example uses `10 items / $500 per month`** as the illustrative limit. Treat that as
+the shape of a new-seller cap, not a promise — the real figure is account-specific.
+
+**What drives the number** (eBay's published list): account age · identity confirmation · link to an
+established account · **registered address** · site of registration · selling performance · past volume
+· risk of the item types listed. A brand-new account, no history, no linked account, registered in a
+HiPO country lands at the **low end of every one of these**. Plan for the floor, not the average.
+
+**Separately: 250 zero insertion fee listings per month on ebay.com** — this is *not* the selling limit
+and does not interact with it in your favour. eBay states plainly: **"The number of zero insertion fee
+listings cannot exceed your selling limit."** With a 10-item cap, 250 free listings buys nothing.
+
+**Does this actually bind at launch? No — money binds first.** A ~10 item / $500 cap sits above the
+5–8 concurrent orders that under $100 of working capital can fund. The selling limit becomes the
+binding constraint only after the cash ceiling lifts. Do not redesign around it now; just know it is
+there before scaling.
 - Listing in the wrong category to dodge a category limit is **search manipulation** — a policy
   violation, not a workaround.
 

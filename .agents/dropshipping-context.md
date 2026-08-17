@@ -85,6 +85,22 @@ eBay reviews the account, the truthful facts are the defence. Household linking 
 device) may trigger a review even when everything is genuine; that is a disclosed risk, not a reason to
 hide anything.
 
+### Likely diagnosis of Osama's suspension — worth checking before appealing
+
+eBay's selling-limits page states: *"Registration of new accounts in order to **circumvent sales limits**
+on eBay is prohibited. In this case, **all of your accounts may be suspended indefinitely**."*
+
+That matches the reported facts closely: two accounts on one identity, followed by suspension. If the
+second account was opened while the first was near or at its selling limit, this is almost certainly the
+clause that was applied — and it explains why the suspension hit rather than a warning. It is also why
+holding two accounts is permitted in general but was not here: the prohibition is about *purpose*, not
+about the count.
+
+Bearing on an appeal: if the second account genuinely had a different purpose — a separate product line,
+or buying separate from selling — that is a defensible position and worth stating plainly. If it was
+opened to get more listing headroom, an appeal is unlikely to succeed and the effort is better spent
+supporting the brother's account.
+
 ### Also open: Osama's own suspension may be appealable
 
 Because multiple accounts are permitted in principle, the suspension turns on whether the second account
@@ -179,6 +195,12 @@ let a financial or strategic decision rest on it without checking first.
   on the total including shipping and tax.
 - **Seller currency conversion 3.0%** for Jordan's band.
 - Regulatory operating fee does **not** apply to ebay.com listings.
+- **Selling limits**: account-specific, never published as a universal figure. eBay's own worked example
+  uses `10 items / $500 per month`. Both active and sold listings count; a Store subscription does not
+  raise it; at the cap you cannot list, raise prices, or add items. Driven by account age, identity
+  confirmation, link to an established account, **registered address**, site, performance, past volume
+  and item risk — a new HiPO-country account with no history sits at the low end of all of them.
+- **250 zero insertion fee listings/month** on ebay.com, but capped by the selling limit.
 
 **NOT verified — flagged, still open**
 
@@ -188,7 +210,7 @@ let a financial or strategic decision rest on it without checking first.
 | Final value fee percentage | Category-dependent, ~2.5–15.3% + per-order fee. The 13.25% in the worked example is a **placeholder**. Confirm for the actual category. |
 | Per-order fee amount | Unconfirmed. |
 | New-seller payout hold duration (~21 days used) | Directionally right, exact terms unconfirmed. |
-| ~250 free listings/month | Unconfirmed. |
+| ~~250 free listings/month~~ | **VERIFIED 2026-08-16** — 250 zero insertion fee listings/month on ebay.com, and crucially they **cannot exceed the selling limit**, so they are worthless under a low cap. |
 | CJ US-warehouse delivery 2–7 days | Supplier's own claim, not independently checked. |
 | Terapeak's 3-year data depth | Secondary sources only. |
 | Evaluation window (3 vs 12 months, 400-transaction rule) | Removed as a stated fact. Only the seller's own dashboard is authoritative. |
