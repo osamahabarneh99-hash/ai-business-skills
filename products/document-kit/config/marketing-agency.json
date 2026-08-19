@@ -1,0 +1,61 @@
+{
+  "slug": "marketing-agency",
+  "accent": "#E4572E",
+  "dark": "#14171A",
+  "docLabel": "Project Proposal",
+  "title": "Brand growth programme for the 2027 season",
+  "subtitle": "A twelve-week engagement covering positioning, campaign production and paid acquisition, built to move qualified pipeline rather than impressions.",
+  "client": "Client Name Ltd.",
+  "company": "Your Agency",
+  "date": "01 January 2027",
+  "validUntil": "31 January 2027",
+  "pricingHeading": "Investment and payment schedule",
+  "pricingNote": "Fees are fixed for the scope described in section 02. Media spend is billed separately at cost and is not included above. Any change to scope is quoted before work begins.",
+  "overview": {
+    "heading": "What we understand about the problem",
+    "lede": "You are spending on acquisition, but attribution stops at the click and nobody can say which campaigns produce revenue. This proposal fixes the measurement first, then rebuilds the campaigns on top of it.",
+    "stats": [
+      { "value": "12 wks", "label": "Engagement length" },
+      { "value": "3", "label": "Channels in scope" },
+      { "value": "Weekly", "label": "Reporting cadence" },
+      { "value": "2", "label": "Dedicated specialists" }
+    ],
+    "noteTitle": "Why measurement first",
+    "note": "Rebuilding creative before attribution works means judging the new campaigns with the same broken data. We sequence it the other way round."
+  },
+  "scope": {
+    "heading": "What is included",
+    "intro": "The engagement runs in three workstreams. Each has a named deliverable and a date, so progress is visible without a status meeting.",
+    "items": [
+      { "title": "Measurement and attribution", "body": "Event tracking audit, server-side event forwarding, and a single reporting view that ties spend to qualified leads rather than to clicks." },
+      { "title": "Positioning and messaging", "body": "Customer interviews, competitor message audit, and a one-page positioning statement that every campaign is written against." },
+      { "title": "Creative production", "body": "Twelve static concepts and four short-form video edits per month, produced against the positioning and refreshed on performance data." },
+      { "title": "Paid acquisition management", "body": "Campaign build, daily budget management and weekly optimisation across the three agreed channels, with pre-committed kill and scale rules." },
+      { "title": "Reporting", "body": "A weekly one-page report showing spend, qualified leads, cost per qualified lead and the decisions taken that week." }
+    ]
+  },
+  "timeline": {
+    "heading": "How the twelve weeks run",
+    "intro": "Dates below assume a start within two weeks of signature and timely access to analytics and ad accounts.",
+    "phases": [
+      { "when": "Weeks 1–2", "title": "Audit and access", "body": "Tracking audit, account access, baseline metrics agreed in writing." },
+      { "when": "Weeks 3–4", "title": "Measurement rebuild", "body": "Server-side events live, reporting view signed off, baseline locked." },
+      { "when": "Weeks 5–6", "title": "Positioning", "body": "Interviews completed, positioning statement approved." },
+      { "when": "Weeks 7–9", "title": "First creative cycle", "body": "Concepts produced, campaigns launched, first optimisation round." },
+      { "when": "Weeks 10–12", "title": "Scale and handover", "body": "Winners scaled, losers cut, documentation and handover pack delivered." }
+    ]
+  },
+  "pricing": [
+    { "item": "Measurement and attribution", "detail": "One-off setup, weeks 1–4", "amount": 4800 },
+    { "item": "Positioning and messaging", "detail": "One-off, weeks 5–6", "amount": 3200 },
+    { "item": "Creative production", "detail": "Monthly, 3 months", "amount": 7500 },
+    { "item": "Paid acquisition management", "detail": "Monthly, 3 months", "amount": 6900 }
+  ],
+  "terms": [
+    { "title": "Payment schedule", "body": "Forty per cent on signature, thirty per cent at week six, thirty per cent on delivery. Invoices are due fourteen days from issue." },
+    { "title": "Scope changes", "body": "Work outside section 02 is quoted separately and begins only after written approval. No change is billed without it." },
+    { "title": "Ownership", "body": "All deliverables transfer to the client on final payment, including source files, ad accounts and documentation." },
+    { "title": "Confidentiality", "body": "Both parties keep commercial information confidential during the engagement and for two years afterwards." },
+    { "title": "Termination", "body": "Either party may terminate with fourteen days written notice. Work completed to that date is invoiced; unused fees are refunded." }
+  ]
+}
